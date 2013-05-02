@@ -11,6 +11,7 @@
 */
 #include <device.h>
 
+// This Function pulses the Clock line
 void pump()
 {
     CyDelayUs(3);
@@ -20,18 +21,32 @@ void pump()
     CyDelayUs(3);
 }
 
-
-
-
-void SccbRead(uint8 id, uint8 addr )
+// This is the end sequence for sccb
+void endSeq()
 {
-    int i;
+    ClockLine_Write(1);  //End Sequence
+    CyDelayUs(3);
+    DataLine_Write(1);
     
-    // Phase 1 Write
+    CyDelayUs(50);
+}
+
+// THis is the Start sequnce for sccb
+void startSeq()
+{
     DataLine_Write(0); // Start Transmission
     CyDelayUs(3);
     ClockLine_Write(0);
     CyDelayUs(5);
+}
+
+
+void SccbWritePhase1(uint8 id, uint8 addr)
+{
+    int i;
+    
+    // Phase 1 Write
+     startSeq();
     
     for( i=sizeof(id)*CHAR_BIT-1; i>=0;--i) // write the device id
     {
@@ -55,18 +70,36 @@ void SccbRead(uint8 id, uint8 addr )
     
 
 
-    ClockLine_Write(1);  //End Bit
-    CyDelayUs(3);
-    DataLine_Write(1);
+
+    }
     
-    CyDelayUs(50);
+
+
+void SccbWrite(uint8 id, uint8 addr, uint8 byte)
+{
+    SccbWritePhase1(id, addr);
+    int i;
+    for( i=sizeof(byte)*CHAR_BIT-1; i>=0;--i) // write the register
+    {
+        int bit = (byte>>i) & 1;
+        DataLine_Write(bit);
+        pump();
+    }    
+    
+    DataLine_Write(0); // Don't Care bit
+    pump();
+    endSeq();
+    
+}
+
+void SccbRead(uint8 id, uint8 addr )
+{
+    int i;
+    SccbWritePhase1(id, addr);
+    endSeq();
+    startSeq();
+    
     //Phase 1 Read
-    
-    DataLine_Write(0); // Start Transmission
-    CyDelayUs(3);
-    ClockLine_Write(0);
-    CyDelayUs(5);
-    
     id++; // for read
     for( i=sizeof(id)*CHAR_BIT-1; i>=0;--i) // write the device id+1 for read
     {
@@ -77,21 +110,27 @@ void SccbRead(uint8 id, uint8 addr )
     
     //Phase 2 read
     // read data 
-
-    for( i=8; i>=0;--i) // write the device id
+    pump(); //don't care bit
+    
+    
+    for( i=7; i>=0;--i) // write the device id
     {
-       if(i==8){DataLine_Read();} // ignore first bit
        
-       else{LCD_Char_1_PrintNumber(DataLine_Read());}
-        
+       /*if(i==8){DataLine_Read();} // ignore first bit
+       
+       else{LCD_Char_1_PrintNumber(DataLine_Read());}*/
+       
+        LCD_Char_1_PrintNumber(DataLine_Read());
         CyDelayUs(15);
         pump();
     }
     
-    
-    ClockLine_Write(1);  //End Bit
-    CyDelayUs(3);
     DataLine_Write(1);
+    pump();
+    DataLine_Write(0);
+    CyDelayUs(4);   
+ 
+    endSeq();
     
 }
 
@@ -106,8 +145,8 @@ void main()
     FREX_Write(0);
     EXPST_Write(0);
     
-    
-    SccbRead(0x60,0x0a);
+    SccbWrite(0x60,0x00,0x0a);
+    SccbRead(0x60,0x00);
 
 
        

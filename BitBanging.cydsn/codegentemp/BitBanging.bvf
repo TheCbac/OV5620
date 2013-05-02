@@ -1,0 +1,39 @@
+
+----------------------------------------------------------------------
+
+Verifying bitstream.
+
+-----------------------------------------------------------------------
+
+
+---------Mapping jacks.---------
+
+
+---------Processing bitstream.---------
+
+Utilized "dsi_hc@[DSI=(1,0)][side=bottom]"
+Utilized "dsi_hc@[DSI=(1,1)][side=bottom]"
+
+---------Propagating signals.---------
+
+Found signal "Net_13_local" on jack "dclk[0][FFB(Clock,0)]".
+Number of connected bvjacks: 1.
+
+    1. Connected jack name: "io_ijack_2[IOP=(3)]"
+    
+    
+
+
+---------Verifying signals (routing).---------
+
+
+---------Verifying configuration.---------
+
+
+
+----------------------------------------------------------------------
+
+Bitstream verification passed.
+
+-----------------------------------------------------------------------
+

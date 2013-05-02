@@ -1,0 +1,1071 @@
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 18, 4
+  12              		.thumb
+  13              		.file	"main.c"
+  14              		.section	.debug_abbrev,"",%progbits
+  15              	.Ldebug_abbrev0:
+  16              		.section	.debug_info,"",%progbits
+  17              	.Ldebug_info0:
+  18              		.section	.debug_line,"",%progbits
+  19              	.Ldebug_line0:
+  20 0000 C7000000 		.text
+  20      02005300 
+  20      00000201 
+  20      FB0E0D00 
+  20      01010101 
+  21              	.Ltext0:
+  22              		.cfi_sections	.debug_frame
+  23              		.section	.text.pump,"ax",%progbits
+  24              		.align	2
+  25              		.global	pump
+  26              		.thumb
+  27              		.thumb_func
+  28              		.type	pump, %function
+  29              	pump:
+  30              	.LFB29:
+  31              		.file 1 ".\\main.c"
+   1:.\main.c      **** /* ========================================
+   2:.\main.c      ****  *
+   3:.\main.c      ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\main.c      ****  * All Rights Reserved
+   5:.\main.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\main.c      ****  *
+   7:.\main.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\main.c      ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\main.c      ****  *
+  10:.\main.c      ****  * ========================================
+  11:.\main.c      **** */
+  12:.\main.c      **** #include <device.h>
+  13:.\main.c      **** 
+  14:.\main.c      **** void pump()
+  15:.\main.c      **** {
+  32              		.loc 1 15 0
+  33              		.cfi_startproc
+  34              		@ args = 0, pretend = 0, frame = 0
+  35              		@ frame_needed = 1, uses_anonymous_args = 0
+  36 0000 80B5     		push	{r7, lr}
+  37              	.LCFI0:
+  38              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 2
+
+
+  39 0002 00AF     		add	r7, sp, #0
+  40              		.cfi_offset 14, -4
+  41              		.cfi_offset 7, -8
+  42              	.LCFI1:
+  43              		.cfi_def_cfa_register 7
+  16:.\main.c      ****     CyDelayUs(3);
+  44              		.loc 1 16 0
+  45 0004 4FF00300 		mov	r0, #3
+  46 0008 FFF7FEFF 		bl	CyDelayUs
+  17:.\main.c      ****     ClockLine_Write(1);
+  47              		.loc 1 17 0
+  48 000c 4FF00100 		mov	r0, #1
+  49 0010 FFF7FEFF 		bl	ClockLine_Write
+  18:.\main.c      ****     CyDelayUs(5);
+  50              		.loc 1 18 0
+  51 0014 4FF00500 		mov	r0, #5
+  52 0018 FFF7FEFF 		bl	CyDelayUs
+  19:.\main.c      ****     ClockLine_Write(0);
+  53              		.loc 1 19 0
+  54 001c 4FF00000 		mov	r0, #0
+  55 0020 FFF7FEFF 		bl	ClockLine_Write
+  20:.\main.c      ****     CyDelayUs(3);
+  56              		.loc 1 20 0
+  57 0024 4FF00300 		mov	r0, #3
+  58 0028 FFF7FEFF 		bl	CyDelayUs
+  21:.\main.c      **** }
+  59              		.loc 1 21 0
+  60 002c 80BD     		pop	{r7, pc}
+  61              		.cfi_endproc
+  62              	.LFE29:
+  63              		.size	pump, .-pump
+  64 002e 00BF     		.section	.text.SccbRead,"ax",%progbits
+  65              		.align	2
+  66              		.global	SccbRead
+  67              		.thumb
+  68              		.thumb_func
+  69              		.type	SccbRead, %function
+  70              	SccbRead:
+  71              	.LFB30:
+  22:.\main.c      **** 
+  23:.\main.c      **** 
+  24:.\main.c      **** 
+  25:.\main.c      **** 
+  26:.\main.c      **** void SccbRead(uint8 id, uint8 addr )
+  27:.\main.c      **** {
+  72              		.loc 1 27 0
+  73              		.cfi_startproc
+  74              		@ args = 0, pretend = 0, frame = 24
+  75              		@ frame_needed = 1, uses_anonymous_args = 0
+  76 0000 80B5     		push	{r7, lr}
+  77              	.LCFI2:
+  78              		.cfi_def_cfa_offset 8
+  79 0002 86B0     		sub	sp, sp, #24
+  80              	.LCFI3:
+  81              		.cfi_def_cfa_offset 32
+  82 0004 00AF     		add	r7, sp, #0
+  83              		.cfi_offset 14, -4
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 3
+
+
+  84              		.cfi_offset 7, -8
+  85              	.LCFI4:
+  86              		.cfi_def_cfa_register 7
+  87 0006 0246     		mov	r2, r0
+  88 0008 0B46     		mov	r3, r1
+  89 000a FA71     		strb	r2, [r7, #7]
+  90 000c BB71     		strb	r3, [r7, #6]
+  28:.\main.c      ****     int i;
+  29:.\main.c      ****     
+  30:.\main.c      ****     // Phase 1 Write
+  31:.\main.c      ****     DataLine_Write(0); // Start Transmission
+  91              		.loc 1 31 0
+  92 000e 4FF00000 		mov	r0, #0
+  93 0012 FFF7FEFF 		bl	DataLine_Write
+  32:.\main.c      ****     CyDelayUs(3);
+  94              		.loc 1 32 0
+  95 0016 4FF00300 		mov	r0, #3
+  96 001a FFF7FEFF 		bl	CyDelayUs
+  33:.\main.c      ****     ClockLine_Write(0);
+  97              		.loc 1 33 0
+  98 001e 4FF00000 		mov	r0, #0
+  99 0022 FFF7FEFF 		bl	ClockLine_Write
+  34:.\main.c      ****     CyDelayUs(5);
+ 100              		.loc 1 34 0
+ 101 0026 4FF00500 		mov	r0, #5
+ 102 002a FFF7FEFF 		bl	CyDelayUs
+  35:.\main.c      ****     
+  36:.\main.c      ****     for( i=sizeof(id)*CHAR_BIT-1; i>=0;--i) // write the device id
+ 103              		.loc 1 36 0
+ 104 002e 4FF00703 		mov	r3, #7
+ 105 0032 BB60     		str	r3, [r7, #8]
+ 106 0034 11E0     		b	.L4
+ 107              	.L5:
+ 108              	.LBB2:
+  37:.\main.c      ****     {
+  38:.\main.c      ****         int bit = (id>>i) & 1;
+ 109              		.loc 1 38 0
+ 110 0036 FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
+ 111 0038 BB68     		ldr	r3, [r7, #8]
+ 112 003a 42FA03F3 		asr	r3, r2, r3
+ 113 003e 03F00103 		and	r3, r3, #1
+ 114 0042 FB60     		str	r3, [r7, #12]
+  39:.\main.c      ****         DataLine_Write(bit);
+ 115              		.loc 1 39 0
+ 116 0044 FB68     		ldr	r3, [r7, #12]
+ 117 0046 DBB2     		uxtb	r3, r3
+ 118 0048 1846     		mov	r0, r3
+ 119 004a FFF7FEFF 		bl	DataLine_Write
+  40:.\main.c      ****         pump();
+ 120              		.loc 1 40 0
+ 121 004e FFF7FEFF 		bl	pump
+ 122              	.LBE2:
+ 123              		.loc 1 36 0
+ 124 0052 BB68     		ldr	r3, [r7, #8]
+ 125 0054 03F1FF33 		add	r3, r3, #-1
+ 126 0058 BB60     		str	r3, [r7, #8]
+ 127              	.L4:
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 4
+
+
+ 128 005a BB68     		ldr	r3, [r7, #8]
+ 129 005c 002B     		cmp	r3, #0
+ 130 005e EADA     		bge	.L5
+  41:.\main.c      ****     }
+  42:.\main.c      ****     
+  43:.\main.c      ****     DataLine_Write(0); // Don't Care bit
+ 131              		.loc 1 43 0
+ 132 0060 4FF00000 		mov	r0, #0
+ 133 0064 FFF7FEFF 		bl	DataLine_Write
+  44:.\main.c      ****     pump();
+ 134              		.loc 1 44 0
+ 135 0068 FFF7FEFF 		bl	pump
+  45:.\main.c      ****     // Phase 2 Write
+  46:.\main.c      ****     for( i=sizeof(addr)*CHAR_BIT-1; i>=0;--i) // write the register
+ 136              		.loc 1 46 0
+ 137 006c 4FF00703 		mov	r3, #7
+ 138 0070 BB60     		str	r3, [r7, #8]
+ 139 0072 11E0     		b	.L6
+ 140              	.L7:
+ 141              	.LBB3:
+  47:.\main.c      ****     {
+  48:.\main.c      ****         int bit = (addr>>i) & 1;
+ 142              		.loc 1 48 0
+ 143 0074 BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
+ 144 0076 BB68     		ldr	r3, [r7, #8]
+ 145 0078 42FA03F3 		asr	r3, r2, r3
+ 146 007c 03F00103 		and	r3, r3, #1
+ 147 0080 3B61     		str	r3, [r7, #16]
+  49:.\main.c      ****         DataLine_Write(bit);
+ 148              		.loc 1 49 0
+ 149 0082 3B69     		ldr	r3, [r7, #16]
+ 150 0084 DBB2     		uxtb	r3, r3
+ 151 0086 1846     		mov	r0, r3
+ 152 0088 FFF7FEFF 		bl	DataLine_Write
+  50:.\main.c      ****         pump();
+ 153              		.loc 1 50 0
+ 154 008c FFF7FEFF 		bl	pump
+ 155              	.LBE3:
+ 156              		.loc 1 46 0
+ 157 0090 BB68     		ldr	r3, [r7, #8]
+ 158 0092 03F1FF33 		add	r3, r3, #-1
+ 159 0096 BB60     		str	r3, [r7, #8]
+ 160              	.L6:
+ 161 0098 BB68     		ldr	r3, [r7, #8]
+ 162 009a 002B     		cmp	r3, #0
+ 163 009c EADA     		bge	.L7
+  51:.\main.c      ****     }    
+  52:.\main.c      ****     
+  53:.\main.c      ****     DataLine_Write(0); // Don't Care bit
+ 164              		.loc 1 53 0
+ 165 009e 4FF00000 		mov	r0, #0
+ 166 00a2 FFF7FEFF 		bl	DataLine_Write
+  54:.\main.c      ****     pump();
+ 167              		.loc 1 54 0
+ 168 00a6 FFF7FEFF 		bl	pump
+  55:.\main.c      ****     
+  56:.\main.c      **** 
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 5
+
+
+  57:.\main.c      **** 
+  58:.\main.c      ****     ClockLine_Write(1);  //End Bit
+ 169              		.loc 1 58 0
+ 170 00aa 4FF00100 		mov	r0, #1
+ 171 00ae FFF7FEFF 		bl	ClockLine_Write
+  59:.\main.c      ****     CyDelayUs(3);
+ 172              		.loc 1 59 0
+ 173 00b2 4FF00300 		mov	r0, #3
+ 174 00b6 FFF7FEFF 		bl	CyDelayUs
+  60:.\main.c      ****     DataLine_Write(1);
+ 175              		.loc 1 60 0
+ 176 00ba 4FF00100 		mov	r0, #1
+ 177 00be FFF7FEFF 		bl	DataLine_Write
+  61:.\main.c      ****     
+  62:.\main.c      ****     CyDelayUs(50);
+ 178              		.loc 1 62 0
+ 179 00c2 4FF03200 		mov	r0, #50
+ 180 00c6 FFF7FEFF 		bl	CyDelayUs
+  63:.\main.c      ****     //Phase 1 Read
+  64:.\main.c      ****     
+  65:.\main.c      ****     DataLine_Write(0); // Start Transmission
+ 181              		.loc 1 65 0
+ 182 00ca 4FF00000 		mov	r0, #0
+ 183 00ce FFF7FEFF 		bl	DataLine_Write
+  66:.\main.c      ****     CyDelayUs(3);
+ 184              		.loc 1 66 0
+ 185 00d2 4FF00300 		mov	r0, #3
+ 186 00d6 FFF7FEFF 		bl	CyDelayUs
+  67:.\main.c      ****     ClockLine_Write(0);
+ 187              		.loc 1 67 0
+ 188 00da 4FF00000 		mov	r0, #0
+ 189 00de FFF7FEFF 		bl	ClockLine_Write
+  68:.\main.c      ****     CyDelayUs(5);
+ 190              		.loc 1 68 0
+ 191 00e2 4FF00500 		mov	r0, #5
+ 192 00e6 FFF7FEFF 		bl	CyDelayUs
+  69:.\main.c      ****     
+  70:.\main.c      ****     id++; // for read
+ 193              		.loc 1 70 0
+ 194 00ea FB79     		ldrb	r3, [r7, #7]
+ 195 00ec 03F10103 		add	r3, r3, #1
+ 196 00f0 FB71     		strb	r3, [r7, #7]
+  71:.\main.c      ****     for( i=sizeof(id)*CHAR_BIT-1; i>=0;--i) // write the device id+1 for read
+ 197              		.loc 1 71 0
+ 198 00f2 4FF00703 		mov	r3, #7
+ 199 00f6 BB60     		str	r3, [r7, #8]
+ 200 00f8 11E0     		b	.L8
+ 201              	.L9:
+ 202              	.LBB4:
+  72:.\main.c      ****     {
+  73:.\main.c      ****         int bit = (id>>i) & 1;
+ 203              		.loc 1 73 0
+ 204 00fa FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
+ 205 00fc BB68     		ldr	r3, [r7, #8]
+ 206 00fe 42FA03F3 		asr	r3, r2, r3
+ 207 0102 03F00103 		and	r3, r3, #1
+ 208 0106 7B61     		str	r3, [r7, #20]
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 6
+
+
+  74:.\main.c      ****         DataLine_Write(bit);
+ 209              		.loc 1 74 0
+ 210 0108 7B69     		ldr	r3, [r7, #20]
+ 211 010a DBB2     		uxtb	r3, r3
+ 212 010c 1846     		mov	r0, r3
+ 213 010e FFF7FEFF 		bl	DataLine_Write
+  75:.\main.c      ****         pump();
+ 214              		.loc 1 75 0
+ 215 0112 FFF7FEFF 		bl	pump
+ 216              	.LBE4:
+ 217              		.loc 1 71 0
+ 218 0116 BB68     		ldr	r3, [r7, #8]
+ 219 0118 03F1FF33 		add	r3, r3, #-1
+ 220 011c BB60     		str	r3, [r7, #8]
+ 221              	.L8:
+ 222 011e BB68     		ldr	r3, [r7, #8]
+ 223 0120 002B     		cmp	r3, #0
+ 224 0122 EADA     		bge	.L9
+  76:.\main.c      ****     }
+  77:.\main.c      ****     
+  78:.\main.c      ****     //Phase 2 read
+  79:.\main.c      ****     // read data 
+  80:.\main.c      **** 
+  81:.\main.c      ****     for( i=8; i>=0;--i) // write the device id
+ 225              		.loc 1 81 0
+ 226 0124 4FF00803 		mov	r3, #8
+ 227 0128 BB60     		str	r3, [r7, #8]
+ 228 012a 15E0     		b	.L10
+ 229              	.L13:
+  82:.\main.c      ****     {
+  83:.\main.c      ****        if(i==8){DataLine_Read();} // ignore first bit
+ 230              		.loc 1 83 0
+ 231 012c BB68     		ldr	r3, [r7, #8]
+ 232 012e 082B     		cmp	r3, #8
+ 233 0130 02D1     		bne	.L11
+ 234 0132 FFF7FEFF 		bl	DataLine_Read
+ 235 0136 05E0     		b	.L12
+ 236              	.L11:
+  84:.\main.c      ****        
+  85:.\main.c      ****        else{LCD_Char_1_PrintNumber(DataLine_Read());}
+ 237              		.loc 1 85 0
+ 238 0138 FFF7FEFF 		bl	DataLine_Read
+ 239 013c 0346     		mov	r3, r0
+ 240 013e 1846     		mov	r0, r3
+ 241 0140 FFF7FEFF 		bl	LCD_Char_1_PrintNumber
+ 242              	.L12:
+  86:.\main.c      ****         
+  87:.\main.c      ****         CyDelayUs(15);
+ 243              		.loc 1 87 0
+ 244 0144 4FF00F00 		mov	r0, #15
+ 245 0148 FFF7FEFF 		bl	CyDelayUs
+  88:.\main.c      ****         pump();
+ 246              		.loc 1 88 0
+ 247 014c FFF7FEFF 		bl	pump
+ 248              		.loc 1 81 0
+ 249 0150 BB68     		ldr	r3, [r7, #8]
+ 250 0152 03F1FF33 		add	r3, r3, #-1
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 7
+
+
+ 251 0156 BB60     		str	r3, [r7, #8]
+ 252              	.L10:
+ 253 0158 BB68     		ldr	r3, [r7, #8]
+ 254 015a 002B     		cmp	r3, #0
+ 255 015c E6DA     		bge	.L13
+  89:.\main.c      ****     }
+  90:.\main.c      ****     
+  91:.\main.c      ****     
+  92:.\main.c      ****     ClockLine_Write(1);  //End Bit
+ 256              		.loc 1 92 0
+ 257 015e 4FF00100 		mov	r0, #1
+ 258 0162 FFF7FEFF 		bl	ClockLine_Write
+  93:.\main.c      ****     CyDelayUs(3);
+ 259              		.loc 1 93 0
+ 260 0166 4FF00300 		mov	r0, #3
+ 261 016a FFF7FEFF 		bl	CyDelayUs
+  94:.\main.c      ****     DataLine_Write(1);
+ 262              		.loc 1 94 0
+ 263 016e 4FF00100 		mov	r0, #1
+ 264 0172 FFF7FEFF 		bl	DataLine_Write
+  95:.\main.c      ****     
+  96:.\main.c      **** }
+ 265              		.loc 1 96 0
+ 266 0176 07F11807 		add	r7, r7, #24
+ 267 017a BD46     		mov	sp, r7
+ 268 017c 80BD     		pop	{r7, pc}
+ 269              		.cfi_endproc
+ 270              	.LFE30:
+ 271              		.size	SccbRead, .-SccbRead
+ 272 017e 00BF     		.section	.text.main,"ax",%progbits
+ 273              		.align	2
+ 274              		.global	main
+ 275              		.thumb
+ 276              		.thumb_func
+ 277              		.type	main, %function
+ 278              	main:
+ 279              	.LFB31:
+  97:.\main.c      **** 
+  98:.\main.c      **** void main()
+  99:.\main.c      **** {
+ 280              		.loc 1 99 0
+ 281              		.cfi_startproc
+ 282              		@ args = 0, pretend = 0, frame = 0
+ 283              		@ frame_needed = 1, uses_anonymous_args = 0
+ 284 0000 80B5     		push	{r7, lr}
+ 285              	.LCFI5:
+ 286              		.cfi_def_cfa_offset 8
+ 287 0002 00AF     		add	r7, sp, #0
+ 288              		.cfi_offset 14, -4
+ 289              		.cfi_offset 7, -8
+ 290              	.LCFI6:
+ 291              		.cfi_def_cfa_register 7
+ 100:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+ 101:.\main.c      **** 
+ 102:.\main.c      ****     LCD_Char_1_Start();
+ 292              		.loc 1 102 0
+ 293 0004 FFF7FEFF 		bl	LCD_Char_1_Start
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 8
+
+
+ 103:.\main.c      ****     LCD_Char_1_DisplayOn();
+ 294              		.loc 1 103 0
+ 295 0008 4FF00C00 		mov	r0, #12
+ 296 000c FFF7FEFF 		bl	LCD_Char_1_WriteControl
+ 104:.\main.c      ****     PWND_Write(0);
+ 297              		.loc 1 104 0
+ 298 0010 4FF00000 		mov	r0, #0
+ 299 0014 FFF7FEFF 		bl	PWND_Write
+ 105:.\main.c      ****     RST_B_Write(1);
+ 300              		.loc 1 105 0
+ 301 0018 4FF00100 		mov	r0, #1
+ 302 001c FFF7FEFF 		bl	RST_B_Write
+ 106:.\main.c      ****     FREX_Write(0);
+ 303              		.loc 1 106 0
+ 304 0020 4FF00000 		mov	r0, #0
+ 305 0024 FFF7FEFF 		bl	FREX_Write
+ 107:.\main.c      ****     EXPST_Write(0);
+ 306              		.loc 1 107 0
+ 307 0028 4FF00000 		mov	r0, #0
+ 308 002c FFF7FEFF 		bl	EXPST_Write
+ 108:.\main.c      ****     
+ 109:.\main.c      ****     
+ 110:.\main.c      ****     SccbRead(0x60,0x0a);
+ 309              		.loc 1 110 0
+ 310 0030 4FF06000 		mov	r0, #96
+ 311 0034 4FF00A01 		mov	r1, #10
+ 312 0038 FFF7FEFF 		bl	SccbRead
+ 313              	.L16:
+ 111:.\main.c      **** 
+ 112:.\main.c      **** 
+ 113:.\main.c      ****        
+ 114:.\main.c      ****     
+ 115:.\main.c      ****     
+ 116:.\main.c      ****     
+ 117:.\main.c      ****     
+ 118:.\main.c      ****     /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */
+ 119:.\main.c      ****     for(;;)
+ 120:.\main.c      ****     {
+ 121:.\main.c      ****         /* Place your application code here. */
+ 122:.\main.c      ****     }
+ 314              		.loc 1 122 0
+ 315 003c FEE7     		b	.L16
+ 316              		.cfi_endproc
+ 317              	.LFE31:
+ 318              		.size	main, .-main
+ 319 003e 00BF     		.text
+ 320              	.Letext0:
+ 321              		.section	.debug_loc,"",%progbits
+ 322              	.Ldebug_loc0:
+ 323              	.LLST0:
+ 324 0000 00000000 		.4byte	.LFB29
+ 325 0004 02000000 		.4byte	.LCFI0
+ 326 0008 0100     		.2byte	0x1
+ 327 000a 5D       		.byte	0x5d
+ 328 000b 02000000 		.4byte	.LCFI0
+ 329 000f 04000000 		.4byte	.LCFI1
+ 330 0013 0200     		.2byte	0x2
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 9
+
+
+ 331 0015 7D       		.byte	0x7d
+ 332 0016 08       		.sleb128 8
+ 333 0017 04000000 		.4byte	.LCFI1
+ 334 001b 2E000000 		.4byte	.LFE29
+ 335 001f 0200     		.2byte	0x2
+ 336 0021 77       		.byte	0x77
+ 337 0022 08       		.sleb128 8
+ 338 0023 00000000 		.4byte	0x0
+ 339 0027 00000000 		.4byte	0x0
+ 340              	.LLST1:
+ 341 002b 00000000 		.4byte	.LFB30
+ 342 002f 02000000 		.4byte	.LCFI2
+ 343 0033 0100     		.2byte	0x1
+ 344 0035 5D       		.byte	0x5d
+ 345 0036 02000000 		.4byte	.LCFI2
+ 346 003a 04000000 		.4byte	.LCFI3
+ 347 003e 0200     		.2byte	0x2
+ 348 0040 7D       		.byte	0x7d
+ 349 0041 08       		.sleb128 8
+ 350 0042 04000000 		.4byte	.LCFI3
+ 351 0046 06000000 		.4byte	.LCFI4
+ 352 004a 0200     		.2byte	0x2
+ 353 004c 7D       		.byte	0x7d
+ 354 004d 20       		.sleb128 32
+ 355 004e 06000000 		.4byte	.LCFI4
+ 356 0052 7E010000 		.4byte	.LFE30
+ 357 0056 0200     		.2byte	0x2
+ 358 0058 77       		.byte	0x77
+ 359 0059 20       		.sleb128 32
+ 360 005a 00000000 		.4byte	0x0
+ 361 005e 00000000 		.4byte	0x0
+ 362              	.LLST2:
+ 363 0062 00000000 		.4byte	.LFB31
+ 364 0066 02000000 		.4byte	.LCFI5
+ 365 006a 0100     		.2byte	0x1
+ 366 006c 5D       		.byte	0x5d
+ 367 006d 02000000 		.4byte	.LCFI5
+ 368 0071 04000000 		.4byte	.LCFI6
+ 369 0075 0200     		.2byte	0x2
+ 370 0077 7D       		.byte	0x7d
+ 371 0078 08       		.sleb128 8
+ 372 0079 04000000 		.4byte	.LCFI6
+ 373 007d 3E000000 		.4byte	.LFE31
+ 374 0081 0200     		.2byte	0x2
+ 375 0083 77       		.byte	0x77
+ 376 0084 08       		.sleb128 8
+ 377 0085 00000000 		.4byte	0x0
+ 378 0089 00000000 		.4byte	0x0
+ 379              		.file 2 "./Generated_Source/PSoC5/cytypes.h"
+ 380              		.file 3 "./Generated_Source/PSoC5/core_cm3.h"
+ 381              		.section	.debug_info
+ 382 0000 5B010000 		.4byte	0x15b
+ 383 0004 0200     		.2byte	0x2
+ 384 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 385 000a 04       		.byte	0x4
+ 386 000b 01       		.uleb128 0x1
+ 387 000c 62000000 		.4byte	.LASF15
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 10
+
+
+ 388 0010 01       		.byte	0x1
+ 389 0011 CD000000 		.4byte	.LASF16
+ 390 0015 D6000000 		.4byte	.LASF17
+ 391 0019 00000000 		.4byte	0x0
+ 392 001d 00000000 		.4byte	0x0
+ 393 0021 00000000 		.4byte	.Ldebug_ranges0+0x0
+ 394 0025 00000000 		.4byte	.Ldebug_line0
+ 395 0029 02       		.uleb128 0x2
+ 396 002a 01       		.byte	0x1
+ 397 002b 06       		.byte	0x6
+ 398 002c BB000000 		.4byte	.LASF0
+ 399 0030 02       		.uleb128 0x2
+ 400 0031 01       		.byte	0x1
+ 401 0032 08       		.byte	0x8
+ 402 0033 6E000000 		.4byte	.LASF1
+ 403 0037 02       		.uleb128 0x2
+ 404 0038 02       		.byte	0x2
+ 405 0039 05       		.byte	0x5
+ 406 003a 8E000000 		.4byte	.LASF2
+ 407 003e 02       		.uleb128 0x2
+ 408 003f 02       		.byte	0x2
+ 409 0040 07       		.byte	0x7
+ 410 0041 A8000000 		.4byte	.LASF3
+ 411 0045 02       		.uleb128 0x2
+ 412 0046 04       		.byte	0x4
+ 413 0047 05       		.byte	0x5
+ 414 0048 9F000000 		.4byte	.LASF4
+ 415 004c 02       		.uleb128 0x2
+ 416 004d 04       		.byte	0x4
+ 417 004e 07       		.byte	0x7
+ 418 004f 34000000 		.4byte	.LASF5
+ 419 0053 02       		.uleb128 0x2
+ 420 0054 08       		.byte	0x8
+ 421 0055 05       		.byte	0x5
+ 422 0056 00000000 		.4byte	.LASF6
+ 423 005a 02       		.uleb128 0x2
+ 424 005b 08       		.byte	0x8
+ 425 005c 07       		.byte	0x7
+ 426 005d 46000000 		.4byte	.LASF7
+ 427 0061 03       		.uleb128 0x3
+ 428 0062 04       		.byte	0x4
+ 429 0063 05       		.byte	0x5
+ 430 0064 696E7400 		.ascii	"int\000"
+ 431 0068 02       		.uleb128 0x2
+ 432 0069 04       		.byte	0x4
+ 433 006a 07       		.byte	0x7
+ 434 006b 17000000 		.4byte	.LASF8
+ 435 006f 04       		.uleb128 0x4
+ 436 0070 2E000000 		.4byte	.LASF18
+ 437 0074 02       		.byte	0x2
+ 438 0075 4C       		.byte	0x4c
+ 439 0076 30000000 		.4byte	0x30
+ 440 007a 02       		.uleb128 0x2
+ 441 007b 04       		.byte	0x4
+ 442 007c 04       		.byte	0x4
+ 443 007d C7000000 		.4byte	.LASF9
+ 444 0081 02       		.uleb128 0x2
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 11
+
+
+ 445 0082 08       		.byte	0x8
+ 446 0083 04       		.byte	0x4
+ 447 0084 98000000 		.4byte	.LASF10
+ 448 0088 02       		.uleb128 0x2
+ 449 0089 01       		.byte	0x1
+ 450 008a 08       		.byte	0x8
+ 451 008b 7C000000 		.4byte	.LASF11
+ 452 008f 05       		.uleb128 0x5
+ 453 0090 04       		.byte	0x4
+ 454 0091 07       		.byte	0x7
+ 455 0092 06       		.uleb128 0x6
+ 456 0093 01       		.byte	0x1
+ 457 0094 29000000 		.4byte	.LASF13
+ 458 0098 01       		.byte	0x1
+ 459 0099 0E       		.byte	0xe
+ 460 009a 00000000 		.4byte	.LFB29
+ 461 009e 2E000000 		.4byte	.LFE29
+ 462 00a2 00000000 		.4byte	.LLST0
+ 463 00a6 07       		.uleb128 0x7
+ 464 00a7 01       		.byte	0x1
+ 465 00a8 0E000000 		.4byte	.LASF19
+ 466 00ac 01       		.byte	0x1
+ 467 00ad 1A       		.byte	0x1a
+ 468 00ae 01       		.byte	0x1
+ 469 00af 00000000 		.4byte	.LFB30
+ 470 00b3 7E010000 		.4byte	.LFE30
+ 471 00b7 2B000000 		.4byte	.LLST1
+ 472 00bb 37010000 		.4byte	0x137
+ 473 00bf 08       		.uleb128 0x8
+ 474 00c0 696400   		.ascii	"id\000"
+ 475 00c3 01       		.byte	0x1
+ 476 00c4 1A       		.byte	0x1a
+ 477 00c5 6F000000 		.4byte	0x6f
+ 478 00c9 02       		.byte	0x2
+ 479 00ca 91       		.byte	0x91
+ 480 00cb 67       		.sleb128 -25
+ 481 00cc 09       		.uleb128 0x9
+ 482 00cd 5D000000 		.4byte	.LASF12
+ 483 00d1 01       		.byte	0x1
+ 484 00d2 1A       		.byte	0x1a
+ 485 00d3 6F000000 		.4byte	0x6f
+ 486 00d7 02       		.byte	0x2
+ 487 00d8 91       		.byte	0x91
+ 488 00d9 66       		.sleb128 -26
+ 489 00da 0A       		.uleb128 0xa
+ 490 00db 6900     		.ascii	"i\000"
+ 491 00dd 01       		.byte	0x1
+ 492 00de 1C       		.byte	0x1c
+ 493 00df 61000000 		.4byte	0x61
+ 494 00e3 02       		.byte	0x2
+ 495 00e4 91       		.byte	0x91
+ 496 00e5 68       		.sleb128 -24
+ 497 00e6 0B       		.uleb128 0xb
+ 498 00e7 36000000 		.4byte	.LBB2
+ 499 00eb 52000000 		.4byte	.LBE2
+ 500 00ef 02010000 		.4byte	0x102
+ 501 00f3 0A       		.uleb128 0xa
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 12
+
+
+ 502 00f4 62697400 		.ascii	"bit\000"
+ 503 00f8 01       		.byte	0x1
+ 504 00f9 26       		.byte	0x26
+ 505 00fa 61000000 		.4byte	0x61
+ 506 00fe 02       		.byte	0x2
+ 507 00ff 91       		.byte	0x91
+ 508 0100 6C       		.sleb128 -20
+ 509 0101 00       		.byte	0x0
+ 510 0102 0B       		.uleb128 0xb
+ 511 0103 74000000 		.4byte	.LBB3
+ 512 0107 90000000 		.4byte	.LBE3
+ 513 010b 1E010000 		.4byte	0x11e
+ 514 010f 0A       		.uleb128 0xa
+ 515 0110 62697400 		.ascii	"bit\000"
+ 516 0114 01       		.byte	0x1
+ 517 0115 30       		.byte	0x30
+ 518 0116 61000000 		.4byte	0x61
+ 519 011a 02       		.byte	0x2
+ 520 011b 91       		.byte	0x91
+ 521 011c 70       		.sleb128 -16
+ 522 011d 00       		.byte	0x0
+ 523 011e 0C       		.uleb128 0xc
+ 524 011f FA000000 		.4byte	.LBB4
+ 525 0123 16010000 		.4byte	.LBE4
+ 526 0127 0A       		.uleb128 0xa
+ 527 0128 62697400 		.ascii	"bit\000"
+ 528 012c 01       		.byte	0x1
+ 529 012d 49       		.byte	0x49
+ 530 012e 61000000 		.4byte	0x61
+ 531 0132 02       		.byte	0x2
+ 532 0133 91       		.byte	0x91
+ 533 0134 74       		.sleb128 -12
+ 534 0135 00       		.byte	0x0
+ 535 0136 00       		.byte	0x0
+ 536 0137 06       		.uleb128 0x6
+ 537 0138 01       		.byte	0x1
+ 538 0139 24000000 		.4byte	.LASF14
+ 539 013d 01       		.byte	0x1
+ 540 013e 62       		.byte	0x62
+ 541 013f 00000000 		.4byte	.LFB31
+ 542 0143 3E000000 		.4byte	.LFE31
+ 543 0147 62000000 		.4byte	.LLST2
+ 544 014b 0D       		.uleb128 0xd
+ 545 014c 81000000 		.4byte	.LASF20
+ 546 0150 03       		.byte	0x3
+ 547 0151 CE06     		.2byte	0x6ce
+ 548 0153 59010000 		.4byte	0x159
+ 549 0157 01       		.byte	0x1
+ 550 0158 01       		.byte	0x1
+ 551 0159 0E       		.uleb128 0xe
+ 552 015a 61000000 		.4byte	0x61
+ 553 015e 00       		.byte	0x0
+ 554              		.section	.debug_abbrev
+ 555 0000 01       		.uleb128 0x1
+ 556 0001 11       		.uleb128 0x11
+ 557 0002 01       		.byte	0x1
+ 558 0003 25       		.uleb128 0x25
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 13
+
+
+ 559 0004 0E       		.uleb128 0xe
+ 560 0005 13       		.uleb128 0x13
+ 561 0006 0B       		.uleb128 0xb
+ 562 0007 03       		.uleb128 0x3
+ 563 0008 0E       		.uleb128 0xe
+ 564 0009 1B       		.uleb128 0x1b
+ 565 000a 0E       		.uleb128 0xe
+ 566 000b 11       		.uleb128 0x11
+ 567 000c 01       		.uleb128 0x1
+ 568 000d 52       		.uleb128 0x52
+ 569 000e 01       		.uleb128 0x1
+ 570 000f 55       		.uleb128 0x55
+ 571 0010 06       		.uleb128 0x6
+ 572 0011 10       		.uleb128 0x10
+ 573 0012 06       		.uleb128 0x6
+ 574 0013 00       		.byte	0x0
+ 575 0014 00       		.byte	0x0
+ 576 0015 02       		.uleb128 0x2
+ 577 0016 24       		.uleb128 0x24
+ 578 0017 00       		.byte	0x0
+ 579 0018 0B       		.uleb128 0xb
+ 580 0019 0B       		.uleb128 0xb
+ 581 001a 3E       		.uleb128 0x3e
+ 582 001b 0B       		.uleb128 0xb
+ 583 001c 03       		.uleb128 0x3
+ 584 001d 0E       		.uleb128 0xe
+ 585 001e 00       		.byte	0x0
+ 586 001f 00       		.byte	0x0
+ 587 0020 03       		.uleb128 0x3
+ 588 0021 24       		.uleb128 0x24
+ 589 0022 00       		.byte	0x0
+ 590 0023 0B       		.uleb128 0xb
+ 591 0024 0B       		.uleb128 0xb
+ 592 0025 3E       		.uleb128 0x3e
+ 593 0026 0B       		.uleb128 0xb
+ 594 0027 03       		.uleb128 0x3
+ 595 0028 08       		.uleb128 0x8
+ 596 0029 00       		.byte	0x0
+ 597 002a 00       		.byte	0x0
+ 598 002b 04       		.uleb128 0x4
+ 599 002c 16       		.uleb128 0x16
+ 600 002d 00       		.byte	0x0
+ 601 002e 03       		.uleb128 0x3
+ 602 002f 0E       		.uleb128 0xe
+ 603 0030 3A       		.uleb128 0x3a
+ 604 0031 0B       		.uleb128 0xb
+ 605 0032 3B       		.uleb128 0x3b
+ 606 0033 0B       		.uleb128 0xb
+ 607 0034 49       		.uleb128 0x49
+ 608 0035 13       		.uleb128 0x13
+ 609 0036 00       		.byte	0x0
+ 610 0037 00       		.byte	0x0
+ 611 0038 05       		.uleb128 0x5
+ 612 0039 24       		.uleb128 0x24
+ 613 003a 00       		.byte	0x0
+ 614 003b 0B       		.uleb128 0xb
+ 615 003c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 14
+
+
+ 616 003d 3E       		.uleb128 0x3e
+ 617 003e 0B       		.uleb128 0xb
+ 618 003f 00       		.byte	0x0
+ 619 0040 00       		.byte	0x0
+ 620 0041 06       		.uleb128 0x6
+ 621 0042 2E       		.uleb128 0x2e
+ 622 0043 00       		.byte	0x0
+ 623 0044 3F       		.uleb128 0x3f
+ 624 0045 0C       		.uleb128 0xc
+ 625 0046 03       		.uleb128 0x3
+ 626 0047 0E       		.uleb128 0xe
+ 627 0048 3A       		.uleb128 0x3a
+ 628 0049 0B       		.uleb128 0xb
+ 629 004a 3B       		.uleb128 0x3b
+ 630 004b 0B       		.uleb128 0xb
+ 631 004c 11       		.uleb128 0x11
+ 632 004d 01       		.uleb128 0x1
+ 633 004e 12       		.uleb128 0x12
+ 634 004f 01       		.uleb128 0x1
+ 635 0050 40       		.uleb128 0x40
+ 636 0051 06       		.uleb128 0x6
+ 637 0052 00       		.byte	0x0
+ 638 0053 00       		.byte	0x0
+ 639 0054 07       		.uleb128 0x7
+ 640 0055 2E       		.uleb128 0x2e
+ 641 0056 01       		.byte	0x1
+ 642 0057 3F       		.uleb128 0x3f
+ 643 0058 0C       		.uleb128 0xc
+ 644 0059 03       		.uleb128 0x3
+ 645 005a 0E       		.uleb128 0xe
+ 646 005b 3A       		.uleb128 0x3a
+ 647 005c 0B       		.uleb128 0xb
+ 648 005d 3B       		.uleb128 0x3b
+ 649 005e 0B       		.uleb128 0xb
+ 650 005f 27       		.uleb128 0x27
+ 651 0060 0C       		.uleb128 0xc
+ 652 0061 11       		.uleb128 0x11
+ 653 0062 01       		.uleb128 0x1
+ 654 0063 12       		.uleb128 0x12
+ 655 0064 01       		.uleb128 0x1
+ 656 0065 40       		.uleb128 0x40
+ 657 0066 06       		.uleb128 0x6
+ 658 0067 01       		.uleb128 0x1
+ 659 0068 13       		.uleb128 0x13
+ 660 0069 00       		.byte	0x0
+ 661 006a 00       		.byte	0x0
+ 662 006b 08       		.uleb128 0x8
+ 663 006c 05       		.uleb128 0x5
+ 664 006d 00       		.byte	0x0
+ 665 006e 03       		.uleb128 0x3
+ 666 006f 08       		.uleb128 0x8
+ 667 0070 3A       		.uleb128 0x3a
+ 668 0071 0B       		.uleb128 0xb
+ 669 0072 3B       		.uleb128 0x3b
+ 670 0073 0B       		.uleb128 0xb
+ 671 0074 49       		.uleb128 0x49
+ 672 0075 13       		.uleb128 0x13
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 15
+
+
+ 673 0076 02       		.uleb128 0x2
+ 674 0077 0A       		.uleb128 0xa
+ 675 0078 00       		.byte	0x0
+ 676 0079 00       		.byte	0x0
+ 677 007a 09       		.uleb128 0x9
+ 678 007b 05       		.uleb128 0x5
+ 679 007c 00       		.byte	0x0
+ 680 007d 03       		.uleb128 0x3
+ 681 007e 0E       		.uleb128 0xe
+ 682 007f 3A       		.uleb128 0x3a
+ 683 0080 0B       		.uleb128 0xb
+ 684 0081 3B       		.uleb128 0x3b
+ 685 0082 0B       		.uleb128 0xb
+ 686 0083 49       		.uleb128 0x49
+ 687 0084 13       		.uleb128 0x13
+ 688 0085 02       		.uleb128 0x2
+ 689 0086 0A       		.uleb128 0xa
+ 690 0087 00       		.byte	0x0
+ 691 0088 00       		.byte	0x0
+ 692 0089 0A       		.uleb128 0xa
+ 693 008a 34       		.uleb128 0x34
+ 694 008b 00       		.byte	0x0
+ 695 008c 03       		.uleb128 0x3
+ 696 008d 08       		.uleb128 0x8
+ 697 008e 3A       		.uleb128 0x3a
+ 698 008f 0B       		.uleb128 0xb
+ 699 0090 3B       		.uleb128 0x3b
+ 700 0091 0B       		.uleb128 0xb
+ 701 0092 49       		.uleb128 0x49
+ 702 0093 13       		.uleb128 0x13
+ 703 0094 02       		.uleb128 0x2
+ 704 0095 0A       		.uleb128 0xa
+ 705 0096 00       		.byte	0x0
+ 706 0097 00       		.byte	0x0
+ 707 0098 0B       		.uleb128 0xb
+ 708 0099 0B       		.uleb128 0xb
+ 709 009a 01       		.byte	0x1
+ 710 009b 11       		.uleb128 0x11
+ 711 009c 01       		.uleb128 0x1
+ 712 009d 12       		.uleb128 0x12
+ 713 009e 01       		.uleb128 0x1
+ 714 009f 01       		.uleb128 0x1
+ 715 00a0 13       		.uleb128 0x13
+ 716 00a1 00       		.byte	0x0
+ 717 00a2 00       		.byte	0x0
+ 718 00a3 0C       		.uleb128 0xc
+ 719 00a4 0B       		.uleb128 0xb
+ 720 00a5 01       		.byte	0x1
+ 721 00a6 11       		.uleb128 0x11
+ 722 00a7 01       		.uleb128 0x1
+ 723 00a8 12       		.uleb128 0x12
+ 724 00a9 01       		.uleb128 0x1
+ 725 00aa 00       		.byte	0x0
+ 726 00ab 00       		.byte	0x0
+ 727 00ac 0D       		.uleb128 0xd
+ 728 00ad 34       		.uleb128 0x34
+ 729 00ae 00       		.byte	0x0
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 16
+
+
+ 730 00af 03       		.uleb128 0x3
+ 731 00b0 0E       		.uleb128 0xe
+ 732 00b1 3A       		.uleb128 0x3a
+ 733 00b2 0B       		.uleb128 0xb
+ 734 00b3 3B       		.uleb128 0x3b
+ 735 00b4 05       		.uleb128 0x5
+ 736 00b5 49       		.uleb128 0x49
+ 737 00b6 13       		.uleb128 0x13
+ 738 00b7 3F       		.uleb128 0x3f
+ 739 00b8 0C       		.uleb128 0xc
+ 740 00b9 3C       		.uleb128 0x3c
+ 741 00ba 0C       		.uleb128 0xc
+ 742 00bb 00       		.byte	0x0
+ 743 00bc 00       		.byte	0x0
+ 744 00bd 0E       		.uleb128 0xe
+ 745 00be 35       		.uleb128 0x35
+ 746 00bf 00       		.byte	0x0
+ 747 00c0 49       		.uleb128 0x49
+ 748 00c1 13       		.uleb128 0x13
+ 749 00c2 00       		.byte	0x0
+ 750 00c3 00       		.byte	0x0
+ 751 00c4 00       		.byte	0x0
+ 752              		.section	.debug_pubnames,"",%progbits
+ 753 0000 2D000000 		.4byte	0x2d
+ 754 0004 0200     		.2byte	0x2
+ 755 0006 00000000 		.4byte	.Ldebug_info0
+ 756 000a 5F010000 		.4byte	0x15f
+ 757 000e 92000000 		.4byte	0x92
+ 758 0012 70756D70 		.ascii	"pump\000"
+ 758      00
+ 759 0017 A6000000 		.4byte	0xa6
+ 760 001b 53636362 		.ascii	"SccbRead\000"
+ 760      52656164 
+ 760      00
+ 761 0024 37010000 		.4byte	0x137
+ 762 0028 6D61696E 		.ascii	"main\000"
+ 762      00
+ 763 002d 00000000 		.4byte	0x0
+ 764              		.section	.debug_aranges,"",%progbits
+ 765 0000 2C000000 		.4byte	0x2c
+ 766 0004 0200     		.2byte	0x2
+ 767 0006 00000000 		.4byte	.Ldebug_info0
+ 768 000a 04       		.byte	0x4
+ 769 000b 00       		.byte	0x0
+ 770 000c 0000     		.2byte	0x0
+ 771 000e 0000     		.2byte	0x0
+ 772 0010 00000000 		.4byte	.LFB29
+ 773 0014 2E000000 		.4byte	.LFE29-.LFB29
+ 774 0018 00000000 		.4byte	.LFB30
+ 775 001c 7E010000 		.4byte	.LFE30-.LFB30
+ 776 0020 00000000 		.4byte	.LFB31
+ 777 0024 3E000000 		.4byte	.LFE31-.LFB31
+ 778 0028 00000000 		.4byte	0x0
+ 779 002c 00000000 		.4byte	0x0
+ 780              		.section	.debug_ranges,"",%progbits
+ 781              	.Ldebug_ranges0:
+ 782 0000 00000000 		.4byte	.Ltext0
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 17
+
+
+ 783 0004 00000000 		.4byte	.Letext0
+ 784 0008 00000000 		.4byte	.LFB29
+ 785 000c 2E000000 		.4byte	.LFE29
+ 786 0010 00000000 		.4byte	.LFB30
+ 787 0014 7E010000 		.4byte	.LFE30
+ 788 0018 00000000 		.4byte	.LFB31
+ 789 001c 3E000000 		.4byte	.LFE31
+ 790 0020 00000000 		.4byte	0x0
+ 791 0024 00000000 		.4byte	0x0
+ 792              		.section	.debug_str,"MS",%progbits,1
+ 793              	.LASF6:
+ 794 0000 6C6F6E67 		.ascii	"long long int\000"
+ 794      206C6F6E 
+ 794      6720696E 
+ 794      7400
+ 795              	.LASF19:
+ 796 000e 53636362 		.ascii	"SccbRead\000"
+ 796      52656164 
+ 796      00
+ 797              	.LASF8:
+ 798 0017 756E7369 		.ascii	"unsigned int\000"
+ 798      676E6564 
+ 798      20696E74 
+ 798      00
+ 799              	.LASF14:
+ 800 0024 6D61696E 		.ascii	"main\000"
+ 800      00
+ 801              	.LASF13:
+ 802 0029 70756D70 		.ascii	"pump\000"
+ 802      00
+ 803              	.LASF18:
+ 804 002e 75696E74 		.ascii	"uint8\000"
+ 804      3800
+ 805              	.LASF5:
+ 806 0034 6C6F6E67 		.ascii	"long unsigned int\000"
+ 806      20756E73 
+ 806      69676E65 
+ 806      6420696E 
+ 806      7400
+ 807              	.LASF7:
+ 808 0046 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 808      206C6F6E 
+ 808      6720756E 
+ 808      7369676E 
+ 808      65642069 
+ 809              	.LASF12:
+ 810 005d 61646472 		.ascii	"addr\000"
+ 810      00
+ 811              	.LASF15:
+ 812 0062 474E5520 		.ascii	"GNU C 4.4.1\000"
+ 812      4320342E 
+ 812      342E3100 
+ 813              	.LASF1:
+ 814 006e 756E7369 		.ascii	"unsigned char\000"
+ 814      676E6564 
+ 814      20636861 
+ 814      7200
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\cc30T1yN.s 			page 18
+
+
+ 815              	.LASF11:
+ 816 007c 63686172 		.ascii	"char\000"
+ 816      00
+ 817              	.LASF20:
+ 818 0081 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 818      52784275 
+ 818      66666572 
+ 818      00
+ 819              	.LASF2:
+ 820 008e 73686F72 		.ascii	"short int\000"
+ 820      7420696E 
+ 820      7400
+ 821              	.LASF10:
+ 822 0098 646F7562 		.ascii	"double\000"
+ 822      6C6500
+ 823              	.LASF4:
+ 824 009f 6C6F6E67 		.ascii	"long int\000"
+ 824      20696E74 
+ 824      00
+ 825              	.LASF3:
+ 826 00a8 73686F72 		.ascii	"short unsigned int\000"
+ 826      7420756E 
+ 826      7369676E 
+ 826      65642069 
+ 826      6E7400
+ 827              	.LASF0:
+ 828 00bb 7369676E 		.ascii	"signed char\000"
+ 828      65642063 
+ 828      68617200 
+ 829              	.LASF9:
+ 830 00c7 666C6F61 		.ascii	"float\000"
+ 830      7400
+ 831              	.LASF16:
+ 832 00cd 2E5C6D61 		.ascii	".\\main.c\000"
+ 832      696E2E63 
+ 832      00
+ 833              	.LASF17:
+ 834 00d6 433A5C55 		.ascii	"C:\\Users\\Craig\\Dropbox\\6.115\\Final Project\\PS"
+ 834      73657273 
+ 834      5C437261 
+ 834      69675C44 
+ 834      726F7062 
+ 835 0103 6F432057 		.ascii	"oC Work\\BitBanging.cydsn\000"
+ 835      6F726B5C 
+ 835      42697442 
+ 835      616E6769 
+ 835      6E672E63 
+ 836              		.ident	"GCC: (Sourcery G++ Lite 2010q1-188) 4.4.1"

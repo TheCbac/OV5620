@@ -11,10 +11,38 @@ Verifying bitstream.
 
 ---------Processing bitstream.---------
 
+Utilized "dsi_hc@[DSI=(0,0)][side=top]"
+Utilized "dsi_hv_b@[DSI=(0,0)][side=top]"
 Utilized "dsi_hc@[DSI=(1,0)][side=bottom]"
+Utilized "dsi_hv_a@[DSI=(1,0)][side=bottom]"
 Utilized "dsi_hc@[DSI=(1,1)][side=bottom]"
+Utilized "dsi_hv_b@[DSI=(0,4)][side=top]"
+Utilized "dsi_hv_a@[DSI=(1,4)][side=bottom]"
+Utilized "dsi_hc@[DSI=(0,5)][side=top]"
+Utilized "dsi_hc@[DSI=(1,5)][side=bottom]"
 
 ---------Propagating signals.---------
+
+Found signal "Net_80" on jack "io_ojack_0[IOP=(6)]".
+Number of connected bvjacks: 1.
+
+    1. Connected jack name: "interrupt_jack[IntrHod=(0)][IntrId=(0)]"
+    
+    
+
+Found signal "Net_74" on jack "io_ojack_6[IOP=(12)]".
+Number of connected bvjacks: 1.
+
+    1. Connected jack name: "interrupt_jack[IntrHod=(0)][IntrId=(1)]"
+    
+    
+
+Found signal "Net_81" on jack "io_ojack_7[IOP=(12)]".
+Number of connected bvjacks: 1.
+
+    1. Connected jack name: "interrupt_jack[IntrHod=(0)][IntrId=(2)]"
+    
+    
 
 Found signal "Net_13_local" on jack "dclk[0][FFB(Clock,0)]".
 Number of connected bvjacks: 1.

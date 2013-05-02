@@ -40,6 +40,24 @@
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1.c" value="ARM_C_FILE;LCD_Char_1" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1.h" value="NONE;LCD_Char_1" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_PM.c" value="ARM_C_FILE;LCD_Char_1" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\DataBus_aliases.h" value="NONE;DataBus" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\DataBus.c" value="ARM_C_FILE;DataBus" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\DataBus.h" value="NONE;DataBus" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\PCLK_aliases.h" value="NONE;PCLK" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\PCLK.c" value="ARM_C_FILE;PCLK" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\PCLK.h" value="NONE;PCLK" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\VREF_aliases.h" value="NONE;VREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\VREF.c" value="ARM_C_FILE;VREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\VREF.h" value="NONE;VREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\HREF_aliases.h" value="NONE;HREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\HREF.c" value="ARM_C_FILE;HREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\HREF.h" value="NONE;HREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_PCLK.c" value="ARM_C_FILE;isr_PCLK" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_PCLK.h" value="NONE;isr_PCLK" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_VREF.c" value="ARM_C_FILE;isr_VREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_VREF.h" value="NONE;isr_VREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_HREF.c" value="ARM_C_FILE;isr_HREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_HREF.h" value="NONE;isr_HREF" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_LCDPort_aliases.h" value="NONE;LCD_Char_1_LCDPort" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_LCDPort.c" value="ARM_C_FILE;LCD_Char_1_LCDPort" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_LCDPort.h" value="NONE;LCD_Char_1_LCDPort" />

@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.455ms
-Initializing data phase: Elapsed time ==> 2s.981ms
+Loading plugins phase: Elapsed time ==> 0s.443ms
+Initializing data phase: Elapsed time ==> 2s.926ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\BitBanging.cyprj -d CY8C5868AXI-LP035 -s C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\Generated_Source\PSoC5 -- -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 2s.319ms
+Elaboration phase: Elapsed time ==> 2s.479ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.041ms
+HDL generation phase: Elapsed time ==> 0s.054ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Craig
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Apr 30 22:50:32 2013
+Thu May 02 14:14:08 2013
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 BitBanging.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Apr 30 22:50:32 2013
+Thu May 02 14:14:08 2013
 
 
 vpp:  No errors.
@@ -80,7 +80,7 @@ Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Craig
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Apr 30 22:50:32 2013
+Thu May 02 14:14:08 2013
 
 Linking 'C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -104,7 +104,7 @@ Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Craig
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Apr 30 22:50:32 2013
+Thu May 02 14:14:08 2013
 
 Linking 'C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -142,6 +142,17 @@ Aliasing \LCD_Char_1:tmpOE__LCDPort_net_3\ to tmpOE__DataLine_net_0
 Aliasing \LCD_Char_1:tmpOE__LCDPort_net_2\ to tmpOE__DataLine_net_0
 Aliasing \LCD_Char_1:tmpOE__LCDPort_net_1\ to tmpOE__DataLine_net_0
 Aliasing \LCD_Char_1:tmpOE__LCDPort_net_0\ to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_7 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_6 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_5 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_4 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_3 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_2 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_1 to tmpOE__DataLine_net_0
+Aliasing tmpOE__DataBus_net_0 to tmpOE__DataLine_net_0
+Aliasing tmpOE__PCLK_net_0 to tmpOE__DataLine_net_0
+Aliasing tmpOE__VREF_net_0 to tmpOE__DataLine_net_0
+Aliasing tmpOE__HREF_net_0 to tmpOE__DataLine_net_0
 Removing Lhs of wire one[6] = tmpOE__DataLine_net_0[1]
 Removing Lhs of wire tmpOE__ClockLine_net_0[9] = tmpOE__DataLine_net_0[1]
 Removing Lhs of wire tmpOE__FREX_net_0[15] = tmpOE__DataLine_net_0[1]
@@ -156,9 +167,20 @@ Removing Lhs of wire \LCD_Char_1:tmpOE__LCDPort_net_3\[50] = tmpOE__DataLine_net
 Removing Lhs of wire \LCD_Char_1:tmpOE__LCDPort_net_2\[51] = tmpOE__DataLine_net_0[1]
 Removing Lhs of wire \LCD_Char_1:tmpOE__LCDPort_net_1\[52] = tmpOE__DataLine_net_0[1]
 Removing Lhs of wire \LCD_Char_1:tmpOE__LCDPort_net_0\[53] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_7[71] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_6[72] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_5[73] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_4[74] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_3[75] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_2[76] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_1[77] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__DataBus_net_0[78] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__PCLK_net_0[98] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__VREF_net_0[104] = tmpOE__DataLine_net_0[1]
+Removing Lhs of wire tmpOE__HREF_net_0[110] = tmpOE__DataLine_net_0[1]
 
 ------------------------------------------------------
-Aliased 0 equations, 14 wires.
+Aliased 0 equations, 25 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -182,14 +204,14 @@ CYPRESS_DIR    : C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\warp
 Warp Program   : C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\BitBanging.cyprj" -dcpsoc3 BitBanging.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.598ms
+Warp synthesis phase: Elapsed time ==> 0s.689ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V2.2.0.293, Family: PSoC3, Started at: Tuesday, 30 April 2013 22:50:32
+cyp3fit: V2.2.0.293, Family: PSoC3, Started at: Thursday, 02 May 2013 14:14:08
 Options: -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\BitBanging.cyprj -d CY8C5868AXI-LP035 BitBanging.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.033ms
+Design parsing phase: Elapsed time ==> 0s.018ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -248,6 +270,310 @@ Design Equations
         PORT MAP (
             pa_out => ClockLine(0)__PA ,
             pad => ClockLine(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(0)__PA ,
+            pad => DataBus(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(1)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(1)__PA ,
+            pad => DataBus(1)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(2)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(2)__PA ,
+            pad => DataBus(2)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(3)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(3)__PA ,
+            pad => DataBus(3)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(4)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(4)__PA ,
+            pad => DataBus(4)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(5)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(5)__PA ,
+            pad => DataBus(5)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(6)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(6)__PA ,
+            pad => DataBus(6)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = DataBus(7)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => DataBus(7)__PA ,
+            pad => DataBus(7)_PAD );
         Properties:
         {
         }
@@ -366,6 +692,84 @@ Design Equations
         {
         }
 
+    Pin : Name = HREF(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => HREF(0)__PA ,
+            fb => Net_80 ,
+            pad => HREF(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = PCLK(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => PCLK(0)__PA ,
+            fb => Net_74 ,
+            pad => PCLK(0)_PAD );
+        Properties:
+        {
+        }
+
     Pin : Name = PWND(0)
         Attributes:
             In Group/Port: True
@@ -438,6 +842,45 @@ Design Equations
         PORT MAP (
             pa_out => RST_B(0)__PA ,
             pad => RST_B(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = VREF(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => VREF(0)__PA ,
+            fb => Net_81 ,
+            pad => VREF(0)_PAD );
         Properties:
         {
         }
@@ -764,6 +1207,34 @@ Design Equations
     <CYPRESSTAG name="DRQ listing">
     </CYPRESSTAG>
     <CYPRESSTAG name="Interrupt listing">
+
+    ------------------------------------------------------------
+    Interrupt listing
+    ------------------------------------------------------------
+
+    interrupt: Name =isr_HREF
+        PORT MAP (
+            interrupt => Net_80 );
+        Properties:
+        {
+            int_type = "10"
+        }
+
+    interrupt: Name =isr_PCLK
+        PORT MAP (
+            interrupt => Net_74 );
+        Properties:
+        {
+            int_type = "00"
+        }
+
+    interrupt: Name =isr_VREF
+        PORT MAP (
+            interrupt => Net_81 );
+        Properties:
+        {
+            int_type = "00"
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -776,14 +1247,14 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital domain clock dividers :    1 :    7 :    8 :  12.50%
 Analog domain clock dividers  :    0 :    4 :    4 :   0.00%
-Pins                          :   17 :   55 :   72 :  23.61%
+Pins                          :   28 :   44 :   72 :  38.89%
 UDB Macrocells                :    0 :  192 :  192 :   0.00%
 UDB Unique Pterms             :    0 :  384 :  384 :   0.00%
 UDB Datapath Cells            :    0 :   24 :   24 :   0.00%
 UDB Status Cells              :    0 :   24 :   24 :   0.00%
 UDB Control Cells             :    0 :   24 :   24 :   0.00%
 DMA Channels                  :    0 :   24 :   24 :   0.00%
-Interrupts                    :    0 :   32 :   32 :   0.00%
+Interrupts                    :    3 :   29 :   32 :   9.38%
 DSM Fixed Blocks              :    0 :    1 :    1 :   0.00%
 VIDAC Fixed Blocks            :    0 :    4 :    4 :   0.00%
 SC Fixed Blocks               :    0 :    4 :    4 :   0.00%
@@ -801,17 +1272,28 @@ EMIF Fixed Blocks             :    0 :    1 :    1 :   0.00%
 LPF Fixed Blocks              :    0 :    2 :    2 :   0.00%
 SAR Fixed Blocks              :    0 :    2 :    2 :   0.00%
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.016ms
-Tech mapping phase: Elapsed time ==> 0s.168ms
+Technology Mapping: Elapsed time ==> 0s.018ms
+Tech mapping phase: Elapsed time ==> 0s.263ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
 IO_4@[IOP=(12)][IoId=(4)] : ClockLine(0) (fixed)
+IO_0@[IOP=(0)][IoId=(0)] : DataBus(0) (fixed)
+IO_1@[IOP=(0)][IoId=(1)] : DataBus(1) (fixed)
+IO_2@[IOP=(0)][IoId=(2)] : DataBus(2) (fixed)
+IO_3@[IOP=(0)][IoId=(3)] : DataBus(3) (fixed)
+IO_4@[IOP=(0)][IoId=(4)] : DataBus(4) (fixed)
+IO_5@[IOP=(0)][IoId=(5)] : DataBus(5) (fixed)
+IO_6@[IOP=(0)][IoId=(6)] : DataBus(6) (fixed)
+IO_7@[IOP=(0)][IoId=(7)] : DataBus(7) (fixed)
 IO_5@[IOP=(12)][IoId=(5)] : DataLine(0) (fixed)
 IO_6@[IOP=(3)][IoId=(6)] : EXPST(0) (fixed)
 IO_5@[IOP=(3)][IoId=(5)] : FREX(0) (fixed)
+IO_0@[IOP=(6)][IoId=(0)] : HREF(0) (fixed)
+IO_6@[IOP=(12)][IoId=(6)] : PCLK(0) (fixed)
 IO_3@[IOP=(3)][IoId=(3)] : PWND(0) (fixed)
 IO_4@[IOP=(3)][IoId=(4)] : RST_B(0) (fixed)
+IO_7@[IOP=(12)][IoId=(7)] : VREF(0) (fixed)
 IO_2@[IOP=(3)][IoId=(2)] : XCLK(0) (fixed)
 IO_0@[IOP=(2)][IoId=(0)] : \LCD_Char_1:LCDPort(0)\ (fixed)
 IO_1@[IOP=(2)][IoId=(1)] : \LCD_Char_1:LCDPort(1)\ (fixed)
@@ -820,7 +1302,7 @@ IO_3@[IOP=(2)][IoId=(3)] : \LCD_Char_1:LCDPort(3)\ (fixed)
 IO_4@[IOP=(2)][IoId=(4)] : \LCD_Char_1:LCDPort(4)\ (fixed)
 IO_5@[IOP=(2)][IoId=(5)] : \LCD_Char_1:LCDPort(5)\ (fixed)
 IO_6@[IOP=(2)][IoId=(6)] : \LCD_Char_1:LCDPort(6)\ (fixed)
-Analog Placement phase: Elapsed time ==> 0s.033ms
+Analog Placement phase: Elapsed time ==> 0s.047ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 Analog Routing phase: Elapsed time ==> 0s.000ms
@@ -838,12 +1320,12 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.574ms
+Analog Code Generation phase: Elapsed time ==> 0s.531ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.8 sec.
+I2076: Total run-time: 0.7 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -857,13 +1339,13 @@ PLD Packing: Elapsed time ==> 0s.001ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.018ms
+Partitioning: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
-Annealing: Elapsed time ==> 0s.001ms
+Annealing: Elapsed time ==> 0s.002ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 4, final cost is 4 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 104, final cost is 104 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -904,9 +1386,345 @@ UDB [UDB=(3,2)] is empty.
 UDB [UDB=(3,3)] is empty.
 UDB [UDB=(3,4)] is empty.
 UDB [UDB=(3,5)] is empty.
-Intr hod @ [IntrHod=(0)]: empty
+Intr hod @ [IntrHod=(0)]: 
+  Intr@ [IntrHod=(0)][IntrId=(0)] 
+    interrupt: Name =isr_HREF
+        PORT MAP (
+            interrupt => Net_80 );
+        Properties:
+        {
+            int_type = "10"
+        }
+  Intr@ [IntrHod=(0)][IntrId=(1)] 
+    interrupt: Name =isr_PCLK
+        PORT MAP (
+            interrupt => Net_74 );
+        Properties:
+        {
+            int_type = "00"
+        }
+  Intr@ [IntrHod=(0)][IntrId=(2)] 
+    interrupt: Name =isr_VREF
+        PORT MAP (
+            interrupt => Net_81 );
+        Properties:
+        {
+            int_type = "00"
+        }
 Drq hod @ [DrqHod=(0)]: empty
-Port 0 is empty
+Port 0 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = DataBus(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(0)__PA ,
+        pad => DataBus(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = DataBus(1)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(1)__PA ,
+        pad => DataBus(1)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=2]: 
+Pin : Name = DataBus(2)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(2)__PA ,
+        pad => DataBus(2)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=3]: 
+Pin : Name = DataBus(3)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(3)__PA ,
+        pad => DataBus(3)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=4]: 
+Pin : Name = DataBus(4)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(4)__PA ,
+        pad => DataBus(4)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
+Pin : Name = DataBus(5)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(5)__PA ,
+        pad => DataBus(5)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=6]: 
+Pin : Name = DataBus(6)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(6)__PA ,
+        pad => DataBus(6)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = DataBus(7)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => DataBus(7)__PA ,
+        pad => DataBus(7)_PAD );
+    Properties:
+    {
+    }
+
 Port 1 is empty
 Port 2 contains the following IO cells:
 [IoId=0]: 
@@ -1381,7 +2199,47 @@ Pin : Name = EXPST(0)
 
 Port 4 is empty
 Port 5 is empty
-Port 6 is empty
+Port 6 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = HREF(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => HREF(0)__PA ,
+        fb => Net_80 ,
+        pad => HREF(0)_PAD );
+    Properties:
+    {
+    }
+
 Port 12 contains the following IO cells:
 [IoId=4]: 
 Pin : Name = ClockLine(0)
@@ -1461,6 +2319,86 @@ Pin : Name = DataLine(0)
     {
     }
 
+[IoId=6]: 
+Pin : Name = PCLK(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => PCLK(0)__PA ,
+        fb => Net_74 ,
+        pad => PCLK(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = VREF(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => VREF(0)__PA ,
+        fb => Net_81 ,
+        pad => VREF(0)_PAD );
+    Properties:
+    {
+    }
+
 Port 15 is empty
 Fixed Function block hod @ [FFB(CAN,0)]: empty
 Fixed Function block hod @ [FFB(Cache,0)]: empty
@@ -1513,6 +2451,15 @@ Port Configuration report
      |     |       | Interrupt |                  |                         | 
 Port | Pin | Fixed |      Type |       Drive Mode |                    Name | Connections
 -----+-----+-------+-----------+------------------+-------------------------+-----------------
+   0 |   0 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(0) | 
+     |   1 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(1) | 
+     |   2 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(2) | 
+     |   3 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(3) | 
+     |   4 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(4) | 
+     |   5 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(5) | 
+     |   6 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(6) | 
+     |   7 |     * |      NONE |     HI_Z_DIGITAL |              DataBus(7) | 
+-----+-----+-------+-----------+------------------+-------------------------+-----------------
    2 |   0 |     * |      NONE |         CMOS_OUT | \LCD_Char_1:LCDPort(0)\ | 
      |   1 |     * |      NONE |         CMOS_OUT | \LCD_Char_1:LCDPort(1)\ | 
      |   2 |     * |      NONE |         CMOS_OUT | \LCD_Char_1:LCDPort(2)\ | 
@@ -1527,38 +2474,42 @@ Port | Pin | Fixed |      Type |       Drive Mode |                    Name | Co
      |   5 |     * |      NONE |         CMOS_OUT |                 FREX(0) | 
      |   6 |     * |      NONE |         CMOS_OUT |                EXPST(0) | 
 -----+-----+-------+-----------+------------------+-------------------------+-----------------
+   6 |   0 |     * |      NONE |     HI_Z_DIGITAL |                 HREF(0) | FB(Net_80)
+-----+-----+-------+-----------+------------------+-------------------------+-----------------
   12 |   4 |     * |      NONE |    OPEN_DRAIN_LO |            ClockLine(0) | 
      |   5 |     * |      NONE |    OPEN_DRAIN_LO |             DataLine(0) | 
+     |   6 |     * |      NONE |     HI_Z_DIGITAL |                 PCLK(0) | FB(Net_74)
+     |   7 |     * |      NONE |     HI_Z_DIGITAL |                 VREF(0) | FB(Net_81)
 ----------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.037ms
-Digital Placement phase: Elapsed time ==> 1s.055ms
+Digital component placer commit/Report: Elapsed time ==> 0s.028ms
+Digital Placement phase: Elapsed time ==> 1s.044ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.730ms
+Digital Routing phase: Elapsed time ==> 1s.587ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.371ms
+Bitstream and API generation phase: Elapsed time ==> 0s.262ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.081ms
+Bitstream verification phase: Elapsed time ==> 0s.070ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in BitBanging_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.227ms
+Static timing analysis phase: Elapsed time ==> 0s.301ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.308ms
+Design database save phase: Elapsed time ==> 0s.189ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 4s.598ms
+cydsfit: Elapsed time ==> 4s.334ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 4s.630ms
-API generation phase: Elapsed time ==> 0s.875ms
-Dependency generation phase: Elapsed time ==> 0s.089ms
-Cleanup phase: Elapsed time ==> 0s.002ms
+Fitter phase: Elapsed time ==> 4s.386ms
+API generation phase: Elapsed time ==> 1s.151ms
+Dependency generation phase: Elapsed time ==> 0s.010ms
+Cleanup phase: Elapsed time ==> 0s.004ms

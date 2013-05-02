@@ -33,6 +33,17 @@
 #include <RST_B.h>
 #include <Clock_1.h>
 #include <LCD_Char_1.h>
+#include <DataBus_aliases.h>
+#include <DataBus.h>
+#include <PCLK_aliases.h>
+#include <PCLK.h>
+#include <VREF_aliases.h>
+#include <VREF.h>
+#include <HREF_aliases.h>
+#include <HREF.h>
+#include <isr_PCLK.h>
+#include <isr_VREF.h>
+#include <isr_HREF.h>
 #include <LCD_Char_1_LCDPort_aliases.h>
 #include <LCD_Char_1_LCDPort.h>
 #include <core_cm3_psoc5.h>

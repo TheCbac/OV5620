@@ -11,6 +11,10 @@
 */
 #include <device.h>
 
+
+
+//##################################### SCCB FUNCTIONS ####################################
+
 // This Function pulses the Clock line
 void pump()
 {
@@ -134,27 +138,72 @@ void SccbRead(uint8 id, uint8 addr )
     
 }
 
+//###################### END SCCB FUNCTIONS ######################
+
+
+
+
+
+CY_ISR(PCLK_Interrupt)
+{
+    /*  Place your Interrupt code here. */
+    /* `#START isr_PCLK_Interrupt` */
+    LCD_Char_1_PrintNumber(DataBus_Read());
+    /* `#END` */
+}
+
+CY_ISR(VREF_Interrupt)
+{ 
+    /*  Place your Interrupt code here. */
+    /* `#START isr_PCLK_Interrupt` */
+    LCD_Char_1_PrintString("V");
+    /* `#END` */
+}
+
+CY_ISR(HREF_Interrupt)
+{
+    /*  Place your Interrupt code here. */
+    /* `#START isr_PCLK_Interrupt` */
+    //LCD_Char_1_PrintString("H");
+    /* `#END` */
+}
+
+
 void main()
 {
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-
+    uint8 test;
     LCD_Char_1_Start();
     LCD_Char_1_DisplayOn();
+    
+    isr_PCLK_StartEx(PCLK_Interrupt);
+    isr_VREF_StartEx(VREF_Interrupt);
+    isr_HREF_StartEx(HREF_Interrupt);
+    
     PWND_Write(0);
     RST_B_Write(1);
     FREX_Write(0);
     EXPST_Write(0);
     
-    SccbWrite(0x60,0x00,0x0a);
-    SccbRead(0x60,0x00);
+    SccbWrite(0x60,0x12,0x08); // Binning 08 is 1/8 binning
+    SccbWrite(0x60,0x11,0x7f); // Output clock divider
+    //SccbRead(0x60,0x12);
 
 
-       
+    // for Snap Shot 
+    FREX_Write(1);
+    CyDelayUs(50);
+    EXPST_Write(1);
+    CyDelayUs(50);
+    EXPST_Write(0);
+    CyDelayUs(50);
+    FREX_Write(0);
     
     
     
     
-    /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */
+    CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
+    
     for(;;)
     {
         /* Place your application code here. */

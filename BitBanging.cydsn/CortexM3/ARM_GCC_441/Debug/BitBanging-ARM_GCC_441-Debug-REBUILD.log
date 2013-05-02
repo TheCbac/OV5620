@@ -1,3 +1,5 @@
---------------- Rebuild Started: 05/01/2013 21:58:47 Project: main.c, Configuration: ARM GCC 4.4.1 Debug ---------------
+--------------- Rebuild Started: 05/02/2013 14:29:56 Project: main.c, Configuration: ARM GCC 4.4.1 Debug ---------------
 arm-none-eabi-gcc.exe -I. -Wno-main -I./Generated_Source/PSoC5 -mcpu=cortex-m3 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM3\ARM_GCC_441\Debug\main.lst -ffunction-sections -c .\main.c -o .\CortexM3\ARM_GCC_441\Debug\main.o
---------------- Rebuild Succeeded: 05/01/2013 21:58:47 ---------------
+.\main.c: In function 'main':
+.\main.c:175: warning: unused variable 'test'
+--------------- Rebuild Succeeded: 05/02/2013 14:29:56 ---------------

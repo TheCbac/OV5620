@@ -58,9 +58,25 @@
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_VREF.h" value="NONE;isr_VREF" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_HREF.c" value="ARM_C_FILE;isr_HREF" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_HREF.h" value="NONE;isr_HREF" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LED_aliases.h" value="NONE;LED" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LED.c" value="ARM_C_FILE;LED" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LED.h" value="NONE;LED" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_HREF_LOW.c" value="ARM_C_FILE;isr_HREF_LOW" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_HREF_LOW.h" value="NONE;isr_HREF_LOW" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART.c" value="ARM_C_FILE;UART" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART.h" value="NONE;UART" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART_PM.c" value="ARM_C_FILE;UART" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART_INT.c" value="ARM_C_FILE;UART" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART_BOOT.c" value="ARM_C_FILE;UART" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_tx.c" value="ARM_C_FILE;isr_tx" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_tx.h" value="NONE;isr_tx" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_rx.c" value="ARM_C_FILE;isr_rx" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\isr_rx.h" value="NONE;isr_rx" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_LCDPort_aliases.h" value="NONE;LCD_Char_1_LCDPort" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_LCDPort.c" value="ARM_C_FILE;LCD_Char_1_LCDPort" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\LCD_Char_1_LCDPort.h" value="NONE;LCD_Char_1_LCDPort" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART_IntClock.c" value="ARM_C_FILE;UART_IntClock" />
+  <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\UART_IntClock.h" value="NONE;UART_IntClock" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\cm3gcc.ld" value="NONE;cy_boot" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\Cm3RealView.scat" value="NONE;cy_boot" />
   <file name="C:\Users\Craig\Dropbox\6.115\Final Project\PSoC Work\BitBanging.cydsn\codegentemp\Cm3Start.c" value="ARM_C_FILE;cy_boot" />

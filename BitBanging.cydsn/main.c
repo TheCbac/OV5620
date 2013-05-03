@@ -10,8 +10,10 @@
  * ========================================
 */
 #include <device.h>
-
-
+int vsync =0;
+uint8 picture[10][10];
+uint8 Row =0;
+uint8 Column =0;
 
 //##################################### SCCB FUNCTIONS ####################################
 
@@ -24,6 +26,7 @@ void pump()
     ClockLine_Write(0);
     CyDelayUs(3);
 }
+
 
 // This is the end sequence for sccb
 void endSeq()
@@ -148,7 +151,23 @@ CY_ISR(PCLK_Interrupt)
 {
     /*  Place your Interrupt code here. */
     /* `#START isr_PCLK_Interrupt` */
-    LCD_Char_1_PrintNumber(DataBus_Read());
+    
+
+    if(Column <10)
+    {
+        picture[Row][Column] = DataBus_Read();
+        ++Column;
+    }
+ 
+    /*
+    if(vsync <=1)
+    {
+        LCD_Char_1_PrintNumber(DataBus_Read());
+        //LCD_Char_1_PrintString(" ");
+        UART_WriteTxData(DataBus_Read());
+    }
+    else{;}
+    */
     /* `#END` */
 }
 
@@ -156,7 +175,9 @@ CY_ISR(VREF_Interrupt)
 { 
     /*  Place your Interrupt code here. */
     /* `#START isr_PCLK_Interrupt` */
-    LCD_Char_1_PrintString("V");
+    //LED_Write(~LED_Read());
+    ++vsync;
+    
     /* `#END` */
 }
 
@@ -164,33 +185,72 @@ CY_ISR(HREF_Interrupt)
 {
     /*  Place your Interrupt code here. */
     /* `#START isr_PCLK_Interrupt` */
-    //LCD_Char_1_PrintString("H");
+    isr_PCLK_Enable();
     /* `#END` */
+}
+
+CY_ISR(HREF_LOW_Interrupt)
+{
+    isr_PCLK_Disable();
+    if(Row<10)
+    {
+        ++Row;
+    }
+}
+
+
+uint8 testarray[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+CY_ISR(RX_Interrupt)
+{
+    LED_Write(1);
+    isr_PCLK_Disable();
+    UART_PutArray(testarray, 10);
+    
 }
 
 
 void main()
 {
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    uint8 test;
+   // uint8 test;
     LCD_Char_1_Start();
     LCD_Char_1_DisplayOn();
     
-    isr_PCLK_StartEx(PCLK_Interrupt);
-    isr_VREF_StartEx(VREF_Interrupt);
-    isr_HREF_StartEx(HREF_Interrupt);
+    /*
+
+    */
+    
+    isr_rx_StartEx(RX_Interrupt);
+   
+    UART_Start();
     
     PWND_Write(0);
     RST_B_Write(1);
     FREX_Write(0);
     EXPST_Write(0);
     
+    
+    //SccbWrite(0x60,0x12,0x80); // initiates soft reset
     SccbWrite(0x60,0x12,0x08); // Binning 08 is 1/8 binning
     SccbWrite(0x60,0x11,0x7f); // Output clock divider
+    SccbWrite(0x60,0x32,0xc0); //pixel clock divider 1/4
     //SccbRead(0x60,0x12);
 
 
     // for Snap Shot 
+
+       // LED_Write(1);
+    isr_PCLK_StartEx(PCLK_Interrupt);
+    isr_VREF_StartEx(VREF_Interrupt);
+    isr_HREF_StartEx(HREF_Interrupt);
+    isr_HREF_LOW_StartEx(HREF_LOW_Interrupt);
+    
+    isr_VREF_SetPriority(0); //highest priority
+    isr_HREF_SetPriority(1);
+    isr_HREF_LOW_SetPriority(1);
+    isr_PCLK_SetPriority(2);
+ 
+    
     FREX_Write(1);
     CyDelayUs(50);
     EXPST_Write(1);
@@ -198,7 +258,6 @@ void main()
     EXPST_Write(0);
     CyDelayUs(50);
     FREX_Write(0);
-    
     
     
     

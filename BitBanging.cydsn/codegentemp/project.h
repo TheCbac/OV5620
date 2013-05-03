@@ -44,8 +44,15 @@
 #include <isr_PCLK.h>
 #include <isr_VREF.h>
 #include <isr_HREF.h>
+#include <LED_aliases.h>
+#include <LED.h>
+#include <isr_HREF_LOW.h>
+#include <UART.h>
+#include <isr_tx.h>
+#include <isr_rx.h>
 #include <LCD_Char_1_LCDPort_aliases.h>
 #include <LCD_Char_1_LCDPort.h>
+#include <UART_IntClock.h>
 #include <core_cm3_psoc5.h>
 #include <core_cm3.h>
 #include <CyDmac.h>

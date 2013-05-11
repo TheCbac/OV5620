@@ -698,16 +698,6 @@
               <FilePath>.\Generated_Source\PSoC5\LED.h</FilePath>
             </File>
             <File>
-              <FileName>isr_HREF_LOW.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_LOW.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF_LOW.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_LOW.h</FilePath>
-            </File>
-            <File>
               <FileName>UART.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Generated_Source\PSoC5\UART.c</FilePath>
@@ -751,6 +741,66 @@
               <FileName>isr_rx.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_rx.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_2_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_2_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_2.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_2.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_3_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_3_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_3.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_3.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_3.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_1_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_1_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_1.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_1.h</FilePath>
+            </File>
+            <File>
+              <FileName>pin_4_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\pin_4_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>pin_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\pin_4.c</FilePath>
+            </File>
+            <File>
+              <FileName>pin_4.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\pin_4.h</FilePath>
             </File>
             <File>
               <FileName>UART_IntClock.c</FileName>
@@ -1462,16 +1512,6 @@
               <FilePath>.\Generated_Source\PSoC5\LED.h</FilePath>
             </File>
             <File>
-              <FileName>isr_HREF_LOW.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_LOW.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF_LOW.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_LOW.h</FilePath>
-            </File>
-            <File>
               <FileName>UART.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Generated_Source\PSoC5\UART.c</FilePath>
@@ -1515,6 +1555,66 @@
               <FileName>isr_rx.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_rx.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_2_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_2_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_2.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_2.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_3_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_3_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_3.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_3.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_3.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_1_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_1_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_1.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pin_1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Pin_1.h</FilePath>
+            </File>
+            <File>
+              <FileName>pin_4_aliases.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\pin_4_aliases.h</FilePath>
+            </File>
+            <File>
+              <FileName>pin_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\pin_4.c</FilePath>
+            </File>
+            <File>
+              <FileName>pin_4.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\pin_4.h</FilePath>
             </File>
             <File>
               <FileName>UART_IntClock.c</FileName>

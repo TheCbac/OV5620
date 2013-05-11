@@ -18,24 +18,22 @@ Archive member included because of file (symbol)
                               .\CortexM3\ARM_GCC_441\Debug\main.o (RST_B_Write)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
                               .\CortexM3\ARM_GCC_441\Debug\main.o (LCD_Char_1_WriteControl)
-.\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
-                              .\CortexM3\ARM_GCC_441\Debug\main.o (DataBus_Read)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
                               .\CortexM3\ARM_GCC_441\Debug\main.o (isr_PCLK_Disable)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
-                              .\CortexM3\ARM_GCC_441\Debug\main.o (isr_VREF_SetPriority)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (isr_VREF_Disable)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
-                              .\CortexM3\ARM_GCC_441\Debug\main.o (isr_HREF_SetPriority)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (isr_HREF_Disable)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
                               .\CortexM3\ARM_GCC_441\Debug\main.o (LED_Write)
-.\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                              .\CortexM3\ARM_GCC_441\Debug\main.o (isr_HREF_LOW_SetPriority)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
                               .\CortexM3\ARM_GCC_441\Debug\main.o (UART_Start)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
                               .\CortexM3\ARM_GCC_441\Debug\main.o (isr_rx_StartEx)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
                               .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o) (UART_IntClock_Start)
+.\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (pin_4_Write)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
                               .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o (cyfitter_cfg)
 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
@@ -60,9 +58,17 @@ c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/b
 Allocating common symbols
 Common symbol       size              file
 
+pixelarray          0x5               .\CortexM3\ARM_GCC_441\Debug\main.o
+state               0x1               .\CortexM3\ARM_GCC_441\Debug\main.o
+testarray           0x140             .\CortexM3\ARM_GCC_441\Debug\main.o
+pixel               0x1               .\CortexM3\ARM_GCC_441\Debug\main.o
 CyResetStatus       0x1               .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+imageNumber         0x1               .\CortexM3\ARM_GCC_441\Debug\main.o
+testi               0x1               .\CortexM3\ARM_GCC_441\Debug\main.o
 dieTemperature      0x2               .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+imageData0          0x1de84           .\CortexM3\ARM_GCC_441\Debug\main.o
 picture             0x64              .\CortexM3\ARM_GCC_441\Debug\main.o
+row                 0x2               .\CortexM3\ARM_GCC_441\Debug\main.o
 
 Discarded input sections
 
@@ -71,8 +77,10 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
  .data          0x00000000        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .data          0x00000000        0x2 .\CortexM3\ARM_GCC_441\Debug\main.o
  .text.SccbRead
                 0x00000000       0xb8 .\CortexM3\ARM_GCC_441\Debug\main.o
+ COMMON         0x00000000    0x1e036 .\CortexM3\ARM_GCC_441\Debug\main.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
@@ -316,15 +324,6 @@ Discarded input sections
  .text.LCD_Char_1_PrintNumber
                 0x00000000      0x110 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
  .rodata        0x00000000       0x10 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .text.DataBus_Write
-                0x00000000       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .text.DataBus_SetDriveMode
-                0x00000000      0x174 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .text.DataBus_ReadDataReg
-                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
@@ -391,25 +390,6 @@ Discarded input sections
                 0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
  .text.LED_ReadDataReg
                 0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_Start
-                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_Stop
-                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_Interrupt
-                0x00000000        0xc .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_GetVector
-                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_GetPriority
-                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_GetState
-                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_SetPending
-                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .text.isr_HREF_LOW_ClearPending
-                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .text.UART_Stop
@@ -445,6 +425,8 @@ Discarded input sections
  .text.UART_ReadTxStatus
                 0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .text.UART_PutString
+                0x00000000       0x48 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .text.UART_PutArray
                 0x00000000       0x48 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .text.UART_PutCRLF
                 0x00000000       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
@@ -485,7 +467,7 @@ Discarded input sections
  .text.UART_IntClock_StandbyPower
                 0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .text.UART_IntClock_SetDividerRegister
-                0x00000000      0x1e4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+                0x00000000      0x1e8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .text.UART_IntClock_GetDividerRegister
                 0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .text.UART_IntClock_SetModeRegister
@@ -498,6 +480,15 @@ Discarded input sections
                 0x00000000      0x100 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .text.UART_IntClock_GetSourceRegister
                 0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .text.pin_4_SetDriveMode
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .text.pin_4_Read
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .text.pin_4_ReadDataReg
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
@@ -608,12 +599,12 @@ LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.
 LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3unhosted.a
 LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a
 END GROUP
-                0x1fff8198                PROVIDE (__cs3_heap_start, _end)
+                0x1fff8130                PROVIDE (__cs3_heap_start, _end)
                 0x00000001                PROVIDE (__cs3_region_num, ((__cs3_regions_end - __cs3_regions) / 0x14))
                 0x20008000                PROVIDE (__cs3_stack, 0x20008000)
                 0x20004000                PROVIDE (__cs3_heap_end, (__cs3_stack - 0x4000))
 
-.text           0x00000000     0x17e0
+.text           0x00000000     0x1790
  CREATE_OBJECT_SYMBOLS
                 0x00000000                __cs3_interrupt_vector = __cs3_interrupt_vector_micro
  *(.cs3.interrupt_vector)
@@ -621,7 +612,7 @@ END GROUP
                 0x00000000       0xc0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
                 0x00000000                __cs3_interrupt_vector_micro
                 0x00000001                ASSERT ((. != __cs3_interrupt_vector_micro), No interrupt vector)
-                0x000004bc                PROVIDE (__cs3_reset, Reset)
+                0x00000468                PROVIDE (__cs3_reset, Reset)
  *(.cs3.reset)
                 0x00000001                ASSERT ((. != __cs3_reset), No reset code)
  *(.dma_init)
@@ -645,242 +636,224 @@ END GROUP
  .text.SccbWrite
                 0x00000264       0x68 .\CortexM3\ARM_GCC_441\Debug\main.o
                 0x00000264                SccbWrite
+ .text.CameraConfig
+                0x000002cc       0x68 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x000002cc                CameraConfig
  .text.PCLK_Interrupt
-                0x000002cc       0x6c .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x000002cc                PCLK_Interrupt
+                0x00000334       0x30 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x00000334                PCLK_Interrupt
  .text.VREF_Interrupt
-                0x00000338       0x24 .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x00000338                VREF_Interrupt
+                0x00000364       0x14 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x00000364                VREF_Interrupt
  .text.HREF_Interrupt
-                0x0000035c        0xc .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x0000035c                HREF_Interrupt
- .text.HREF_LOW_Interrupt
-                0x00000368       0x34 .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x00000368                HREF_LOW_Interrupt
+                0x00000378       0x14 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x00000378                HREF_Interrupt
  .text.RX_Interrupt
-                0x0000039c       0x24 .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x0000039c                RX_Interrupt
- .text.main     0x000003c0       0xfc .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x000003c0                main
- .text.Reset    0x000004bc       0x24 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
-                0x000004bc                Reset
+                0x0000038c       0x14 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x0000038c                RX_Interrupt
+ .text.main     0x000003a0       0xc8 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x000003a0                main
+ .text.Reset    0x00000468       0x24 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x00000468                Reset
  .text.initialize_psoc
-                0x000004e0       0x9c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
-                0x000004e0                initialize_psoc
- .text.CyDelay  0x0000057c       0x48 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
-                0x0000057c                CyDelay
+                0x0000048c       0x9c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x0000048c                initialize_psoc
+ .text.CyDelay  0x00000528       0x48 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+                0x00000528                CyDelay
  .text.CyDelayUs
-                0x000005c4       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
-                0x000005c4                CyDelayUs
+                0x00000570       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+                0x00000570                CyDelayUs
  .text.DataLine_Write
-                0x000005ec       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
-                0x000005ec                DataLine_Write
+                0x00000598       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+                0x00000598                DataLine_Write
  .text.ClockLine_Write
-                0x00000630       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
-                0x00000630                ClockLine_Write
+                0x000005dc       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+                0x000005dc                ClockLine_Write
  .text.FREX_Write
-                0x00000674       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
-                0x00000674                FREX_Write
+                0x00000620       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+                0x00000620                FREX_Write
  .text.EXPST_Write
-                0x000006b8       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
-                0x000006b8                EXPST_Write
+                0x00000664       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+                0x00000664                EXPST_Write
  .text.PWND_Write
-                0x000006fc       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
-                0x000006fc                PWND_Write
+                0x000006a8       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+                0x000006a8                PWND_Write
  .text.RST_B_Write
-                0x00000740       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
-                0x00000740                RST_B_Write
+                0x000006ec       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+                0x000006ec                RST_B_Write
  .text.LCD_Char_1_Init
-                0x00000784       0x90 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
-                0x00000784                LCD_Char_1_Init
+                0x00000730       0x90 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x00000730                LCD_Char_1_Init
  .text.LCD_Char_1_Enable
-                0x00000814       0x1c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
-                0x00000814                LCD_Char_1_Enable
+                0x000007c0       0x1c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x000007c0                LCD_Char_1_Enable
  .text.LCD_Char_1_Start
-                0x00000830       0x2c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
-                0x00000830                LCD_Char_1_Start
+                0x000007dc       0x2c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x000007dc                LCD_Char_1_Start
  .text.LCD_Char_1_WriteControl
-                0x0000085c       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
-                0x0000085c                LCD_Char_1_WriteControl
+                0x00000808       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x00000808                LCD_Char_1_WriteControl
  .text.LCD_Char_1_IsReady
-                0x00000894      0x1f4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
-                0x00000894                LCD_Char_1_IsReady
+                0x00000840      0x1f4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x00000840                LCD_Char_1_IsReady
  .text.LCD_Char_1_WrCntrlNib
-                0x00000a88       0x8c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .text.DataBus_Read
-                0x00000b14       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
-                0x00000b14                DataBus_Read
+                0x00000a34       0x8c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
  .text.isr_PCLK_StartEx
-                0x00000b2c       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
-                0x00000b2c                isr_PCLK_StartEx
+                0x00000ac0       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x00000ac0                isr_PCLK_StartEx
  .text.isr_PCLK_SetVector
-                0x00000b54       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
-                0x00000b54                isr_PCLK_SetVector
+                0x00000ae8       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x00000ae8                isr_PCLK_SetVector
  .text.isr_PCLK_SetPriority
-                0x00000b7c       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
-                0x00000b7c                isr_PCLK_SetPriority
+                0x00000b10       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x00000b10                isr_PCLK_SetPriority
  .text.isr_PCLK_Enable
-                0x00000ba4       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
-                0x00000ba4                isr_PCLK_Enable
+                0x00000b38       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x00000b38                isr_PCLK_Enable
  .text.isr_PCLK_Disable
-                0x00000bbc       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
-                0x00000bbc                isr_PCLK_Disable
+                0x00000b50       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x00000b50                isr_PCLK_Disable
  .text.isr_VREF_StartEx
-                0x00000bd4       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
-                0x00000bd4                isr_VREF_StartEx
+                0x00000b68       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000b68                isr_VREF_StartEx
  .text.isr_VREF_SetVector
-                0x00000bfc       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
-                0x00000bfc                isr_VREF_SetVector
+                0x00000b90       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000b90                isr_VREF_SetVector
  .text.isr_VREF_SetPriority
-                0x00000c24       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
-                0x00000c24                isr_VREF_SetPriority
+                0x00000bb8       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000bb8                isr_VREF_SetPriority
  .text.isr_VREF_Enable
-                0x00000c4c       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
-                0x00000c4c                isr_VREF_Enable
+                0x00000be0       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000be0                isr_VREF_Enable
  .text.isr_VREF_Disable
-                0x00000c64       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
-                0x00000c64                isr_VREF_Disable
+                0x00000bf8       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000bf8                isr_VREF_Disable
  .text.isr_HREF_StartEx
-                0x00000c7c       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
-                0x00000c7c                isr_HREF_StartEx
+                0x00000c10       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x00000c10                isr_HREF_StartEx
  .text.isr_HREF_SetVector
-                0x00000ca4       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
-                0x00000ca4                isr_HREF_SetVector
+                0x00000c38       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x00000c38                isr_HREF_SetVector
  .text.isr_HREF_SetPriority
-                0x00000ccc       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
-                0x00000ccc                isr_HREF_SetPriority
+                0x00000c60       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x00000c60                isr_HREF_SetPriority
  .text.isr_HREF_Enable
-                0x00000cf4       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
-                0x00000cf4                isr_HREF_Enable
+                0x00000c88       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x00000c88                isr_HREF_Enable
  .text.isr_HREF_Disable
-                0x00000d0c       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
-                0x00000d0c                isr_HREF_Disable
+                0x00000ca0       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x00000ca0                isr_HREF_Disable
  .text.LED_Write
-                0x00000d24       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
-                0x00000d24                LED_Write
- .text.isr_HREF_LOW_StartEx
-                0x00000d68       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                0x00000d68                isr_HREF_LOW_StartEx
- .text.isr_HREF_LOW_SetVector
-                0x00000d90       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                0x00000d90                isr_HREF_LOW_SetVector
- .text.isr_HREF_LOW_SetPriority
-                0x00000db8       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                0x00000db8                isr_HREF_LOW_SetPriority
- .text.isr_HREF_LOW_Enable
-                0x00000de0       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                0x00000de0                isr_HREF_LOW_Enable
- .text.isr_HREF_LOW_Disable
-                0x00000df8       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                0x00000df8                isr_HREF_LOW_Disable
+                0x00000cb8       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+                0x00000cb8                LED_Write
  .text.UART_Start
-                0x00000e10       0x2c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
-                0x00000e10                UART_Start
+                0x00000cfc       0x2c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00000cfc                UART_Start
  .text.UART_Init
-                0x00000e3c       0x50 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
-                0x00000e3c                UART_Init
+                0x00000d28       0x50 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00000d28                UART_Init
  .text.UART_Enable
-                0x00000e8c       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
-                0x00000e8c                UART_Enable
+                0x00000d78       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00000d78                UART_Enable
  .text.UART_PutChar
-                0x00000f04       0x34 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
-                0x00000f04                UART_PutChar
- .text.UART_PutArray
-                0x00000f38       0x48 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
-                0x00000f38                UART_PutArray
+                0x00000df0       0x34 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00000df0                UART_PutChar
  .text.isr_rx_StartEx
-                0x00000f80       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
-                0x00000f80                isr_rx_StartEx
+                0x00000e24       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x00000e24                isr_rx_StartEx
  .text.isr_rx_SetVector
-                0x00000fa8       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
-                0x00000fa8                isr_rx_SetVector
+                0x00000e4c       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x00000e4c                isr_rx_SetVector
  .text.isr_rx_SetPriority
-                0x00000fd0       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
-                0x00000fd0                isr_rx_SetPriority
+                0x00000e74       0x28 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x00000e74                isr_rx_SetPriority
  .text.isr_rx_Enable
-                0x00000ff8       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
-                0x00000ff8                isr_rx_Enable
+                0x00000e9c       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x00000e9c                isr_rx_Enable
  .text.isr_rx_Disable
-                0x00001010       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
-                0x00001010                isr_rx_Disable
+                0x00000eb4       0x18 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x00000eb4                isr_rx_Disable
  .text.UART_IntClock_Start
-                0x00001028       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
-                0x00001028                UART_IntClock_Start
+                0x00000ecc       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+                0x00000ecc                UART_IntClock_Start
+ .text.pin_4_Write
+                0x00000f10       0x44 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+                0x00000f10                pin_4_Write
  .text.CYMEMZERO
-                0x0000106c       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00000f54       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .text.CYCONFIGCPY
-                0x0000108c       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00000f74       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .text.cfg_write_bytes32
-                0x000010ac       0x84 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00000f94       0x84 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .text.ClockSetup
-                0x00001130      0x160 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00001018      0x160 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .text.AnalogSetDefault
-                0x00001290       0x4c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00001178       0x4c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .text.cyfitter_cfg
-                0x000012dc      0x1f8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
-                0x000012dc                cyfitter_cfg
- *fill*         0x000014d4        0x4 00
- .text          0x000014d8       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
-                0x000014d8                CyDelayCycles
-                0x000014e8                CyEnterCriticalSection
-                0x000014f0                CyExitCriticalSection
- .text          0x000014f8      0x190 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
-                0x000014f8                memcpy
- .text          0x00001688       0xd4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
-                0x00001688                memset
- .text          0x0000175c       0x30 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
-                0x0000175c                __cs3_premain
- .text          0x0000178c        0x2 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
-                0x0000178c                __cs3_isr_external_24
-                0x0000178c                __cs3_isr_external_9
-                0x0000178c                __cs3_isr_external_14
-                0x0000178c                __cs3_isr_reserved_9
-                0x0000178c                __cs3_isr_external_4
-                0x0000178c                __cs3_isr_external_21
-                0x0000178c                __cs3_isr_external_0
-                0x0000178c                __cs3_isr_external_27
-                0x0000178c                __cs3_isr_external_11
-                0x0000178c                __cs3_isr_usage_fault
-                0x0000178c                __cs3_isr_svcall
-                0x0000178c                __cs3_isr_external_3
-                0x0000178c                __cs3_isr_mpu_fault
-                0x0000178c                __cs3_isr_external_16
-                0x0000178c                __cs3_isr_pendsv
-                0x0000178c                __cs3_isr_external_31
-                0x0000178c                __cs3_isr_nmi
-                0x0000178c                __cs3_isr_external_5
-                0x0000178c                __cs3_isr_external_6
-                0x0000178c                __cs3_isr_external_12
-                0x0000178c                __cs3_isr_hard_fault
-                0x0000178c                __cs3_isr_bus_fault
-                0x0000178c                __cs3_isr_external_1
-                0x0000178c                __cs3_isr_external_13
-                0x0000178c                __cs3_isr_external_30
-                0x0000178c                __cs3_isr_external_23
-                0x0000178c                __cs3_isr_external_20
-                0x0000178c                __cs3_isr_debug
-                0x0000178c                __cs3_isr_reserved_13
-                0x0000178c                __cs3_isr_external_8
-                0x0000178c                __cs3_isr_external_26
-                0x0000178c                __cs3_isr_reserved_8
-                0x0000178c                __cs3_isr_reserved_7
-                0x0000178c                __cs3_isr_external_7
-                0x0000178c                __cs3_isr_external_28
-                0x0000178c                __cs3_isr_systick
-                0x0000178c                __cs3_isr_external_22
-                0x0000178c                __cs3_isr_external_10
-                0x0000178c                __cs3_isr_external_15
-                0x0000178c                __cs3_isr_interrupt
-                0x0000178c                __cs3_isr_external_18
-                0x0000178c                __cs3_isr_external_29
-                0x0000178c                __cs3_isr_external_25
-                0x0000178c                __cs3_isr_reserved_10
-                0x0000178c                __cs3_isr_external_2
-                0x0000178c                __cs3_isr_external_17
-                0x0000178c                __cs3_isr_external_19
- *fill*         0x0000178e        0x2 00
- .text          0x00001790       0x50 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x00001790                __libc_init_array
+                0x000011c4      0x2c0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x000011c4                cyfitter_cfg
+ *fill*         0x00001484        0x4 00
+ .text          0x00001488       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
+                0x00001488                CyDelayCycles
+                0x00001498                CyEnterCriticalSection
+                0x000014a0                CyExitCriticalSection
+ .text          0x000014a8      0x190 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x000014a8                memcpy
+ .text          0x00001638       0xd4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x00001638                memset
+ .text          0x0000170c       0x30 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+                0x0000170c                __cs3_premain
+ .text          0x0000173c        0x2 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
+                0x0000173c                __cs3_isr_external_24
+                0x0000173c                __cs3_isr_external_9
+                0x0000173c                __cs3_isr_external_14
+                0x0000173c                __cs3_isr_reserved_9
+                0x0000173c                __cs3_isr_external_4
+                0x0000173c                __cs3_isr_external_21
+                0x0000173c                __cs3_isr_external_0
+                0x0000173c                __cs3_isr_external_27
+                0x0000173c                __cs3_isr_external_11
+                0x0000173c                __cs3_isr_usage_fault
+                0x0000173c                __cs3_isr_svcall
+                0x0000173c                __cs3_isr_external_3
+                0x0000173c                __cs3_isr_mpu_fault
+                0x0000173c                __cs3_isr_external_16
+                0x0000173c                __cs3_isr_pendsv
+                0x0000173c                __cs3_isr_external_31
+                0x0000173c                __cs3_isr_nmi
+                0x0000173c                __cs3_isr_external_5
+                0x0000173c                __cs3_isr_external_6
+                0x0000173c                __cs3_isr_external_12
+                0x0000173c                __cs3_isr_hard_fault
+                0x0000173c                __cs3_isr_bus_fault
+                0x0000173c                __cs3_isr_external_1
+                0x0000173c                __cs3_isr_external_13
+                0x0000173c                __cs3_isr_external_30
+                0x0000173c                __cs3_isr_external_23
+                0x0000173c                __cs3_isr_external_20
+                0x0000173c                __cs3_isr_debug
+                0x0000173c                __cs3_isr_reserved_13
+                0x0000173c                __cs3_isr_external_8
+                0x0000173c                __cs3_isr_external_26
+                0x0000173c                __cs3_isr_reserved_8
+                0x0000173c                __cs3_isr_reserved_7
+                0x0000173c                __cs3_isr_external_7
+                0x0000173c                __cs3_isr_external_28
+                0x0000173c                __cs3_isr_systick
+                0x0000173c                __cs3_isr_external_22
+                0x0000173c                __cs3_isr_external_10
+                0x0000173c                __cs3_isr_external_15
+                0x0000173c                __cs3_isr_interrupt
+                0x0000173c                __cs3_isr_external_18
+                0x0000173c                __cs3_isr_external_29
+                0x0000173c                __cs3_isr_external_25
+                0x0000173c                __cs3_isr_reserved_10
+                0x0000173c                __cs3_isr_external_2
+                0x0000173c                __cs3_isr_external_17
+                0x0000173c                __cs3_isr_external_19
+ *fill*         0x0000173e        0x2 00
+ .text          0x00001740       0x50 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x00001740                __libc_init_array
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -893,7 +866,7 @@ END GROUP
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x000017e0        0x0
+.v4_bx          0x00001790        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .eh_frame_hdr
@@ -901,64 +874,64 @@ END GROUP
 
 .eh_frame
  *(.eh_frame)
-                0x000017e0                PROVIDE (__exidx_start, .)
+                0x00001790                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000017e0                __exidx_end = .
+                0x00001790                __exidx_end = .
 
-.rodata         0x000017e0       0x68
+.rodata         0x00001790       0x70
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x000017e0       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
-                0x00001810                . = ALIGN (0x4)
+ .rodata        0x00001790       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x000017c8                . = ALIGN (0x4)
  *(.init)
- .init          0x00001810        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x00001810                _init
- .init          0x00001814        0x8 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x0000181c                . = ALIGN (0x4)
-                0x0000181c                __preinit_array_start = .
+ .init          0x000017c8        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x000017c8                _init
+ .init          0x000017cc        0x8 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x000017d4                . = ALIGN (0x4)
+                0x000017d4                __preinit_array_start = .
  *(.preinit_array)
-                0x0000181c                __preinit_array_end = .
-                0x0000181c                . = ALIGN (0x4)
-                0x0000181c                __init_array_start = .
+                0x000017d4                __preinit_array_end = .
+                0x000017d4                . = ALIGN (0x4)
+                0x000017d4                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x0000181c        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .init_array    0x00001820        0x4 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
-                0x00001824                __init_array_end = .
-                0x00001824                . = ALIGN (0x4)
+ .init_array    0x000017d4        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .init_array    0x000017d8        0x4 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x000017dc                __init_array_end = .
+                0x000017dc                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00001824        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x00001824                _fini
- .fini          0x00001828        0x8 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x00001830                . = ALIGN (0x4)
-                0x00001830                __fini_array_start = .
+ .fini          0x000017dc        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x000017dc                _fini
+ .fini          0x000017e0        0x8 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x000017e8                . = ALIGN (0x4)
+                0x000017e8                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00001830        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x000017e8        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00001834                __fini_array_end = .
-                0x00001834                . = ALIGN (0x4)
+                0x000017ec                __fini_array_end = .
+                0x000017ec                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00001834                . = ALIGN (0x4)
+                0x000017ec                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00001834                . = ALIGN (0x4)
-                0x00001834                __cs3_regions = .
-                0x00001834        0x4 LONG 0x0
-                0x00001838        0x4 LONG 0x1848 __cs3_region_init_ram
-                0x0000183c        0x4 LONG 0x1fff8000 __cs3_region_start_ram
-                0x00001840        0x4 LONG 0x120 __cs3_region_init_size_ram
-                0x00001844        0x4 LONG 0x78 __cs3_region_zero_size_ram
-                0x00001848                __cs3_regions_end = .
-                0x00001848                . = ALIGN (0x8)
-                0x00001848                _etext = .
+                0x000017ec                . = ALIGN (0x4)
+                0x000017ec                __cs3_regions = .
+                0x000017ec        0x4 LONG 0x0
+                0x000017f0        0x4 LONG 0x1800 __cs3_region_init_ram
+                0x000017f4        0x4 LONG 0x1fff8000 __cs3_region_start_ram
+                0x000017f8        0x4 LONG 0x118 __cs3_region_init_size_ram
+                0x000017fc        0x4 LONG 0x18 __cs3_region_zero_size_ram
+                0x00001800                __cs3_regions_end = .
+                0x00001800                . = ALIGN (0x8)
+                0x00001800                _etext = .
 
-.data           0x1fff8000      0x120 load address 0x00001848
+.data           0x1fff8000      0x118 load address 0x00001800
                 0x1fff8000                __cs3_region_start_ram = .
  *(.cs3.region-head.ram)
                 0x1fff8001                ASSERT ((. == __cs3_region_start_ram), .cs3.region-head.ram not permitted)
@@ -972,46 +945,45 @@ END GROUP
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x1fff8104        0xc .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x1fff8104                testarray
- .data          0x1fff8110       0x10 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
-                0x1fff8110                cydelay_freq_hz
-                0x1fff8114                cydelay_freq_khz
-                0x1fff8118                cydelay_freq_mhz
-                0x1fff811c                cydelay_32k_ms
-                0x1fff8120                . = ALIGN (0x8)
+ .data          0x1fff8104       0x10 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+                0x1fff8104                cydelay_freq_hz
+                0x1fff8108                cydelay_freq_khz
+                0x1fff810c                cydelay_freq_mhz
+                0x1fff8110                cydelay_32k_ms
+                0x1fff8118                . = ALIGN (0x8)
+ *fill*         0x1fff8114        0x4 00
  *(.ram)
-                0x1fff8120                _edata = .
+                0x1fff8118                _edata = .
 
-.bss            0x1fff8120       0x78 load address 0x00001968
+.bss            0x1fff8118       0x18 load address 0x00001918
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x1fff8120        0x1 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x1fff8121        0x3 00
- .bss           0x1fff8124        0x8 .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x1fff8124                vsync
-                0x1fff8128                Row
-                0x1fff8129                Column
- .bss           0x1fff812c        0x2 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
-                0x1fff812c                LCD_Char_1_enableState
-                0x1fff812d                LCD_Char_1_initVar
- .bss           0x1fff812e        0x2 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
-                0x1fff812e                UART_initVar
+ .bss           0x1fff8118        0x1 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x1fff8119        0x3 00
+ .bss           0x1fff811c        0x8 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x1fff811c                vsync
+                0x1fff8120                Row
+                0x1fff8121                Column
+                0x1fff8122                status
+                0x1fff8123                counter
+ .bss           0x1fff8124        0x2 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x1fff8124                LCD_Char_1_enableState
+                0x1fff8125                LCD_Char_1_initVar
+ .bss           0x1fff8126        0x2 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x1fff8126                UART_initVar
  *(COMMON)
- COMMON         0x1fff8130       0x64 .\CortexM3\ARM_GCC_441\Debug\main.o
-                0x1fff8130                picture
- COMMON         0x1fff8194        0x1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
-                0x1fff8194                CyResetStatus
-                0x1fff8198                . = ALIGN (0x8)
- *fill*         0x1fff8195        0x3 00
+ COMMON         0x1fff8128        0x1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+                0x1fff8128                CyResetStatus
+                0x1fff8130                . = ALIGN (0x8)
+ *fill*         0x1fff8129        0x7 00
  *(.ram.b)
-                0x1fff8198                _end = .
-                0x1fff8198                __end = .
+                0x1fff8130                _end = .
+                0x1fff8130                __end = .
                 0x20003000                __cs3_region_end_ram = (__cs3_region_start_ram + 0xb000)
                 0x0000b000                __cs3_region_size_ram = 0xb000
-                0x00001848                __cs3_region_init_ram = LOADADDR (.data)
-                0x00000120                __cs3_region_init_size_ram = (_edata - ADDR (.data))
-                0x00000078                __cs3_region_zero_size_ram = (_end - _edata)
+                0x00001800                __cs3_region_init_ram = LOADADDR (.data)
+                0x00000118                __cs3_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000018                __cs3_region_zero_size_ram = (_end - _edata)
 
 .stab
  *(.stab)
@@ -1031,7 +1003,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.comment        0x00000000      0x3dd
+.comment        0x00000000      0x3b2
  .comment       0x00000000       0x2b .\CortexM3\ARM_GCC_441\Debug\main.o
  .comment       0x0000002b       0x2b .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
  .comment       0x00000056       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
@@ -1043,20 +1015,19 @@ END GROUP
  .comment       0x00000158       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
  .comment       0x00000183       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
  .comment       0x000001ae       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .comment       0x000001d9       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .comment       0x00000204       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .comment       0x0000022f       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .comment       0x0000025a       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .comment       0x00000285       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .comment       0x000002b0       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .comment       0x000002db       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .comment       0x00000306       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .comment       0x00000331       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .comment       0x0000035c       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .comment       0x00000387       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .comment       0x000003b2       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .comment       0x000001d9       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .comment       0x00000204       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .comment       0x0000022f       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .comment       0x0000025a       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .comment       0x00000285       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .comment       0x000002b0       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .comment       0x000002db       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .comment       0x00000306       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .comment       0x00000331       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .comment       0x0000035c       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .comment       0x00000387       0x2b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
-.debug_aranges  0x00000000      0xae8
+.debug_aranges  0x00000000      0xa68
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x78 .\CortexM3\ARM_GCC_441\Debug\main.o
@@ -1081,243 +1052,233 @@ END GROUP
  .debug_aranges
                 0x000004b0       0x90 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
  .debug_aranges
-                0x00000540       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
+                0x00000540       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
  .debug_aranges
-                0x00000578       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x000005c0       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
  .debug_aranges
-                0x000005f8       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000640       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
  .debug_aranges
-                0x00000678       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x000006c0       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
  .debug_aranges
-                0x000006f8       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+                0x000006f8       0xf0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .debug_aranges
-                0x00000730       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
+                0x000007e8       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
  .debug_aranges
-                0x000007b0       0xf0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00000868       0x70 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .debug_aranges
-                0x000008a0       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x000008d8       0x38 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
  .debug_aranges
-                0x00000920       0x70 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+                0x00000910       0x58 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .debug_aranges
-                0x00000990       0x58 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00000968       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
  .debug_aranges
-                0x000009e8       0x20 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
+                0x00000988       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
  .debug_aranges
-                0x00000a08       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_aranges
-                0x00000a80       0x68 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+                0x00000a00       0x68 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
 .debug_pubnames
-                0x00000000     0x1817
+                0x00000000     0x1715
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000      0x103 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x00000000      0x171 .\CortexM3\ARM_GCC_441\Debug\main.o
  .debug_pubnames
-                0x00000103       0x57 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x00000171       0x57 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
  .debug_pubnames
-                0x0000015a      0x57a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+                0x000001c8      0x57a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
  .debug_pubnames
-                0x000006d4       0xbb .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
+                0x00000742       0xbb .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
  .debug_pubnames
-                0x0000078f       0x6a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+                0x000007fd       0x6a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
  .debug_pubnames
-                0x000007f9       0x6e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+                0x00000867       0x6e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
  .debug_pubnames
-                0x00000867       0x5a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+                0x000008d5       0x5a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
  .debug_pubnames
-                0x000008c1       0x5e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+                0x0000092f       0x5e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
  .debug_pubnames
-                0x0000091f       0x5a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+                0x0000098d       0x5a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
  .debug_pubnames
-                0x00000979       0x5e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+                0x000009e7       0x5e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
  .debug_pubnames
-                0x000009d7      0x17b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+                0x00000a45      0x17b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
  .debug_pubnames
-                0x00000b52       0x66 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
+                0x00000bc0      0x134 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
  .debug_pubnames
-                0x00000bb8      0x134 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x00000cf4      0x134 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
  .debug_pubnames
-                0x00000cec      0x134 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x00000e28      0x134 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
  .debug_pubnames
-                0x00000e20      0x134 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x00000f5c       0x56 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
  .debug_pubnames
-                0x00000f54       0x56 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+                0x00000fb2      0x264 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .debug_pubnames
-                0x00000faa      0x168 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
+                0x00001216      0x11a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
  .debug_pubnames
-                0x00001112      0x264 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00001330      0x176 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .debug_pubnames
-                0x00001376      0x11a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x000014a6       0x5e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
  .debug_pubnames
-                0x00001490      0x176 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+                0x00001504       0x3d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .debug_pubnames
-                0x00001606       0x3d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00001541      0x104 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
  .debug_pubnames
-                0x00001643      0x104 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_pubnames
-                0x00001747       0xd0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+                0x00001645       0xd0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
-.debug_info     0x00000000     0x40e2
+.debug_info     0x00000000     0x404e
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x314 .\CortexM3\ARM_GCC_441\Debug\main.o
- .debug_info    0x00000314      0x13e .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
- .debug_info    0x00000452      0xc71 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
- .debug_info    0x000010c3      0x5ac .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
- .debug_info    0x0000166f      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
- .debug_info    0x0000178f      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
- .debug_info    0x000018af      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
- .debug_info    0x000019cf      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
- .debug_info    0x00001aef      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
- .debug_info    0x00001c0f      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
- .debug_info    0x00001d2f      0x3af .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .debug_info    0x000020de      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .debug_info    0x000021fe      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .debug_info    0x00002439      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .debug_info    0x00002674      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .debug_info    0x000028af      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .debug_info    0x000029cf      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .debug_info    0x00002c0a      0x55c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .debug_info    0x00003166      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .debug_info    0x000033a1      0x269 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .debug_info    0x0000360a      0x36e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .debug_info    0x00003978       0x97 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
- .debug_info    0x00003a0f      0x334 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_info    0x00003d43      0x39f .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_info    0x00000000      0x3fc .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_info    0x000003fc      0x13e .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_info    0x0000053a      0xc71 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+ .debug_info    0x000011ab      0x5ac .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
+ .debug_info    0x00001757      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+ .debug_info    0x00001877      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+ .debug_info    0x00001997      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+ .debug_info    0x00001ab7      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+ .debug_info    0x00001bd7      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+ .debug_info    0x00001cf7      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+ .debug_info    0x00001e17      0x3af .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+ .debug_info    0x000021c6      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_info    0x00002401      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_info    0x0000263c      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_info    0x00002877      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_info    0x00002997      0x55c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_info    0x00002ef3      0x23b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_info    0x0000312e      0x269 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_info    0x00003397      0x120 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .debug_info    0x000034b7      0x42d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .debug_info    0x000038e4       0x97 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
+ .debug_info    0x0000397b      0x334 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_info    0x00003caf      0x39f .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
-.debug_abbrev   0x00000000     0x13fb
+.debug_abbrev   0x00000000     0x1350
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x10e .\CortexM3\ARM_GCC_441\Debug\main.o
- .debug_abbrev  0x0000010e       0xd6 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
- .debug_abbrev  0x000001e4      0x182 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
- .debug_abbrev  0x00000366      0x14d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
- .debug_abbrev  0x000004b3       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
- .debug_abbrev  0x00000538       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
- .debug_abbrev  0x000005bd       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
- .debug_abbrev  0x00000642       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
- .debug_abbrev  0x000006c7       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
- .debug_abbrev  0x0000074c       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
- .debug_abbrev  0x000007d1      0x118 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .debug_abbrev  0x000008e9       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .debug_abbrev  0x0000096e       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .debug_abbrev  0x00000a4f       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .debug_abbrev  0x00000b30       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .debug_abbrev  0x00000c11       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .debug_abbrev  0x00000c96       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .debug_abbrev  0x00000d77      0x10c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .debug_abbrev  0x00000e83       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .debug_abbrev  0x00000f64       0xd8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .debug_abbrev  0x0000103c      0x153 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .debug_abbrev  0x0000118f       0x14 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
- .debug_abbrev  0x000011a3      0x14a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_abbrev  0x000012ed      0x10e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_abbrev  0x00000000      0x12a .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_abbrev  0x0000012a       0xd6 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_abbrev  0x00000200      0x182 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+ .debug_abbrev  0x00000382      0x14d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
+ .debug_abbrev  0x000004cf       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+ .debug_abbrev  0x00000554       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+ .debug_abbrev  0x000005d9       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+ .debug_abbrev  0x0000065e       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+ .debug_abbrev  0x000006e3       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+ .debug_abbrev  0x00000768       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+ .debug_abbrev  0x000007ed      0x118 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+ .debug_abbrev  0x00000905       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_abbrev  0x000009e6       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_abbrev  0x00000ac7       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_abbrev  0x00000ba8       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_abbrev  0x00000c2d      0x10c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_abbrev  0x00000d39       0xe1 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_abbrev  0x00000e1a       0xd8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_abbrev  0x00000ef2       0x85 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .debug_abbrev  0x00000f77      0x16d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000010e4       0x14 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x000010f8      0x14a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_abbrev  0x00001242      0x10e .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
-.debug_line     0x00000000     0x23a0
+.debug_line     0x00000000     0x2244
  *(.debug_line)
- .debug_line    0x00000000      0x18d .\CortexM3\ARM_GCC_441\Debug\main.o
- .debug_line    0x0000018d       0xb4 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
- .debug_line    0x00000241      0x659 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
- .debug_line    0x0000089a      0x346 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
- .debug_line    0x00000be0       0xb3 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
- .debug_line    0x00000c93       0xb4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
- .debug_line    0x00000d47       0xaf .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
- .debug_line    0x00000df6       0xb0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
- .debug_line    0x00000ea6       0xaf .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
- .debug_line    0x00000f55       0xb0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
- .debug_line    0x00001005      0x1df .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .debug_line    0x000011e4       0xc0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .debug_line    0x000012a4      0x15c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .debug_line    0x00001400      0x15c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .debug_line    0x0000155c      0x15c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .debug_line    0x000016b8       0xae .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .debug_line    0x00001766      0x160 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .debug_line    0x000018c6      0x2b2 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .debug_line    0x00001b78      0x15a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .debug_line    0x00001cd2      0x182 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .debug_line    0x00001e54      0x1c4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .debug_line    0x00002018       0x67 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
- .debug_line    0x0000207f      0x194 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_line    0x00002213      0x18d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_line    0x00000000      0x192 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_line    0x00000192       0xb4 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_line    0x00000246      0x659 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+ .debug_line    0x0000089f      0x346 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
+ .debug_line    0x00000be5       0xb3 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+ .debug_line    0x00000c98       0xb4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+ .debug_line    0x00000d4c       0xaf .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+ .debug_line    0x00000dfb       0xb0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+ .debug_line    0x00000eab       0xaf .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+ .debug_line    0x00000f5a       0xb0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+ .debug_line    0x0000100a      0x1df .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+ .debug_line    0x000011e9      0x15c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_line    0x00001345      0x15c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_line    0x000014a1      0x15c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_line    0x000015fd       0xae .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_line    0x000016ab      0x2b2 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_line    0x0000195d      0x15a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_line    0x00001ab7      0x182 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_line    0x00001c39       0xb0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .debug_line    0x00001ce9      0x1d3 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .debug_line    0x00001ebc       0x67 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
+ .debug_line    0x00001f23      0x194 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_line    0x000020b7      0x18d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
-.debug_frame    0x00000000     0x21a4
+.debug_frame    0x00000000     0x201c
  *(.debug_frame)
- .debug_frame   0x00000000      0x174 .\CortexM3\ARM_GCC_441\Debug\main.o
- .debug_frame   0x00000174       0x5c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
- .debug_frame   0x000001d0      0x778 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
- .debug_frame   0x00000948      0x208 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
- .debug_frame   0x00000b50       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
- .debug_frame   0x00000bd0       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
- .debug_frame   0x00000c50       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
- .debug_frame   0x00000cd0       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
- .debug_frame   0x00000d50       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
- .debug_frame   0x00000dd0       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
- .debug_frame   0x00000e50      0x1e0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .debug_frame   0x00001030       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .debug_frame   0x000010b0      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .debug_frame   0x00001230      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .debug_frame   0x000013b0      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .debug_frame   0x00001530       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .debug_frame   0x000015b0      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .debug_frame   0x00001730      0x328 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .debug_frame   0x00001a58      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .debug_frame   0x00001bd8      0x14c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .debug_frame   0x00001d24      0x104 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .debug_frame   0x00001e28      0x178 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_frame   0x00001fa0      0x13c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
- .debug_frame   0x000020dc       0x34 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
- .debug_frame   0x00002110       0x28 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
- .debug_frame   0x00002138       0x40 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
- .debug_frame   0x00002178       0x2c c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x00000000      0x16c .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_frame   0x0000016c       0x5c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_frame   0x000001c8      0x778 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+ .debug_frame   0x00000940      0x208 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
+ .debug_frame   0x00000b48       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+ .debug_frame   0x00000bc8       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+ .debug_frame   0x00000c48       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+ .debug_frame   0x00000cc8       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+ .debug_frame   0x00000d48       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+ .debug_frame   0x00000dc8       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+ .debug_frame   0x00000e48      0x1e0 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+ .debug_frame   0x00001028      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_frame   0x000011a8      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_frame   0x00001328      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_frame   0x000014a8       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_frame   0x00001528      0x328 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_frame   0x00001850      0x180 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_frame   0x000019d0      0x14c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_frame   0x00001b1c       0x80 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .debug_frame   0x00001b9c      0x104 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .debug_frame   0x00001ca0      0x178 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_frame   0x00001e18      0x13c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_frame   0x00001f54       0x34 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x00001f88       0x28 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .debug_frame   0x00001fb0       0x40 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+ .debug_frame   0x00001ff0       0x2c c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
 
-.debug_str      0x00000000     0x1d74
+.debug_str      0x00000000     0x1c98
  *(.debug_str)
- .debug_str     0x00000000      0x13e .\CortexM3\ARM_GCC_441\Debug\main.o
-                                0x1b7 (size before relaxing)
- .debug_str     0x0000013e       0x8c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_str     0x00000000      0x193 .\CortexM3\ARM_GCC_441\Debug\main.o
+                                0x200 (size before relaxing)
+ .debug_str     0x00000193       0x8c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
                                 0x180 (size before relaxing)
- .debug_str     0x000001ca      0x657 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
+ .debug_str     0x0000021f      0x64a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyLib.o)
                                 0x776 (size before relaxing)
- .debug_str     0x00000821      0x372 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
+ .debug_str     0x00000869      0x372 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyPm.o)
                                 0x48b (size before relaxing)
- .debug_str     0x00000b93       0x7d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
+ .debug_str     0x00000bdb       0x7d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataLine.o)
                                 0x170 (size before relaxing)
- .debug_str     0x00000c10       0x71 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
+ .debug_str     0x00000c58       0x71 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(ClockLine.o)
                                 0x175 (size before relaxing)
- .debug_str     0x00000c81       0x58 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
+ .debug_str     0x00000cc9       0x58 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(FREX.o)
                                 0x15c (size before relaxing)
- .debug_str     0x00000cd9       0x5d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
+ .debug_str     0x00000d21       0x5d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(EXPST.o)
                                 0x161 (size before relaxing)
- .debug_str     0x00000d36       0x58 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
+ .debug_str     0x00000d7e       0x58 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
                                 0x15c (size before relaxing)
- .debug_str     0x00000d8e       0x5d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
+ .debug_str     0x00000dd6       0x5d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
                                 0x161 (size before relaxing)
- .debug_str     0x00000deb      0x1dd .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
+ .debug_str     0x00000e33      0x1dd .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
                                 0x2e7 (size before relaxing)
- .debug_str     0x00000fc8       0x67 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
-                                0x16b (size before relaxing)
- .debug_str     0x0000102f      0x112 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_str     0x00001010      0x112 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
                                 0x22d (size before relaxing)
- .debug_str     0x00001141      0x112 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_str     0x00001122      0x112 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
                                 0x22d (size before relaxing)
- .debug_str     0x00001253      0x112 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_str     0x00001234      0x112 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
                                 0x22d (size before relaxing)
- .debug_str     0x00001365       0x53 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_str     0x00001346       0x53 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
                                 0x157 (size before relaxing)
- .debug_str     0x000013b8      0x14a .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
-                                0x265 (size before relaxing)
- .debug_str     0x00001502      0x27c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_str     0x00001399      0x277 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
                                 0x38d (size before relaxing)
- .debug_str     0x0000177e       0xf6 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_str     0x00001610       0xf6 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
                                 0x211 (size before relaxing)
- .debug_str     0x00001874      0x1b4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_str     0x00001706      0x1b4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
                                 0x2af (size before relaxing)
- .debug_str     0x00001a28      0x124 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
-                                0x249 (size before relaxing)
- .debug_str     0x00001b4c      0x130 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_str     0x000018ba       0x5d .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+                                0x161 (size before relaxing)
+ .debug_str     0x00001917      0x159 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                                0x27e (size before relaxing)
+ .debug_str     0x00001a70      0x130 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
                                 0x257 (size before relaxing)
- .debug_str     0x00001c7c       0xf8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_str     0x00001ba0       0xf8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
                                 0x226 (size before relaxing)
 
-.debug_loc      0x00000000     0x3575
+.debug_loc      0x00000000     0x330a
  *(.debug_loc)
  .debug_loc     0x00000000      0x228 .\CortexM3\ARM_GCC_441\Debug\main.o
  .debug_loc     0x00000228       0x62 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
@@ -1330,23 +1291,22 @@ END GROUP
  .debug_loc     0x00001569       0xc4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
  .debug_loc     0x0000162d       0xc4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
  .debug_loc     0x000016f1      0x309 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .debug_loc     0x000019fa       0xc4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .debug_loc     0x00001abe      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .debug_loc     0x00001d29      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .debug_loc     0x00001f94      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .debug_loc     0x000021ff       0xc4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .debug_loc     0x000022c3      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .debug_loc     0x0000252e      0x591 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .debug_loc     0x00002abf      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .debug_loc     0x00002d2a      0x221 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .debug_loc     0x00002f4b      0x1b8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .debug_loc     0x00003103      0x24c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_loc     0x0000334f      0x226 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_loc     0x000019fa      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_loc     0x00001c65      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_loc     0x00001ed0      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_loc     0x0000213b       0xc4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_loc     0x000021ff      0x591 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_loc     0x00002790      0x26b .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_loc     0x000029fb      0x221 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_loc     0x00002c1c       0xc4 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .debug_loc     0x00002ce0      0x1b8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .debug_loc     0x00002e98      0x24c .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_loc     0x000030e4      0x226 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0xa10
+.debug_ranges   0x00000000      0x998
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x70 .\CortexM3\ARM_GCC_441\Debug\main.o
  .debug_ranges  0x00000070       0x28 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
@@ -1359,18 +1319,17 @@ END GROUP
  .debug_ranges  0x00000400       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(PWND.o)
  .debug_ranges  0x00000430       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(RST_B.o)
  .debug_ranges  0x00000460       0x88 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
- .debug_ranges  0x000004e8       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
- .debug_ranges  0x00000518       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
- .debug_ranges  0x00000590       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
- .debug_ranges  0x00000608       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
- .debug_ranges  0x00000680       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
- .debug_ranges  0x000006b0       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
- .debug_ranges  0x00000728       0xe8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
- .debug_ranges  0x00000810       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
- .debug_ranges  0x00000888       0x68 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
- .debug_ranges  0x000008f0       0x50 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
- .debug_ranges  0x00000940       0x70 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
- .debug_ranges  0x000009b0       0x60 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+ .debug_ranges  0x000004e8       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+ .debug_ranges  0x00000560       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+ .debug_ranges  0x000005d8       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+ .debug_ranges  0x00000650       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+ .debug_ranges  0x00000680       0xe8 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+ .debug_ranges  0x00000768       0x78 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+ .debug_ranges  0x000007e0       0x68 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+ .debug_ranges  0x00000848       0x30 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
+ .debug_ranges  0x00000878       0x50 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+ .debug_ranges  0x000008c8       0x70 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+ .debug_ranges  0x00000938       0x60 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
 
 .debug_weaknames
  *(.debug_weaknames)
@@ -1417,47 +1376,45 @@ END GROUP
  .ARM.attributes
                 0x0000022c       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LCD_Char_1.o)
  .ARM.attributes
-                0x0000025d       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(DataBus.o)
+                0x0000025d       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
  .ARM.attributes
-                0x0000028e       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_PCLK.o)
+                0x0000028e       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
  .ARM.attributes
-                0x000002bf       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_VREF.o)
+                0x000002bf       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
  .ARM.attributes
-                0x000002f0       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF.o)
+                0x000002f0       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
  .ARM.attributes
-                0x00000321       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(LED.o)
+                0x00000321       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
  .ARM.attributes
-                0x00000352       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_HREF_LOW.o)
+                0x00000352       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
  .ARM.attributes
-                0x00000383       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART.o)
+                0x00000383       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
  .ARM.attributes
-                0x000003b4       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(isr_rx.o)
+                0x000003b4       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(pin_4.o)
  .ARM.attributes
-                0x000003e5       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(UART_IntClock.o)
+                0x000003e5       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
  .ARM.attributes
-                0x00000416       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(cyfitter_cfg.o)
+                0x00000416       0x21 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
  .ARM.attributes
-                0x00000447       0x21 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyBootAsmGnu.o)
+                0x00000437       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
  .ARM.attributes
-                0x00000468       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CyFlash.o)
+                0x00000468       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
  .ARM.attributes
-                0x00000499       0x31 .\CortexM3\ARM_GCC_441\Debug\BitBanging.a(CySpc.o)
+                0x00000499       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
  .ARM.attributes
-                0x000004ca       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x000004c2       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x000004f3       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x000004eb       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  .ARM.attributes
-                0x0000051c       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+                0x00000514       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  .ARM.attributes
-                0x00000545       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x0000052d       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
  .ARM.attributes
-                0x0000055e       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+                0x00000556       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
  .ARM.attributes
-                0x00000587       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+                0x0000056f       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
  .ARM.attributes
-                0x000005a0       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
- .ARM.attributes
-                0x000005b9       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x00000588       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
 
 /DISCARD/
  *(.note.GNU-stack)

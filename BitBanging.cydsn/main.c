@@ -74,9 +74,6 @@ void SccbWritePhase1(uint8 id, uint8 addr)
     
     DataLine_Write(0); // Don't Care bit
     pump();
-    
-
-
 
     }
     
@@ -140,73 +137,114 @@ void SccbRead(uint8 id, uint8 addr )
     endSeq();
     
 }
+void CameraConfig()
+{
+    //SccbWrite(0x60,0x12,0x80); // initiates soft reset
+    SccbWrite(0x60,0x12,0x10); // Binning 08 is 1/8 binning
+    SccbWrite(0x60,0x11,0x7f); // Output clock divider
+    SccbWrite(0x60,0x32,0xc0); //pixel clock divider 1/4
+    SccbWrite(0x60,0x15,0x20); // PCLK output only when HREF high
+    SccbWrite(0x60,0x80,0x11); //Color bar enable (Test pattern?)
+    //SccbWrite(0x60,0x1b,0x05); //pixel shift
+    SccbWrite(0x60,0x09,0x04); //Slave Mode
+    //SccbRead(0x60,0x12);
+
+}
 
 //###################### END SCCB FUNCTIONS ######################
 
 
+uint8 pixel;
+uint16 row;
+//uint8 imageData0[350][350];
 
-
-
+uint8 imageNumber;
+uint8 state;
+uint8 status=0;
 CY_ISR(PCLK_Interrupt)
 {
-    /*  Place your Interrupt code here. */
-    /* `#START isr_PCLK_Interrupt` */
-    
-
-    if(Column <10)
-    {
-        picture[Row][Column] = DataBus_Read();
-        ++Column;
-    }
- 
-    /*
-    if(vsync <=1)
-    {
-        LCD_Char_1_PrintNumber(DataBus_Read());
-        //LCD_Char_1_PrintString(" ");
-        UART_WriteTxData(DataBus_Read());
-    }
-    else{;}
-    */
-    /* `#END` */
+   status=~status;
+   pin_4_Write(status);
 }
 
 CY_ISR(VREF_Interrupt)
 { 
-    /*  Place your Interrupt code here. */
-    /* `#START isr_PCLK_Interrupt` */
-    //LED_Write(~LED_Read());
-    ++vsync;
+    /*
+    if(imageNumber>=1)
+    {
+        LCD_Char_1_PrintNumber(pixel);
+        LCD_Char_1_PrintNumber(row);
+        CyGlobalIntDisable;
+    }*/
+   
     
-    /* `#END` */
+    isr_HREF_Enable(); // Start the HREF interrupts
+   // isr_HREF_FALL_Enable();
+    UART_PutChar(1);
+   // VREF_ClearInterrupt();
+    
 }
+
+/*
+CY_ISR(VREF_FALL_Interrupt)
+{ 
+    //LED_Write(0);
+    row=0;
+    isr_PCLK_Enable();  
+}*/
+
 
 CY_ISR(HREF_Interrupt)
 {
-    /*  Place your Interrupt code here. */
-    /* `#START isr_PCLK_Interrupt` */
+   // pixel=0;
+    //++row;
+    //isr_HREF_LOW_Disable();
+    UART_PutChar(2);
     isr_PCLK_Enable();
-    /* `#END` */
-}
-
-CY_ISR(HREF_LOW_Interrupt)
-{
-    isr_PCLK_Disable();
-    if(Row<10)
-    {
-        ++Row;
-    }
-}
-
-
-uint8 testarray[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-CY_ISR(RX_Interrupt)
-{
-    LED_Write(1);
-    isr_PCLK_Disable();
-    UART_PutArray(testarray, 10);
+    //HREF_ClearInterrupt();
+    //isr_HREF_Disable();
+    //isr_HREF_LOW_Enable();
     
 }
+
+uint8 pixelarray[5];
+
+/*
+CY_ISR(HREF_FALL_Interrupt)
+{
+    //isr_HREF_Enable(); 
+    //isr_HREF_LOW_Disable();
+    UART_PutChar(4);
+    HREF_ClearInterrupt();
+    
+}*/
+uint8 testarray[320];
+uint8 counter=0;
+uint8 testi;
+uint16 size=255;
+CY_ISR(RX_Interrupt)
+{
+    LED_Write(1); // Turn on an LED
+    /*
+    for(testi=0; testi<255;++testi){
+       // testarray[testi]= counter;
+       //counter[0]=testi;
+       
+       UART_PutChar(testi);
+       
+       //CyDelayUs(30);
+       //while(UART_ReadTxStatus()!=UART_TX_STS_COMPLETE){;} // wait until done   
+        if( counter==255)
+        { counter=0;}
+        else{++counter;}
+       
+    }*/
+    
+   // UART_PutArray(testarray,size);
+   isr_VREF_Enable(); // Start the Image
+    
+}
+
 
 
 void main()
@@ -215,42 +253,35 @@ void main()
    // uint8 test;
     LCD_Char_1_Start();
     LCD_Char_1_DisplayOn();
-    
-    /*
 
-    */
     
-    isr_rx_StartEx(RX_Interrupt);
-   
-    UART_Start();
-    
+    UART_Start();  
     PWND_Write(0);
     RST_B_Write(1);
     FREX_Write(0);
     EXPST_Write(0);
+
+    isr_rx_StartEx(RX_Interrupt);        //UART Read Interrupt
+    isr_PCLK_StartEx(PCLK_Interrupt);    //Pixel Clock interrupt
+    isr_VREF_StartEx(VREF_Interrupt);    // Rising vertical sync 
+    //isr_VREF_FALL_StartEx(VREF_FALL_Interrupt); //Falling vertical sync
+    isr_HREF_StartEx(HREF_Interrupt); //Rising Horizontal sync
+    //isr_HREF_FALL_StartEx(HREF_FALL_Interrupt); // Falling Horizontal sync
     
-    
-    //SccbWrite(0x60,0x12,0x80); // initiates soft reset
-    SccbWrite(0x60,0x12,0x08); // Binning 08 is 1/8 binning
-    SccbWrite(0x60,0x11,0x7f); // Output clock divider
-    SccbWrite(0x60,0x32,0xc0); //pixel clock divider 1/4
-    //SccbRead(0x60,0x12);
-
-
-    // for Snap Shot 
-
-       // LED_Write(1);
-    isr_PCLK_StartEx(PCLK_Interrupt);
-    isr_VREF_StartEx(VREF_Interrupt);
-    isr_HREF_StartEx(HREF_Interrupt);
-    isr_HREF_LOW_StartEx(HREF_LOW_Interrupt);
     
     isr_VREF_SetPriority(0); //highest priority
+    //isr_VREF_FALL_SetPriority(0);
     isr_HREF_SetPriority(1);
-    isr_HREF_LOW_SetPriority(1);
+    //isr_HREF_LOW_SetPriority(1);
     isr_PCLK_SetPriority(2);
- 
     
+    isr_PCLK_Disable();
+    isr_VREF_Disable();
+    //isr_VREF_FALL_Disable();
+    isr_HREF_Disable();
+    //isr_HREF_LOW_Disable();
+    
+    CameraConfig();
     FREX_Write(1);
     CyDelayUs(50);
     EXPST_Write(1);
@@ -260,7 +291,7 @@ void main()
     FREX_Write(0);
     
     
-    
+    //CyDelay(500);
     CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
     
     for(;;)

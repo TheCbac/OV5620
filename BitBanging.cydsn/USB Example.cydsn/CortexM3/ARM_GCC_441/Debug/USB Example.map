@@ -1,0 +1,1482 @@
+Archive member included because of file (symbol)
+
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (USB_Start)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o) (USB_EP)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o) (USB_EP_1_ISR)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o) (USB_HandleStandardRqst)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o) (USB_HandleVendorRqst)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o) (CyDelayCycles)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o (CyResetStatus)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (LED_Write)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (LCD_WriteControl)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                              .\CortexM3\ARM_GCC_441\Debug\main.o (ADC_Start)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (ADC_ISR1)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (ADC_theACLK_SetDividerRegister)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (ADC_Ext_CP_Clk_SetDividerRegister)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (ADC_AMux_Select)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o) (ADC_AMux_Set)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o) (USB_DispatchClassRqst)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o) (USB_STRING_DESCRIPTORS)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o) (CySpcStart)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (__aeabi_f2d)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (__aeabi_dcmpgt)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (__aeabi_ui2f)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (__aeabi_fmul)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o) (__aeabi_f2uiz)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o) (memcpy)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o) (memset)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+                              (__cs3_start_c)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+                              (__cs3_interrupt_vector_micro)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
+                              (__cs3_isr_nmi)
+c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                              c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o) (__libc_init_array)
+
+Allocating common symbols
+Common symbol       size              file
+
+USB_fwSerialNumberStringDescriptor
+                    0x4               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+USB_transferState   0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_interfaceNumber
+                    0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_lastPacketSize  0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_interfaceClass  0x4               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_interfaceSetting
+                    0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_ep0Mode         0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_device          0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_tBuffer         0x2               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+USB_deviceAddress   0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_ep0Toggle       0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+length              0x1               .\CortexM3\ARM_GCC_441\Debug\main.o
+USB_configurationChanged
+                    0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+buffer              0x140             .\CortexM3\ARM_GCC_441\Debug\main.o
+USB_interfaceStatus
+                    0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_transferByteCount
+                    0x2               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_configuration   0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_interfaceSetting_last
+                    0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_currentTD       0xc               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+USB_ep0Count        0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+count               0x1               .\CortexM3\ARM_GCC_441\Debug\main.o
+USB_deviceStatus    0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+CyResetStatus       0x1               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+dieTemperature      0x2               .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+USB_EP              0x6c              .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .data          0x00000000        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .text.IntDefaultHandler
+                0x00000000        0x8 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_Stop
+                0x00000000      0x100 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_CheckActivity
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_IsConfigurationChanged
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_GetInterfaceSetting
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_DisableOutEP
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_Force
+                0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_GetEPAckState
+                0x00000000       0x50 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_SetPowerStatus
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text.USB_RWUEnabled
+                0x00000000       0x34 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .text.USB_InitControlWrite
+                0x00000000       0x88 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .bss           0x00000000        0x1 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .text.USB_SerialNumString
+                0x00000000       0x14 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .text.USB_TerminateEP
+                0x00000000       0xf8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0xdc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0xac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x64 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0xd0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyUSB_PowerOnCheck
+                0x00000000       0x74 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000      0x144 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000      0x1e4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0xb8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x9c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0xcc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x58 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0xa4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x60 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0xf8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000      0x100 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0xac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0xc4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0xec .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0xf4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x78 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x48 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x7c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x58 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .bss           0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .rodata        0x00000000       0x10 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x350 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x3f4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000      0x110 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000      0x218 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000      0x1ec .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x7c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0xe4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x6c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0xd8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0xdc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmSlpSaveSet
+                0x00000000        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmSlpRestore
+                0x00000000        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x454 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000      0x270 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000      0x134 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x7c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .text.LED_SetDriveMode
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .text.LED_ReadDataReg
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_Stop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_Position
+                0x00000000       0x74 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_PrintString
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_PutChar
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_WriteData
+                0x00000000       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_WrDatNib
+                0x00000000       0xac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_PrintInt8
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_PrintInt16
+                0x00000000       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.LCD_PrintNumber
+                0x00000000      0x110 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .rodata        0x00000000       0x10 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_Stop
+                0x00000000      0x1d0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SetBufferGain
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SetCoherency
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SetGCOR
+                0x00000000       0xe8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_ReadGCOR
+                0x00000000       0xbc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SetBufferChop
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_StopConvert
+                0x00000000       0x34 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_IsEndConversion
+                0x00000000       0x60 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_GetResult8
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_GetResult16
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_GetResult32
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SetOffset
+                0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SetGain
+                0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_CountsTo_mVolts
+                0x00000000       0xc4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_CountsTo_Volts
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_CountsTo_uVolts
+                0x00000000       0xf0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_IRQ_Start
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_RoundValue
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text.ADC_SelectConfiguration
+                0x00000000      0x1f0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_Start
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_StopBlock
+                0x00000000       0xdc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_StandbyPower
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_SetDividerRegister
+                0x00000000      0x1d4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_GetDividerRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_ClearModeRegister
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_GetModeRegister
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_SetSourceRegister
+                0x00000000       0xe8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_GetSourceRegister
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_SetPhaseRegister
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text.ADC_theACLK_GetPhaseRegister
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_Start
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_StopBlock
+                0x00000000       0xdc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_StandbyPower
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_SetDividerRegister
+                0x00000000      0x1d4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_GetDividerRegister
+                0x00000000       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_ClearModeRegister
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_GetModeRegister
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_SetSourceRegister
+                0x00000000       0xe8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text.ADC_Ext_CP_Clk_GetSourceRegister
+                0x00000000       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .text.ADC_AMux_FastSelect
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPYCODE
+                0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .bss           0x00000000        0x4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x48 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CySetTempInt
+                0x00000000       0x90 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x50 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0xac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000      0x124 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0xc4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x40 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .bss           0x00000000        0x2 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x58 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x64 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000      0x118 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0xbc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0xcc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x9c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x8c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x8c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .text          0x00000000      0x370 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000      0x110 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+ .text          0x00000000      0x21c c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .text          0x00000000      0x2a0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .text          0x00000000       0x40 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .text          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+ .text          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
+ .data          0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x0000b000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_441\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_441\Debug\USB Example.a
+LOAD C:\Program Files\Cypress\PSoC Creator\2.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_441\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+START GROUP
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3unhosted.a
+LOAD c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a
+END GROUP
+                0x1fff8318                PROVIDE (__cs3_heap_start, _end)
+                0x00000001                PROVIDE (__cs3_region_num, ((__cs3_regions_end - __cs3_regions) / 0x14))
+                0x20008000                PROVIDE (__cs3_stack, 0x20008000)
+                0x20004000                PROVIDE (__cs3_heap_end, (__cs3_stack - 0x4000))
+
+.text           0x00000000     0x4278
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                __cs3_interrupt_vector = __cs3_interrupt_vector_micro
+ *(.cs3.interrupt_vector)
+ .cs3.interrupt_vector
+                0x00000000       0xc0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+                0x00000000                __cs3_interrupt_vector_micro
+                0x00000001                ASSERT ((. != __cs3_interrupt_vector_micro), No interrupt vector)
+                0x00000238                PROVIDE (__cs3_reset, Reset)
+ *(.cs3.reset)
+                0x00000001                ASSERT ((. != __cs3_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((0x0 + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text.cs3.init)
+ .text.cs3.init
+                0x000000c0       0x5c c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+                0x000000c0                __cs3_start_c
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x0000011c       0x30 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .text.init     0x0000014c       0x18 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x0000014c                init
+ .text.main     0x00000164       0xd4 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x00000164                main
+ .text.Reset    0x00000238       0x24 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x00000238                Reset
+ .text.initialize_psoc
+                0x0000025c       0x9c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x0000025c                initialize_psoc
+ .text.USB_Start
+                0x000002f8       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x000002f8                USB_Start
+ .text.USB_Init
+                0x0000033c      0x210 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x0000033c                USB_Init
+ .text.USB_InitComponent
+                0x0000054c      0x128 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x0000054c                USB_InitComponent
+ .text.USB_ReInitComponent
+                0x00000674       0x88 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x00000674                USB_ReInitComponent
+ .text.USB_GetConfiguration
+                0x000006fc       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x000006fc                USB_GetConfiguration
+ .text.USB_GetEPState
+                0x00000714       0x34 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x00000714                USB_GetEPState
+ .text.USB_GetEPCount
+                0x00000748       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x00000748                USB_GetEPCount
+ .text.USB_LoadInEP
+                0x000007b8      0x158 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x000007b8                USB_LoadInEP
+ .text.USB_ReadOutEP
+                0x00000910       0x98 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x00000910                USB_ReadOutEP
+ .text.USB_EnableOutEP
+                0x000009a8       0x78 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x000009a8                USB_EnableOutEP
+ .text.USB_EP_0_ISR
+                0x00000a20      0x144 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000a20                USB_EP_0_ISR
+ .text.USB_HandleSetup
+                0x00000b64       0xa4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000b64                USB_HandleSetup
+ .text.USB_HandleIN
+                0x00000c08       0x4c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000c08                USB_HandleIN
+ .text.USB_HandleOUT
+                0x00000c54       0x5c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000c54                USB_HandleOUT
+ .text.USB_LoadEP0
+                0x00000cb0      0x15c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000cb0                USB_LoadEP0
+ .text.USB_InitControlRead
+                0x00000e0c       0x94 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000e0c                USB_InitControlRead
+ .text.USB_InitZeroLengthControlTransfer
+                0x00000ea0       0x58 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000ea0                USB_InitZeroLengthControlTransfer
+ .text.USB_ControlReadDataStage
+                0x00000ef8        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000ef8                USB_ControlReadDataStage
+ .text.USB_ControlReadStatusStage
+                0x00000f04       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000f04                USB_ControlReadStatusStage
+ .text.USB_ControlWriteDataStage
+                0x00000f58      0x114 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00000f58                USB_ControlWriteDataStage
+ .text.USB_ControlWriteStatusStage
+                0x0000106c       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x0000106c                USB_ControlWriteStatusStage
+ .text.USB_InitNoDataControlTransfer
+                0x00001098       0x48 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00001098                USB_InitNoDataControlTransfer
+ .text.USB_NoDataControlStatusStage
+                0x000010e0       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x000010e0                USB_NoDataControlStatusStage
+ .text.USB_UpdateStatusBlock
+                0x00001148       0x58 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x00001148                USB_UpdateStatusBlock
+ .text.USB_InitializeStatusBlock
+                0x000011a0       0x48 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x000011a0                USB_InitializeStatusBlock
+ .text.USB_EP_1_ISR
+                0x000011e8       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+                0x000011e8                USB_EP_1_ISR
+ .text.USB_EP_2_ISR
+                0x00001258       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+                0x00001258                USB_EP_2_ISR
+ .text.USB_SOF_ISR
+                0x000012c8        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+                0x000012c8                USB_SOF_ISR
+ .text.USB_BUS_RESET_ISR
+                0x000012d4        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+                0x000012d4                USB_BUS_RESET_ISR
+ .text.USB_HandleStandardRqst
+                0x000012e0      0x5d4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x000012e0                USB_HandleStandardRqst
+ .text.USB_ConfigReg
+                0x000018b4      0x208 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x000018b4                USB_ConfigReg
+ .text.USB_Config
+                0x00001abc      0x438 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x00001abc                USB_Config
+ .text.USB_ConfigAltChanged
+                0x00001ef4      0x360 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x00001ef4                USB_ConfigAltChanged
+ .text.USB_GetConfigTablePtr
+                0x00002254       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x00002254                USB_GetConfigTablePtr
+ .text.USB_GetDeviceTablePtr
+                0x00002280       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x00002280                USB_GetDeviceTablePtr
+ .text.USB_GetInterfaceClassTablePtr
+                0x000022a8       0x50 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x000022a8                USB_GetInterfaceClassTablePtr
+ .text.USB_SetEndpointHalt
+                0x000022f8      0x130 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x000022f8                USB_SetEndpointHalt
+ .text.USB_ClearEndpointHalt
+                0x00002428      0x1b8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x00002428                USB_ClearEndpointHalt
+ .text.USB_ValidateAlternateSetting
+                0x000025e0       0x94 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x000025e0                USB_ValidateAlternateSetting
+ .text.USB_HandleVendorRqst
+                0x00002674       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+                0x00002674                USB_HandleVendorRqst
+ *fill*         0x000026ac        0x4 00
+ .text          0x000026b0       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+                0x000026b0                CyDelayCycles
+                0x000026c0                CyEnterCriticalSection
+                0x000026c8                CyExitCriticalSection
+ .text.CyHalt   0x000026d0       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x000026d0                CyHalt
+ .text.CyDelay  0x000026e8       0x48 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x000026e8                CyDelay
+ .text.CyDelayUs
+                0x00002730       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x00002730                CyDelayUs
+ .text.CyIntSetVector
+                0x00002758       0x60 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x00002758                CyIntSetVector
+ .text.CyIntSetPriority
+                0x000027b8       0x4c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x000027b8                CyIntSetPriority
+ .text.LED_Write
+                0x00002804       0x44 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+                0x00002804                LED_Write
+ .text.LED_Read
+                0x00002848       0x24 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+                0x00002848                LED_Read
+ .text.LCD_Init
+                0x0000286c       0x90 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                0x0000286c                LCD_Init
+ .text.LCD_Enable
+                0x000028fc       0x1c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                0x000028fc                LCD_Enable
+ .text.LCD_Start
+                0x00002918       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                0x00002918                LCD_Start
+ .text.LCD_WriteControl
+                0x00002944       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                0x00002944                LCD_WriteControl
+ .text.LCD_IsReady
+                0x0000297c      0x1f4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                0x0000297c                LCD_IsReady
+ .text.LCD_WrCntrlNib
+                0x00002b70       0x8c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .text.ADC_Init
+                0x00002bfc       0x34 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00002bfc                ADC_Init
+ .text.ADC_Enable
+                0x00002c30      0x1a4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00002c30                ADC_Enable
+ .text.ADC_Start
+                0x00002dd4       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00002dd4                ADC_Start
+ .text.ADC_StartConvert
+                0x00002e10       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00002e10                ADC_StartConvert
+ .text.ADC_InitConfig
+                0x00002e38      0x860 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00002e38                ADC_InitConfig
+ .text.ADC_GainCompensation
+                0x00003698      0x19c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00003698                ADC_GainCompensation
+ .text.ADC_SetDSMRef0Reg
+                0x00003834       0x94 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x00003834                ADC_SetDSMRef0Reg
+ .text.ADC_ISR1
+                0x000038c8        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+                0x000038c8                ADC_ISR1
+ .text.ADC_ISR2
+                0x000038d4        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+                0x000038d4                ADC_ISR2
+ .text.ADC_ISR3
+                0x000038e0        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+                0x000038e0                ADC_ISR3
+ .text.ADC_ISR4
+                0x000038ec        0xc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+                0x000038ec                ADC_ISR4
+ .text.ADC_theACLK_SetModeRegister
+                0x000038f8       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+                0x000038f8                ADC_theACLK_SetModeRegister
+ .text.ADC_Ext_CP_Clk_SetModeRegister
+                0x00003930       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+                0x00003930                ADC_Ext_CP_Clk_SetModeRegister
+ .text.ADC_AMux_Start
+                0x00003968       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+                0x00003968                ADC_AMux_Start
+ .text.ADC_AMux_Select
+                0x000039a4       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+                0x000039a4                ADC_AMux_Select
+ .text.CYMEMZERO
+                0x000039d0       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPY
+                0x000039f0       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.cfg_write_bytes32
+                0x00003a10       0x84 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.ClockSetup
+                0x00003a94      0x1a8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.AnalogSetDefault
+                0x00003c3c       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .text.ADC_AMux_Set
+                0x00003ca4       0x4c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+                0x00003ca4                ADC_AMux_Set
+ .text.ADC_AMux_Unset
+                0x00003cf0       0x54 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+                0x00003cf0                ADC_AMux_Unset
+ .text.cyfitter_cfg
+                0x00003d44      0x1d4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+                0x00003d44                cyfitter_cfg
+ .text.USB_DispatchClassRqst
+                0x00003f18       0x78 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+                0x00003f18                USB_DispatchClassRqst
+ .text          0x00003f90      0x190 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x00003f90                memcpy
+ .text          0x00004120       0xd4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x00004120                memset
+ .text          0x000041f4       0x30 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+                0x000041f4                __cs3_premain
+ .text          0x00004224        0x2 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
+                0x00004224                __cs3_isr_external_24
+                0x00004224                __cs3_isr_external_9
+                0x00004224                __cs3_isr_external_14
+                0x00004224                __cs3_isr_reserved_9
+                0x00004224                __cs3_isr_external_4
+                0x00004224                __cs3_isr_external_21
+                0x00004224                __cs3_isr_external_0
+                0x00004224                __cs3_isr_external_27
+                0x00004224                __cs3_isr_external_11
+                0x00004224                __cs3_isr_usage_fault
+                0x00004224                __cs3_isr_svcall
+                0x00004224                __cs3_isr_external_3
+                0x00004224                __cs3_isr_mpu_fault
+                0x00004224                __cs3_isr_external_16
+                0x00004224                __cs3_isr_pendsv
+                0x00004224                __cs3_isr_external_31
+                0x00004224                __cs3_isr_nmi
+                0x00004224                __cs3_isr_external_5
+                0x00004224                __cs3_isr_external_6
+                0x00004224                __cs3_isr_external_12
+                0x00004224                __cs3_isr_hard_fault
+                0x00004224                __cs3_isr_bus_fault
+                0x00004224                __cs3_isr_external_1
+                0x00004224                __cs3_isr_external_13
+                0x00004224                __cs3_isr_external_30
+                0x00004224                __cs3_isr_external_23
+                0x00004224                __cs3_isr_external_20
+                0x00004224                __cs3_isr_debug
+                0x00004224                __cs3_isr_reserved_13
+                0x00004224                __cs3_isr_external_8
+                0x00004224                __cs3_isr_external_26
+                0x00004224                __cs3_isr_reserved_8
+                0x00004224                __cs3_isr_reserved_7
+                0x00004224                __cs3_isr_external_7
+                0x00004224                __cs3_isr_external_28
+                0x00004224                __cs3_isr_systick
+                0x00004224                __cs3_isr_external_22
+                0x00004224                __cs3_isr_external_10
+                0x00004224                __cs3_isr_external_15
+                0x00004224                __cs3_isr_interrupt
+                0x00004224                __cs3_isr_external_18
+                0x00004224                __cs3_isr_external_29
+                0x00004224                __cs3_isr_external_25
+                0x00004224                __cs3_isr_reserved_10
+                0x00004224                __cs3_isr_external_2
+                0x00004224                __cs3_isr_external_17
+                0x00004224                __cs3_isr_external_19
+ *fill*         0x00004226        0x2 00
+ .text          0x00004228       0x50 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x00004228                __libc_init_array
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00004278        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+                0x00004278                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00004278                __exidx_end = .
+
+.rodata         0x00004278      0x128
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00004278       0x3c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+                0x00004278                ADC_AMux__addrTable
+                0x00004280                ADC_AMux__maskTable
+ .rodata        0x000042b4       0xb0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+                0x000042b4                USB_DEVICE0_DESCR
+                0x000042c8                USB_DEVICE0_CONFIGURATION0_DESCR
+                0x000042e8                USB_STRING_DESCRIPTORS
+                0x00004318                USB_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x00004328                USB_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x0000432c                USB_DEVICE0_CONFIGURATION0_TABLE
+                0x0000434c                USB_DEVICE0_TABLE
+                0x0000435c                USB_TABLE
+                0x00004364                . = ALIGN (0x4)
+ *(.init)
+ .init          0x00004364        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x00004364                _init
+ .init          0x00004368        0x8 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x00004370                . = ALIGN (0x4)
+                0x00004370                __preinit_array_start = .
+ *(.preinit_array)
+                0x00004370                __preinit_array_end = .
+                0x00004370                . = ALIGN (0x4)
+                0x00004370                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00004370        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .init_array    0x00004374        0x4 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x00004378                __init_array_end = .
+                0x00004378                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00004378        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x00004378                _fini
+ .fini          0x0000437c        0x8 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x00004384                . = ALIGN (0x4)
+                0x00004384                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00004384        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00004388                __fini_array_end = .
+                0x00004388                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00004388                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00004388                . = ALIGN (0x4)
+                0x00004388                __cs3_regions = .
+                0x00004388        0x4 LONG 0x0
+                0x0000438c        0x4 LONG 0x43a0 __cs3_region_init_ram
+                0x00004390        0x4 LONG 0x1fff8000 __cs3_region_start_ram
+                0x00004394        0x4 LONG 0x120 __cs3_region_init_size_ram
+                0x00004398        0x4 LONG 0x1f8 __cs3_region_zero_size_ram
+                0x0000439c                __cs3_regions_end = .
+                0x000043a0                . = ALIGN (0x8)
+ *fill*         0x0000439c        0x4 00
+                0x000043a0                _etext = .
+
+.data           0x1fff8000      0x120 load address 0x000043a0
+                0x1fff8000                __cs3_region_start_ram = .
+ *(.cs3.region-head.ram)
+                0x1fff8001                ASSERT ((. == __cs3_region_start_ram), .cs3.region-head.ram not permitted)
+ *(.ramvectors)
+ .ramvectors    0x1fff8000      0x100 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+ *(.jcr)
+ .jcr           0x1fff8100        0x0 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x1fff8100        0x4 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff8104       0x10 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x1fff8104                cydelay_freq_hz
+                0x1fff8108                cydelay_freq_khz
+                0x1fff810c                cydelay_freq_mhz
+                0x1fff8110                cydelay_32k_ms
+ .data          0x1fff8114        0x8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x1fff8114                ADC_Config
+                0x1fff8118                ADC_CountsPerVolt
+ .data          0x1fff811c        0x1 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+                0x1fff811c                ADC_AMux_lastChannel
+                0x1fff8120                . = ALIGN (0x8)
+ *fill*         0x1fff811d        0x3 00
+ *(.ram)
+                0x1fff8120                _edata = .
+
+.bss            0x1fff8120      0x1f8 load address 0x000044c0
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8120        0x1 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x1fff8121        0x1 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                0x1fff8121                USB_initVar
+ .bss           0x1fff8122        0x2 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                0x1fff8122                LCD_enableState
+                0x1fff8123                LCD_initVar
+ .bss           0x1fff8124        0x8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                0x1fff8124                ADC_convDone
+                0x1fff8125                ADC_stopConversion
+                0x1fff8126                ADC_initVar
+                0x1fff8127                ADC_started
+                0x1fff8128                ADC_Offset
+ *(COMMON)
+ COMMON         0x1fff812c      0x145 .\CortexM3\ARM_GCC_441\Debug\main.o
+                0x1fff812c                length
+                0x1fff8130                buffer
+                0x1fff8270                count
+ *fill*         0x1fff8271        0x3 00
+ COMMON         0x1fff8274       0x98 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                0x1fff8274                USB_transferState
+                0x1fff8275                USB_interfaceNumber
+                0x1fff8276                USB_lastPacketSize
+                0x1fff8278                USB_interfaceClass
+                0x1fff827c                USB_interfaceSetting
+                0x1fff827d                USB_ep0Mode
+                0x1fff827e                USB_device
+                0x1fff827f                USB_deviceAddress
+                0x1fff8280                USB_ep0Toggle
+                0x1fff8281                USB_configurationChanged
+                0x1fff8284                USB_interfaceStatus
+                0x1fff8286                USB_transferByteCount
+                0x1fff8288                USB_configuration
+                0x1fff828c                USB_interfaceSetting_last
+                0x1fff8290                USB_currentTD
+                0x1fff829c                USB_ep0Count
+                0x1fff829d                USB_deviceStatus
+                0x1fff82a0                USB_EP
+ COMMON         0x1fff830c        0x6 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                0x1fff830c                USB_fwSerialNumberStringDescriptor
+                0x1fff8310                USB_tBuffer
+ COMMON         0x1fff8312        0x1 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                0x1fff8312                CyResetStatus
+                0x1fff8318                . = ALIGN (0x8)
+ *fill*         0x1fff8313        0x5 00
+ *(.ram.b)
+                0x1fff8318                _end = .
+                0x1fff8318                __end = .
+                0x20003000                __cs3_region_end_ram = (__cs3_region_start_ram + 0xb000)
+                0x0000b000                __cs3_region_size_ram = 0xb000
+                0x000043a0                __cs3_region_init_ram = LOADADDR (.data)
+                0x00000120                __cs3_region_init_size_ram = (_edata - ADDR (.data))
+                0x000001f8                __cs3_region_zero_size_ram = (_end - _edata)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.comment        0x00000000      0x387
+ .comment       0x00000000       0x2b .\CortexM3\ARM_GCC_441\Debug\main.o
+ .comment       0x0000002b       0x2b .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .comment       0x00000056       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .comment       0x00000081       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .comment       0x000000ac       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .comment       0x000000d7       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .comment       0x00000102       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .comment       0x0000012d       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .comment       0x00000158       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .comment       0x00000183       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .comment       0x000001ae       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .comment       0x000001d9       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .comment       0x00000204       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .comment       0x0000022f       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .comment       0x0000025a       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .comment       0x00000285       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .comment       0x000002b0       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .comment       0x000002db       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .comment       0x00000306       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .comment       0x00000331       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .comment       0x0000035c       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_aranges  0x00000000      0x9b8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_aranges
+                0x00000028       0x30 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_aranges
+                0x00000058       0xb0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_aranges
+                0x00000108       0x98 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_aranges
+                0x000001a0       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_aranges
+                0x000001d8       0x78 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_aranges
+                0x00000250       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_aranges
+                0x00000270       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000290      0x218 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_aranges
+                0x000004a8       0xa0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_aranges
+                0x00000548       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_aranges
+                0x00000580       0x90 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_aranges
+                0x00000610       0xe8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_aranges
+                0x000006f8       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_aranges
+                0x00000730       0x80 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_aranges
+                0x000007b0       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_aranges
+                0x00000820       0x30 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_aranges
+                0x00000850       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x000008b8       0x20 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_aranges
+                0x000008d8       0x78 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_aranges
+                0x00000950       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_pubnames
+                0x00000000     0x1926
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x44 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_pubnames
+                0x00000044       0x57 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_pubnames
+                0x0000009b      0x1a2 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_pubnames
+                0x0000023d      0x338 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_pubnames
+                0x00000575       0x5a .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_pubnames
+                0x000005cf      0x18b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_pubnames
+                0x0000075a       0x2b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_pubnames
+                0x00000785      0x57a .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_pubnames
+                0x00000cff       0xbb .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_pubnames
+                0x00000dba       0x56 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_pubnames
+                0x00000e10      0x112 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_pubnames
+                0x00000f22      0x28f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_pubnames
+                0x000011b1       0x46 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_pubnames
+                0x000011f7      0x1a2 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_pubnames
+                0x00001399      0x181 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_pubnames
+                0x0000151a       0x6a .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_pubnames
+                0x00001584       0x91 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_pubnames
+                0x00001615       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_pubnames
+                0x00001641      0x111 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .debug_pubnames
+                0x00001752      0x104 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_pubnames
+                0x00001856       0xd0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_info     0x00000000     0x4bfa
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x115 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_info    0x00000115      0x13e .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_info    0x00000253      0x5ff .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_info    0x00000852      0x53f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_info    0x00000d91      0x1a7 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_info    0x00000f38      0x74b .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_info    0x00001683       0xbb .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_info    0x0000173e       0xa9 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .debug_info    0x000017e7      0xc71 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_info    0x00002458      0x5ac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_info    0x00002a04      0x120 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_info    0x00002b24      0x3af .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_info    0x00002ed3      0x721 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_info    0x000035f4       0xdc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_info    0x000036d0      0x2ad .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_info    0x0000397d      0x269 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_info    0x00003be6      0x11a .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_info    0x00003d00      0x418 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_info    0x00004118      0x19d .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_info    0x000042b5      0x272 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .debug_info    0x00004527      0x334 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_info    0x0000485b      0x39f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_abbrev   0x00000000     0x13d5
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x90 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_abbrev  0x00000090       0xd6 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_abbrev  0x00000166      0x171 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_abbrev  0x000002d7      0x14f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_abbrev  0x00000426       0xb0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_abbrev  0x000004d6      0x197 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_abbrev  0x0000066d       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_abbrev  0x000006d5       0x14 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x000006e9      0x182 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_abbrev  0x0000086b      0x14d .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_abbrev  0x000009b8       0x85 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_abbrev  0x00000a3d      0x118 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_abbrev  0x00000b55       0xf8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_abbrev  0x00000c4d       0x4a .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_abbrev  0x00000c97       0xd8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_abbrev  0x00000d6f       0xd8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_abbrev  0x00000e47       0x7f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_abbrev  0x00000ec6      0x164 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_abbrev  0x0000102a       0xb5 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_abbrev  0x000010df       0x9e .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .debug_abbrev  0x0000117d      0x14a .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_abbrev  0x000012c7      0x10e .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_line     0x00000000     0x2491
+ *(.debug_line)
+ .debug_line    0x00000000       0x8e .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_line    0x0000008e       0xb4 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_line    0x00000142      0x277 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_line    0x000003b9      0x219 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_line    0x000005d2       0xcc .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_line    0x0000069e      0x2b2 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_line    0x00000950       0x81 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_line    0x000009d1       0x67 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .debug_line    0x00000a38      0x659 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_line    0x00001091      0x346 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_line    0x000013d7       0xae .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_line    0x00001485      0x1d8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_line    0x0000165d      0x3cf .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_line    0x00001a2c       0x8e .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_line    0x00001aba      0x19d .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_line    0x00001c57      0x17c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_line    0x00001dd3       0xaa .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_line    0x00001e7d      0x1f0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_line    0x0000206d       0x8e .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_line    0x000020fb       0x75 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .debug_line    0x00002170      0x194 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_line    0x00002304      0x18d .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_frame    0x00000000     0x1e6c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x48 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_frame   0x00000048       0x5c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_frame   0x000000a4      0x234 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_frame   0x000002d8      0x1e0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_frame   0x000004b8       0x80 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_frame   0x00000538      0x180 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_frame   0x000006b8       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_frame   0x000006e4      0x778 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_frame   0x00000e5c      0x208 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_frame   0x00001064       0x80 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_frame   0x000010e4      0x1e0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_frame   0x000012c4      0x304 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_frame   0x000015c8       0x80 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_frame   0x00001648      0x184 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_frame   0x000017cc      0x14c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_frame   0x00001918       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_frame   0x00001988      0x13c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_frame   0x00001ac4       0x2c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_frame   0x00001af0      0x178 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_frame   0x00001c68      0x13c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .debug_frame   0x00001da4       0x34 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x00001dd8       0x28 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .debug_frame   0x00001e00       0x40 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+ .debug_frame   0x00001e40       0x2c c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+
+.debug_str      0x00000000     0x2120
+ *(.debug_str)
+ .debug_str     0x00000000       0xfb .\CortexM3\ARM_GCC_441\Debug\main.o
+                                0x134 (size before relaxing)
+ .debug_str     0x000000fb       0x8c .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+                                0x192 (size before relaxing)
+ .debug_str     0x00000187      0x2d1 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+                                0x3f5 (size before relaxing)
+ .debug_str     0x00000458      0x28f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+                                0x4e1 (size before relaxing)
+ .debug_str     0x000006e7       0x5d .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+                                0x1df (size before relaxing)
+ .debug_str     0x00000744      0x23c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+                                0x503 (size before relaxing)
+ .debug_str     0x00000980       0x38 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+                                0x147 (size before relaxing)
+ .debug_str     0x000009b8      0x645 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+                                0x788 (size before relaxing)
+ .debug_str     0x00000ffd      0x372 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+                                0x49d (size before relaxing)
+ .debug_str     0x0000136f       0x64 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+                                0x169 (size before relaxing)
+ .debug_str     0x000013d3      0x158 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+                                0x274 (size before relaxing)
+ .debug_str     0x0000152b      0x34c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+                                0x49a (size before relaxing)
+ .debug_str     0x00001877       0x47 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+                                0x141 (size before relaxing)
+ .debug_str     0x000018be      0x1d3 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+                                0x2e8 (size before relaxing)
+ .debug_str     0x00001a91      0x16d .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+                                0x2c9 (size before relaxing)
+ .debug_str     0x00001bfe       0x79 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+                                0x179 (size before relaxing)
+ .debug_str     0x00001c77      0x166 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+                                0x2a7 (size before relaxing)
+ .debug_str     0x00001ddd       0x39 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+                                0x1ed (size before relaxing)
+ .debug_str     0x00001e16       0xe3 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+                                0x288 (size before relaxing)
+ .debug_str     0x00001ef9      0x129 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+                                0x269 (size before relaxing)
+ .debug_str     0x00002022       0xfe .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+                                0x238 (size before relaxing)
+
+.debug_loc      0x00000000     0x30a2
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x56 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_loc     0x00000056       0x62 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_loc     0x000000b8      0x3f1 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_loc     0x000004a9      0x2f8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_loc     0x000007a1       0xac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_loc     0x0000084d      0x288 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_loc     0x00000ad5       0x37 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_loc     0x00000b0c      0xca0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_loc     0x000017ac      0x32f .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_loc     0x00001adb       0xc4 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_loc     0x00001b9f      0x309 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_loc     0x00001ea8      0x536 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_loc     0x000023de       0xac .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_loc     0x0000248a      0x283 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_loc     0x0000270d      0x221 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_loc     0x0000292e       0xa5 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_loc     0x000029d3      0x226 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_loc     0x00002bf9       0x37 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_loc     0x00002c30      0x24c .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_loc     0x00002e7c      0x226 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x8f8
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x20 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .debug_ranges  0x00000020       0x28 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .debug_ranges  0x00000048       0xa8 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .debug_ranges  0x000000f0       0x90 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .debug_ranges  0x00000180       0x30 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .debug_ranges  0x000001b0       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .debug_ranges  0x00000220       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .debug_ranges  0x00000238      0x210 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .debug_ranges  0x00000448       0x98 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .debug_ranges  0x000004e0       0x30 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .debug_ranges  0x00000510       0x88 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .debug_ranges  0x00000598       0xe0 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .debug_ranges  0x00000678       0x30 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .debug_ranges  0x000006a8       0x78 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .debug_ranges  0x00000720       0x68 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .debug_ranges  0x00000788       0x28 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .debug_ranges  0x000007b0       0x60 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000810       0x18 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .debug_ranges  0x00000828       0x70 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .debug_ranges  0x00000898       0x60 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x25
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .ARM.attributes
+                0x00000019       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000042       0x31 .\CortexM3\ARM_GCC_441\Debug\main.o
+ .ARM.attributes
+                0x00000073       0x31 .\CortexM3\ARM_GCC_441\Debug\Cm3Start.o
+ .ARM.attributes
+                0x000000a4       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB.o)
+ .ARM.attributes
+                0x000000d5       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_drv.o)
+ .ARM.attributes
+                0x00000106       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_episr.o)
+ .ARM.attributes
+                0x00000137       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_std.o)
+ .ARM.attributes
+                0x00000168       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_vnd.o)
+ .ARM.attributes
+                0x00000199       0x21 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x000001ba       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyLib.o)
+ .ARM.attributes
+                0x000001eb       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyPm.o)
+ .ARM.attributes
+                0x0000021c       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LED.o)
+ .ARM.attributes
+                0x0000024d       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(LCD.o)
+ .ARM.attributes
+                0x0000027e       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC.o)
+ .ARM.attributes
+                0x000002af       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_INT.o)
+ .ARM.attributes
+                0x000002e0       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_theACLK.o)
+ .ARM.attributes
+                0x00000311       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_Ext_CP_Clk.o)
+ .ARM.attributes
+                0x00000342       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(ADC_AMux.o)
+ .ARM.attributes
+                0x00000373       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x000003a4       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_cls.o)
+ .ARM.attributes
+                0x000003d5       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(USB_descr.o)
+ .ARM.attributes
+                0x00000406       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CyFlash.o)
+ .ARM.attributes
+                0x00000437       0x31 .\CortexM3\ARM_GCC_441\Debug\USB Example.a(CySpc.o)
+ .ARM.attributes
+                0x00000468       0x1b c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000483       0x1b c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x0000049e       0x1b c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x000004b9       0x1b c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x000004d4       0x1b c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .ARM.attributes
+                0x000004ef       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000518       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000541       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .ARM.attributes
+                0x0000056a       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .ARM.attributes
+                0x00000583       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3.a(start_c.o)
+ .ARM.attributes
+                0x000005ac       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro-vector.o)
+ .ARM.attributes
+                0x000005c5       0x19 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libcs3micro.a(micro_isr_interrupt.o)
+ .ARM.attributes
+                0x000005de       0x29 c:/program files/cypress/psoc creator/2.2/psoc creator/import/gnu_cs/arm/4.4.1/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM3\ARM_GCC_441\Debug\USB Example.elf elf32-littlearm)

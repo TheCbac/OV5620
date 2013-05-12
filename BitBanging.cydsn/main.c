@@ -153,36 +153,70 @@ void CameraConfig()
 
 //###################### END SCCB FUNCTIONS ######################
 
-
+uint8 buffer[350],length;
 uint8 pixel;
-uint16 row;
+uint16 row, column=0;
 //uint8 imageData0[350][350];
-
+uint8 pos;
 uint8 imageNumber;
 uint8 state;
 uint8 status=0;
+uint16 countpc;
+
+void sendData()
+{
+        Pin_5_Write(1);
+        LED_Write(0);
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY); 
+        USB_LoadInEP(1, &buffer[0], 64);
+        
+            //LCD_Char_1_PrintNumber(USB_bGetEPState(1));
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[64], 64);
+           // LCD_Char_1_PrintNumber(USB_bGetEPState(1));
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[128], 64);
+           // LCD_Char_1_PrintNumber(USB_bGetEPState(1));
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[192], 64);
+           // LCD_Char_1_PrintNumber(USB_bGetEPState(1));
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[256], 64);
+           // LCD_Char_1_PrintNumber(USB_bGetEPState(1));
+        LED_Write(1);
+        Pin_5_Write(0);
+        /*
+        
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[64], 64);
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[128], 64);
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[192], 64);
+        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[256], 64);
+       //Pin_5_Write(0);
+       */
+}
+
+
+
 CY_ISR(PCLK_Interrupt)
 {
-   status=~status;
-   pin_4_Write(status);
+
+   buffer[column]=DataBus_Read();
+   ++column;
+
 }
+
 
 CY_ISR(VREF_Interrupt)
 { 
-    /*
-    if(imageNumber>=1)
-    {
-        LCD_Char_1_PrintNumber(pixel);
-        LCD_Char_1_PrintNumber(row);
-        CyGlobalIntDisable;
-    }*/
-   
-    
-    isr_HREF_Enable(); // Start the HREF interrupts
-   // isr_HREF_FALL_Enable();
-    UART_PutChar(1);
-   // VREF_ClearInterrupt();
-    
+    Pin_5_Write(~Pin_5_Read());
+    sendData();
+    //isr_HREF_Enable(); // Start the HREF interrupts
+    //isr_HREF_FALL_Enable();
+    //isr_PCLK_Enable();
 }
 
 /*
@@ -196,51 +230,34 @@ CY_ISR(VREF_FALL_Interrupt)
 
 CY_ISR(HREF_Interrupt)
 {
-   // pixel=0;
-    //++row;
-    //isr_HREF_LOW_Disable();
-    UART_PutChar(2);
-    isr_PCLK_Enable();
-    //HREF_ClearInterrupt();
-    //isr_HREF_Disable();
-    //isr_HREF_LOW_Enable();
-    
+
+    //isr_PCLK_Enable();
+    column=0;
+
 }
 
 uint8 pixelarray[5];
 
-/*
+
 CY_ISR(HREF_FALL_Interrupt)
 {
-    //isr_HREF_Enable(); 
-    //isr_HREF_LOW_Disable();
-    UART_PutChar(4);
-    HREF_ClearInterrupt();
+    isr_PCLK_Disable();
+    isr_HREF_Disable();
+    isr_HREF_FALL_Disable();
+    isr_VREF_Disable();
+    sendData();
     
-}*/
+}
 uint8 testarray[320];
 uint8 counter=0;
 uint8 testi;
 uint16 size=255;
+
 CY_ISR(RX_Interrupt)
+
 {
     LED_Write(1); // Turn on an LED
-    /*
-    for(testi=0; testi<255;++testi){
-       // testarray[testi]= counter;
-       //counter[0]=testi;
-       
-       UART_PutChar(testi);
-       
-       //CyDelayUs(30);
-       //while(UART_ReadTxStatus()!=UART_TX_STS_COMPLETE){;} // wait until done   
-        if( counter==255)
-        { counter=0;}
-        else{++counter;}
-       
-    }*/
-    
-   // UART_PutArray(testarray,size);
+
    isr_VREF_Enable(); // Start the Image
     
 }
@@ -255,7 +272,7 @@ void main()
     LCD_Char_1_DisplayOn();
 
     
-    UART_Start();  
+   // UART_Start();  
     PWND_Write(0);
     RST_B_Write(1);
     FREX_Write(0);
@@ -266,7 +283,7 @@ void main()
     isr_VREF_StartEx(VREF_Interrupt);    // Rising vertical sync 
     //isr_VREF_FALL_StartEx(VREF_FALL_Interrupt); //Falling vertical sync
     isr_HREF_StartEx(HREF_Interrupt); //Rising Horizontal sync
-    //isr_HREF_FALL_StartEx(HREF_FALL_Interrupt); // Falling Horizontal sync
+    isr_HREF_FALL_StartEx(HREF_FALL_Interrupt); // Falling Horizontal sync
     
     
     isr_VREF_SetPriority(0); //highest priority
@@ -279,9 +296,13 @@ void main()
     isr_VREF_Disable();
     //isr_VREF_FALL_Disable();
     isr_HREF_Disable();
-    //isr_HREF_LOW_Disable();
+    isr_HREF_FALL_Disable();
     
     CameraConfig();
+    
+    //global enable    
+    CyGlobalIntEnable; 
+    /*
     FREX_Write(1);
     CyDelayUs(50);
     EXPST_Write(1);
@@ -289,15 +310,69 @@ void main()
     EXPST_Write(0);
     CyDelayUs(50);
     FREX_Write(0);
+    */
+    
+    //Start the USB and wait for it to connect
+    USB_Start(0u, USB_3V_OPERATION);
+    while(!USB_bGetConfiguration());
+    
+    //Enable the EndPoint as output
+    USB_EnableOutEP(2);
     
     
-    //CyDelay(500);
-    CyGlobalIntEnable;  /* Uncomment this line to enable global interrupts. */
+    //Read from the computer 
+    while(USB_bGetEPState(2) !=USB_OUT_BUFFER_FULL);
+    length = USB_wGetEPCount(2);
+    USB_ReadOutEP(2, &buffer[0], length);
+    
+    //Start the transmission capture
+    LED_Write(1);
+    
+    isr_VREF_ClearPending();
+   // isr_VREF_Enable();
+    sendData();
+    
+      
     
     for(;;)
     {
         /* Place your application code here. */
+        
+        /*
+         if (pos >=255)
+        {
+            // CyGlobalIntDisable;
+            isr_PCLK_Disable();
+            isr_HREF_Disable();
+            isr_VREF_Disable();       
+             sendData();
+        //LED_Write(1);
+        }*/
     }
+    
 }
 
+
+/*
+    while(1)
+    {
+        while(USB_bGetEPState(2) !=USB_OUT_BUFFER_FULL);
+        
+        //read received bytes count
+        length = USB_wGetEPCount(2);
+        //turn on LED
+        LED_Write(~LED_Read());
+        
+        //unload the out buffer
+        USB_ReadOutEP(2, &buffer[0], length);
+        
+       // check for in buffer is empty
+       while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+       // Turn off LED
+       
+       
+       // load the in buffer
+       USB_LoadInEP(1, &buffer[0], length);
+   
+    }*/
 /* [] END OF FILE */

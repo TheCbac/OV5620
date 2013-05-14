@@ -144,12 +144,12 @@ void CameraConfig()
     RST_B_Write(1);
 
    
-    SccbRead(0x42, 0x1d); // Manufacturer number
+    //SccbRead(0x42, 0x1d); // Manufacturer number
     SccbWrite(0x42,0x15,0x20); // No PCLK during HREF low
     SccbWrite(0x42,0x11,0x8f); // Slowest clock output
     SccbWrite(0x42,0x12,0x21); // Output is CIF, color bar enable
     SccbWrite(0x42,0x13,0x87); // Auto Gain Control, Auto White Balance, Auto Exposure
-    SccbWrite(0x42,0x2b,0x04); //4 dummy pixels 
+    SccbWrite(0x42,0x2b,0x08); //4 dummy pixels 
     
     /*
     SccbWrite(0x60,0x12,0x80); // initiates soft reset

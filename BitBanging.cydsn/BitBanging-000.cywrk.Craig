@@ -457,31 +457,6 @@
 <VisibleNodeIds>
 <v>BitBanging-000</v>
 <v>BitBanging-000\BitBanging</v>
-<v>BitBanging-000\BitBanging\CortexM3</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\Clock_1.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\ClockLine.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\Cm3Start.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\core_cm3.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\CyDmac.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\CyFlash.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\CyLib.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\cyPm.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\CySpc.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\cyutils.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DataBus.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DataLine.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DMA_dma.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\HREF.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_DMA.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_rx.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_tx.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_VREF.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\LCD_Char_1.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

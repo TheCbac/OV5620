@@ -1,14 +1,14 @@
 from PIL import Image as im
 import os
-import scipy.io
+#import scipy.io
 #OS X side
-os.chdir("/Users/ccheney10/Dropbox/6.115/Final Project/PSoC Work/Python Work")
+#os.chdir("/Users/ccheney10/Dropbox/6.115/Final Project/PSoC Work/Python Work")
 #Windows side
-#os.chdir("C:/Users/Craig/Dropbox/6.115/Final Project/Python Work")
+os.chdir("C:/Users/Craig/Dropbox/6.115/Final Project/PSoC Work/Python Work")
 
 data=[]
 dataX=[]
-pic1= im.new("RGB", (349,288))
+#pic1= im.new("RGB", (349,288))
 
 for i in xrange(0,255):
     for j in xrange(0,255):
@@ -119,14 +119,14 @@ def bayer3(array):
     return data
                     
 
-pic1= im.new("L", (349,288))    #"L" is grey scale, "RGB" is, well, RGB
+pic1= im.new("L", (320,288))    #"L" is grey scale, "RGB" is, well, RGB
 #pic1= im.new("RGB", (349,288)) 
-mat_pic=scipy.io.loadmat('picy.mat')
-raw_data=mat_pic['raw_pic']
+#mat_pic=scipy.io.loadmat('picy.mat')
+#raw_data=mat_pic['raw_pic']
 
 #use bayer2 for RGB, bayer3 for grayscale
-pic1.putdata(bayer3(raw_data))
-pic1.save("picyGrayScale.png")
+#pic1.putdata(bayer3(raw_data))
+#pic1.save("picyGrayScale.png")
 dp=[]
 for i in xrange(255*255):
     dp.append(i%255)

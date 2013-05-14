@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 1
 
 
    1              		.syntax unified
@@ -20,7 +20,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
   17              	.Ldebug_info0:
   18              		.section	.debug_line,"",%progbits
   19              	.Ldebug_line0:
-  20 0000 B0000000 		.text
+  20 0000 B1000000 		.text
   20      02006C00 
   20      00000201 
   20      FB0E0D00 
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
    5:.\Generated_Source\PSoC5/Cm3Start.c **** *  Description:
    6:.\Generated_Source\PSoC5/Cm3Start.c **** *  Startup code for the ARM CM3.
    7:.\Generated_Source\PSoC5/Cm3Start.c **** *
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 2
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 2
 
 
    8:.\Generated_Source\PSoC5/Cm3Start.c **** ********************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
   62:.\Generated_Source\PSoC5/Cm3Start.c **** *
   63:.\Generated_Source\PSoC5/Cm3Start.c **** * Return:
   64:.\Generated_Source\PSoC5/Cm3Start.c **** *  None
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 3
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 3
 
 
   65:.\Generated_Source\PSoC5/Cm3Start.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
   93:.\Generated_Source\PSoC5/Cm3Start.c **** /* RealView C Library initialization. */
   94:.\Generated_Source\PSoC5/Cm3Start.c **** extern int __main(void);
   95:.\Generated_Source\PSoC5/Cm3Start.c **** 
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 4
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 4
 
 
   96:.\Generated_Source\PSoC5/Cm3Start.c **** /*******************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
  150:.\Generated_Source\PSoC5/Cm3Start.c ****     IntDefaultHandler,                                                  /* External Interrupt(1D)  
  151:.\Generated_Source\PSoC5/Cm3Start.c ****     IntDefaultHandler,                                                  /* External Interrupt(1E)  
  152:.\Generated_Source\PSoC5/Cm3Start.c ****     IntDefaultHandler                                                   /* External Interrupt(1F)  
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 5
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 5
 
 
  153:.\Generated_Source\PSoC5/Cm3Start.c **** };
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
  207:.\Generated_Source\PSoC5/Cm3Start.c **** 
  208:.\Generated_Source\PSoC5/Cm3Start.c **** 
  209:.\Generated_Source\PSoC5/Cm3Start.c **** /*******************************************************************************
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 6
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 6
 
 
  210:.\Generated_Source\PSoC5/Cm3Start.c **** * Function Name: $Sub$$main
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
   70              		.loc 1 258 0
   71              	@ 258 ".\Generated_Source\PSoC5\Cm3Start.c" 1
   72 0000 054B     		    ldr  r3, =#1073759976
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 7
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 7
 
 
   73 0002 1C78     	    ldrb r4, [r3, #0]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
  288:.\Generated_Source\PSoC5/Cm3Start.c **** * Function Name: initialize_psoc
  289:.\Generated_Source\PSoC5/Cm3Start.c **** ********************************************************************************
  290:.\Generated_Source\PSoC5/Cm3Start.c **** * Summary:
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 8
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 8
 
 
  291:.\Generated_Source\PSoC5/Cm3Start.c **** *  This function used to initialize the PSoC chip before calling main.
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
  127              		.loc 1 315 0
  128 0030 4FF00003 		mov	r3, #0
  129 0034 7B60     		str	r3, [r7, #4]
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 9
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 9
 
 
  130 0036 14E0     		b	.L7
@@ -536,638 +536,640 @@ ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 1
  330:.\Generated_Source\PSoC5/Cm3Start.c **** 
  331:.\Generated_Source\PSoC5/Cm3Start.c ****         /* Setup DMA - only necessary if the design contains a DMA component. */
  332:.\Generated_Source\PSoC5/Cm3Start.c ****         CyDmacConfigure();
+ 168              		.loc 1 332 0
+ 169 0094 FFF7FEFF 		bl	CyDmacConfigure
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 10
+
+
  333:.\Generated_Source\PSoC5/Cm3Start.c **** 
  334:.\Generated_Source\PSoC5/Cm3Start.c ****     #endif  /* (0u != DMA_CHANNELS_USED__MASK0) */
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 10
-
-
  335:.\Generated_Source\PSoC5/Cm3Start.c **** }
- 168              		.loc 1 335 0
- 169 0094 07F10807 		add	r7, r7, #8
- 170 0098 BD46     		mov	sp, r7
- 171 009a 80BD     		pop	{r7, pc}
- 172              		.cfi_endproc
- 173              	.LFE2:
- 174              		.size	initialize_psoc, .-initialize_psoc
- 175              		.section	.init_array,"aw",%init_array
- 176              		.align	2
- 177 0000 00000000 		.word	initialize_psoc(target1)
- 178              		.text
- 179              	.Letext0:
- 180              		.section	.debug_loc,"",%progbits
- 181              	.Ldebug_loc0:
- 182              	.LLST0:
- 183 0000 00000000 		.4byte	.LFB0
- 184 0004 02000000 		.4byte	.LCFI0
- 185 0008 0100     		.2byte	0x1
- 186 000a 5D       		.byte	0x5d
- 187 000b 02000000 		.4byte	.LCFI0
- 188 000f 04000000 		.4byte	.LCFI1
- 189 0013 0200     		.2byte	0x2
- 190 0015 7D       		.byte	0x7d
- 191 0016 04       		.sleb128 4
- 192 0017 04000000 		.4byte	.LCFI1
- 193 001b 06000000 		.4byte	.LFE0
- 194 001f 0200     		.2byte	0x2
- 195 0021 77       		.byte	0x77
- 196 0022 04       		.sleb128 4
- 197 0023 00000000 		.4byte	0x0
- 198 0027 00000000 		.4byte	0x0
- 199              	.LLST2:
- 200 002b 00000000 		.4byte	.LFB2
- 201 002f 02000000 		.4byte	.LCFI2
- 202 0033 0100     		.2byte	0x1
- 203 0035 5D       		.byte	0x5d
- 204 0036 02000000 		.4byte	.LCFI2
- 205 003a 04000000 		.4byte	.LCFI3
- 206 003e 0200     		.2byte	0x2
- 207 0040 7D       		.byte	0x7d
- 208 0041 08       		.sleb128 8
- 209 0042 04000000 		.4byte	.LCFI3
- 210 0046 06000000 		.4byte	.LCFI4
- 211 004a 0200     		.2byte	0x2
- 212 004c 7D       		.byte	0x7d
- 213 004d 10       		.sleb128 16
- 214 004e 06000000 		.4byte	.LCFI4
- 215 0052 9C000000 		.4byte	.LFE2
- 216 0056 0200     		.2byte	0x2
- 217 0058 77       		.byte	0x77
- 218 0059 10       		.sleb128 16
- 219 005a 00000000 		.4byte	0x0
- 220 005e 00000000 		.4byte	0x0
- 221              		.file 2 ".\\Generated_Source\\PSoC5\\/cytypes.h"
- 222              		.file 3 ".\\Generated_Source\\PSoC5\\/CyLib.h"
- 223              		.section	.debug_info
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 11
+ 170              		.loc 1 335 0
+ 171 0098 07F10807 		add	r7, r7, #8
+ 172 009c BD46     		mov	sp, r7
+ 173 009e 80BD     		pop	{r7, pc}
+ 174              		.cfi_endproc
+ 175              	.LFE2:
+ 176              		.size	initialize_psoc, .-initialize_psoc
+ 177              		.section	.init_array,"aw",%init_array
+ 178              		.align	2
+ 179 0000 00000000 		.word	initialize_psoc(target1)
+ 180              		.text
+ 181              	.Letext0:
+ 182              		.section	.debug_loc,"",%progbits
+ 183              	.Ldebug_loc0:
+ 184              	.LLST0:
+ 185 0000 00000000 		.4byte	.LFB0
+ 186 0004 02000000 		.4byte	.LCFI0
+ 187 0008 0100     		.2byte	0x1
+ 188 000a 5D       		.byte	0x5d
+ 189 000b 02000000 		.4byte	.LCFI0
+ 190 000f 04000000 		.4byte	.LCFI1
+ 191 0013 0200     		.2byte	0x2
+ 192 0015 7D       		.byte	0x7d
+ 193 0016 04       		.sleb128 4
+ 194 0017 04000000 		.4byte	.LCFI1
+ 195 001b 06000000 		.4byte	.LFE0
+ 196 001f 0200     		.2byte	0x2
+ 197 0021 77       		.byte	0x77
+ 198 0022 04       		.sleb128 4
+ 199 0023 00000000 		.4byte	0x0
+ 200 0027 00000000 		.4byte	0x0
+ 201              	.LLST2:
+ 202 002b 00000000 		.4byte	.LFB2
+ 203 002f 02000000 		.4byte	.LCFI2
+ 204 0033 0100     		.2byte	0x1
+ 205 0035 5D       		.byte	0x5d
+ 206 0036 02000000 		.4byte	.LCFI2
+ 207 003a 04000000 		.4byte	.LCFI3
+ 208 003e 0200     		.2byte	0x2
+ 209 0040 7D       		.byte	0x7d
+ 210 0041 08       		.sleb128 8
+ 211 0042 04000000 		.4byte	.LCFI3
+ 212 0046 06000000 		.4byte	.LCFI4
+ 213 004a 0200     		.2byte	0x2
+ 214 004c 7D       		.byte	0x7d
+ 215 004d 10       		.sleb128 16
+ 216 004e 06000000 		.4byte	.LCFI4
+ 217 0052 A0000000 		.4byte	.LFE2
+ 218 0056 0200     		.2byte	0x2
+ 219 0058 77       		.byte	0x77
+ 220 0059 10       		.sleb128 16
+ 221 005a 00000000 		.4byte	0x0
+ 222 005e 00000000 		.4byte	0x0
+ 223              		.file 2 ".\\Generated_Source\\PSoC5\\/cytypes.h"
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 11
 
 
- 224 0000 3A010000 		.4byte	0x13a
- 225 0004 0200     		.2byte	0x2
- 226 0006 00000000 		.4byte	.Ldebug_abbrev0
- 227 000a 04       		.byte	0x4
- 228 000b 01       		.uleb128 0x1
- 229 000c 8A000000 		.4byte	.LASF20
- 230 0010 01       		.byte	0x1
- 231 0011 16010000 		.4byte	.LASF21
- 232 0015 3A010000 		.4byte	.LASF22
- 233 0019 00000000 		.4byte	0x0
- 234 001d 00000000 		.4byte	0x0
- 235 0021 00000000 		.4byte	.Ldebug_ranges0+0x0
- 236 0025 00000000 		.4byte	.Ldebug_line0
- 237 0029 02       		.uleb128 0x2
- 238 002a 01       		.byte	0x1
- 239 002b 06       		.byte	0x6
- 240 002c F1000000 		.4byte	.LASF0
- 241 0030 02       		.uleb128 0x2
- 242 0031 01       		.byte	0x1
- 243 0032 08       		.byte	0x8
- 244 0033 A4000000 		.4byte	.LASF1
- 245 0037 02       		.uleb128 0x2
- 246 0038 02       		.byte	0x2
- 247 0039 05       		.byte	0x5
- 248 003a CD000000 		.4byte	.LASF2
- 249 003e 02       		.uleb128 0x2
- 250 003f 02       		.byte	0x2
- 251 0040 07       		.byte	0x7
- 252 0041 DE000000 		.4byte	.LASF3
- 253 0045 02       		.uleb128 0x2
- 254 0046 04       		.byte	0x4
- 255 0047 05       		.byte	0x5
- 256 0048 B7000000 		.4byte	.LASF4
- 257 004c 02       		.uleb128 0x2
- 258 004d 04       		.byte	0x4
- 259 004e 07       		.byte	0x7
- 260 004f 61000000 		.4byte	.LASF5
- 261 0053 02       		.uleb128 0x2
- 262 0054 08       		.byte	0x8
- 263 0055 05       		.byte	0x5
- 264 0056 00000000 		.4byte	.LASF6
- 265 005a 02       		.uleb128 0x2
- 266 005b 08       		.byte	0x8
- 267 005c 07       		.byte	0x7
- 268 005d 73000000 		.4byte	.LASF7
- 269 0061 03       		.uleb128 0x3
- 270 0062 04       		.byte	0x4
- 271 0063 05       		.byte	0x5
- 272 0064 696E7400 		.ascii	"int\000"
- 273 0068 02       		.uleb128 0x2
- 274 0069 04       		.byte	0x4
- 275 006a 07       		.byte	0x7
- 276 006b 15000000 		.4byte	.LASF8
- 277 006f 04       		.uleb128 0x4
- 278 0070 5B000000 		.4byte	.LASF9
- 279 0074 02       		.byte	0x2
- 280 0075 4C       		.byte	0x4c
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 12
+ 224              		.file 3 ".\\Generated_Source\\PSoC5\\/CyLib.h"
+ 225              		.section	.debug_info
+ 226 0000 3A010000 		.4byte	0x13a
+ 227 0004 0200     		.2byte	0x2
+ 228 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 229 000a 04       		.byte	0x4
+ 230 000b 01       		.uleb128 0x1
+ 231 000c 8A000000 		.4byte	.LASF20
+ 232 0010 01       		.byte	0x1
+ 233 0011 16010000 		.4byte	.LASF21
+ 234 0015 3A010000 		.4byte	.LASF22
+ 235 0019 00000000 		.4byte	0x0
+ 236 001d 00000000 		.4byte	0x0
+ 237 0021 00000000 		.4byte	.Ldebug_ranges0+0x0
+ 238 0025 00000000 		.4byte	.Ldebug_line0
+ 239 0029 02       		.uleb128 0x2
+ 240 002a 01       		.byte	0x1
+ 241 002b 06       		.byte	0x6
+ 242 002c F1000000 		.4byte	.LASF0
+ 243 0030 02       		.uleb128 0x2
+ 244 0031 01       		.byte	0x1
+ 245 0032 08       		.byte	0x8
+ 246 0033 A4000000 		.4byte	.LASF1
+ 247 0037 02       		.uleb128 0x2
+ 248 0038 02       		.byte	0x2
+ 249 0039 05       		.byte	0x5
+ 250 003a CD000000 		.4byte	.LASF2
+ 251 003e 02       		.uleb128 0x2
+ 252 003f 02       		.byte	0x2
+ 253 0040 07       		.byte	0x7
+ 254 0041 DE000000 		.4byte	.LASF3
+ 255 0045 02       		.uleb128 0x2
+ 256 0046 04       		.byte	0x4
+ 257 0047 05       		.byte	0x5
+ 258 0048 B7000000 		.4byte	.LASF4
+ 259 004c 02       		.uleb128 0x2
+ 260 004d 04       		.byte	0x4
+ 261 004e 07       		.byte	0x7
+ 262 004f 61000000 		.4byte	.LASF5
+ 263 0053 02       		.uleb128 0x2
+ 264 0054 08       		.byte	0x8
+ 265 0055 05       		.byte	0x5
+ 266 0056 00000000 		.4byte	.LASF6
+ 267 005a 02       		.uleb128 0x2
+ 268 005b 08       		.byte	0x8
+ 269 005c 07       		.byte	0x7
+ 270 005d 73000000 		.4byte	.LASF7
+ 271 0061 03       		.uleb128 0x3
+ 272 0062 04       		.byte	0x4
+ 273 0063 05       		.byte	0x5
+ 274 0064 696E7400 		.ascii	"int\000"
+ 275 0068 02       		.uleb128 0x2
+ 276 0069 04       		.byte	0x4
+ 277 006a 07       		.byte	0x7
+ 278 006b 15000000 		.4byte	.LASF8
+ 279 006f 04       		.uleb128 0x4
+ 280 0070 5B000000 		.4byte	.LASF9
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 12
 
 
- 281 0076 30000000 		.4byte	0x30
- 282 007a 04       		.uleb128 0x4
- 283 007b 0E000000 		.4byte	.LASF10
- 284 007f 02       		.byte	0x2
- 285 0080 4E       		.byte	0x4e
- 286 0081 4C000000 		.4byte	0x4c
- 287 0085 02       		.uleb128 0x2
- 288 0086 04       		.byte	0x4
- 289 0087 04       		.byte	0x4
- 290 0088 FD000000 		.4byte	.LASF11
- 291 008c 02       		.uleb128 0x2
- 292 008d 08       		.byte	0x8
- 293 008e 04       		.byte	0x4
- 294 008f D7000000 		.4byte	.LASF12
- 295 0093 02       		.uleb128 0x2
- 296 0094 01       		.byte	0x1
- 297 0095 08       		.byte	0x8
- 298 0096 B2000000 		.4byte	.LASF13
- 299 009a 04       		.uleb128 0x4
- 300 009b C0000000 		.4byte	.LASF14
- 301 009f 02       		.byte	0x2
- 302 00a0 E0       		.byte	0xe0
- 303 00a1 A5000000 		.4byte	0xa5
- 304 00a5 05       		.uleb128 0x5
- 305 00a6 04       		.byte	0x4
- 306 00a7 AB000000 		.4byte	0xab
- 307 00ab 06       		.uleb128 0x6
- 308 00ac 01       		.byte	0x1
- 309 00ad 07       		.uleb128 0x7
- 310 00ae 04       		.byte	0x4
- 311 00af 07       		.byte	0x7
- 312 00b0 08       		.uleb128 0x8
- 313 00b1 01       		.byte	0x1
- 314 00b2 22000000 		.4byte	.LASF15
- 315 00b6 01       		.byte	0x1
- 316 00b7 46       		.byte	0x46
- 317 00b8 01       		.byte	0x1
- 318 00b9 00000000 		.4byte	.LFB0
- 319 00bd 06000000 		.4byte	.LFE0
- 320 00c1 00000000 		.4byte	.LLST0
- 321 00c5 09       		.uleb128 0x9
- 322 00c6 01       		.byte	0x1
- 323 00c7 10010000 		.4byte	.LASF16
- 324 00cb 01       		.byte	0x1
- 325 00cc 0001     		.2byte	0x100
- 326 00ce 01       		.byte	0x1
- 327 00cf 00000000 		.4byte	.LFB1
- 328 00d3 18000000 		.4byte	.LFE1
- 329 00d7 01       		.byte	0x1
- 330 00d8 5D       		.byte	0x5d
- 331 00d9 0A       		.uleb128 0xa
- 332 00da 01       		.byte	0x1
- 333 00db 4B000000 		.4byte	.LASF23
- 334 00df 01       		.byte	0x1
- 335 00e0 3001     		.2byte	0x130
- 336 00e2 01       		.byte	0x1
- 337 00e3 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 13
+ 281 0074 02       		.byte	0x2
+ 282 0075 4C       		.byte	0x4c
+ 283 0076 30000000 		.4byte	0x30
+ 284 007a 04       		.uleb128 0x4
+ 285 007b 0E000000 		.4byte	.LASF10
+ 286 007f 02       		.byte	0x2
+ 287 0080 4E       		.byte	0x4e
+ 288 0081 4C000000 		.4byte	0x4c
+ 289 0085 02       		.uleb128 0x2
+ 290 0086 04       		.byte	0x4
+ 291 0087 04       		.byte	0x4
+ 292 0088 FD000000 		.4byte	.LASF11
+ 293 008c 02       		.uleb128 0x2
+ 294 008d 08       		.byte	0x8
+ 295 008e 04       		.byte	0x4
+ 296 008f D7000000 		.4byte	.LASF12
+ 297 0093 02       		.uleb128 0x2
+ 298 0094 01       		.byte	0x1
+ 299 0095 08       		.byte	0x8
+ 300 0096 B2000000 		.4byte	.LASF13
+ 301 009a 04       		.uleb128 0x4
+ 302 009b C0000000 		.4byte	.LASF14
+ 303 009f 02       		.byte	0x2
+ 304 00a0 E0       		.byte	0xe0
+ 305 00a1 A5000000 		.4byte	0xa5
+ 306 00a5 05       		.uleb128 0x5
+ 307 00a6 04       		.byte	0x4
+ 308 00a7 AB000000 		.4byte	0xab
+ 309 00ab 06       		.uleb128 0x6
+ 310 00ac 01       		.byte	0x1
+ 311 00ad 07       		.uleb128 0x7
+ 312 00ae 04       		.byte	0x4
+ 313 00af 07       		.byte	0x7
+ 314 00b0 08       		.uleb128 0x8
+ 315 00b1 01       		.byte	0x1
+ 316 00b2 22000000 		.4byte	.LASF15
+ 317 00b6 01       		.byte	0x1
+ 318 00b7 46       		.byte	0x46
+ 319 00b8 01       		.byte	0x1
+ 320 00b9 00000000 		.4byte	.LFB0
+ 321 00bd 06000000 		.4byte	.LFE0
+ 322 00c1 00000000 		.4byte	.LLST0
+ 323 00c5 09       		.uleb128 0x9
+ 324 00c6 01       		.byte	0x1
+ 325 00c7 10010000 		.4byte	.LASF16
+ 326 00cb 01       		.byte	0x1
+ 327 00cc 0001     		.2byte	0x100
+ 328 00ce 01       		.byte	0x1
+ 329 00cf 00000000 		.4byte	.LFB1
+ 330 00d3 18000000 		.4byte	.LFE1
+ 331 00d7 01       		.byte	0x1
+ 332 00d8 5D       		.byte	0x5d
+ 333 00d9 0A       		.uleb128 0xa
+ 334 00da 01       		.byte	0x1
+ 335 00db 4B000000 		.4byte	.LASF23
+ 336 00df 01       		.byte	0x1
+ 337 00e0 3001     		.2byte	0x130
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 13
 
 
- 338 00e7 9C000000 		.4byte	.LFE2
- 339 00eb 2B000000 		.4byte	.LLST2
- 340 00ef 01010000 		.4byte	0x101
- 341 00f3 0B       		.uleb128 0xb
- 342 00f4 6900     		.ascii	"i\000"
- 343 00f6 01       		.byte	0x1
- 344 00f7 3201     		.2byte	0x132
- 345 00f9 7A000000 		.4byte	0x7a
- 346 00fd 02       		.byte	0x2
- 347 00fe 91       		.byte	0x91
- 348 00ff 74       		.sleb128 -12
- 349 0100 00       		.byte	0x0
- 350 0101 0C       		.uleb128 0xc
- 351 0102 96000000 		.4byte	.LASF17
- 352 0106 03       		.byte	0x3
- 353 0107 31       		.byte	0x31
- 354 0108 6F000000 		.4byte	0x6f
- 355 010c 01       		.byte	0x1
- 356 010d 01       		.byte	0x1
- 357 010e 0D       		.uleb128 0xd
- 358 010f 9A000000 		.4byte	0x9a
- 359 0113 1E010000 		.4byte	0x11e
- 360 0117 0E       		.uleb128 0xe
- 361 0118 AD000000 		.4byte	0xad
- 362 011c 2F       		.byte	0x2f
- 363 011d 00       		.byte	0x0
- 364 011e 0F       		.uleb128 0xf
- 365 011f 03010000 		.4byte	.LASF18
- 366 0123 01       		.byte	0x1
- 367 0124 32       		.byte	0x32
- 368 0125 0E010000 		.4byte	0x10e
- 369 0129 01       		.byte	0x1
- 370 012a 05       		.byte	0x5
- 371 012b 03       		.byte	0x3
- 372 012c 00000000 		.4byte	CyRamVectors
- 373 0130 0C       		.uleb128 0xc
- 374 0131 34000000 		.4byte	.LASF19
- 375 0135 01       		.byte	0x1
- 376 0136 EB       		.byte	0xeb
- 377 0137 7A000000 		.4byte	0x7a
- 378 013b 01       		.byte	0x1
- 379 013c 01       		.byte	0x1
- 380 013d 00       		.byte	0x0
- 381              		.section	.debug_abbrev
- 382 0000 01       		.uleb128 0x1
- 383 0001 11       		.uleb128 0x11
- 384 0002 01       		.byte	0x1
- 385 0003 25       		.uleb128 0x25
- 386 0004 0E       		.uleb128 0xe
- 387 0005 13       		.uleb128 0x13
- 388 0006 0B       		.uleb128 0xb
- 389 0007 03       		.uleb128 0x3
- 390 0008 0E       		.uleb128 0xe
- 391 0009 1B       		.uleb128 0x1b
- 392 000a 0E       		.uleb128 0xe
- 393 000b 11       		.uleb128 0x11
- 394 000c 01       		.uleb128 0x1
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 14
+ 338 00e2 01       		.byte	0x1
+ 339 00e3 00000000 		.4byte	.LFB2
+ 340 00e7 A0000000 		.4byte	.LFE2
+ 341 00eb 2B000000 		.4byte	.LLST2
+ 342 00ef 01010000 		.4byte	0x101
+ 343 00f3 0B       		.uleb128 0xb
+ 344 00f4 6900     		.ascii	"i\000"
+ 345 00f6 01       		.byte	0x1
+ 346 00f7 3201     		.2byte	0x132
+ 347 00f9 7A000000 		.4byte	0x7a
+ 348 00fd 02       		.byte	0x2
+ 349 00fe 91       		.byte	0x91
+ 350 00ff 74       		.sleb128 -12
+ 351 0100 00       		.byte	0x0
+ 352 0101 0C       		.uleb128 0xc
+ 353 0102 96000000 		.4byte	.LASF17
+ 354 0106 03       		.byte	0x3
+ 355 0107 31       		.byte	0x31
+ 356 0108 6F000000 		.4byte	0x6f
+ 357 010c 01       		.byte	0x1
+ 358 010d 01       		.byte	0x1
+ 359 010e 0D       		.uleb128 0xd
+ 360 010f 9A000000 		.4byte	0x9a
+ 361 0113 1E010000 		.4byte	0x11e
+ 362 0117 0E       		.uleb128 0xe
+ 363 0118 AD000000 		.4byte	0xad
+ 364 011c 2F       		.byte	0x2f
+ 365 011d 00       		.byte	0x0
+ 366 011e 0F       		.uleb128 0xf
+ 367 011f 03010000 		.4byte	.LASF18
+ 368 0123 01       		.byte	0x1
+ 369 0124 32       		.byte	0x32
+ 370 0125 0E010000 		.4byte	0x10e
+ 371 0129 01       		.byte	0x1
+ 372 012a 05       		.byte	0x5
+ 373 012b 03       		.byte	0x3
+ 374 012c 00000000 		.4byte	CyRamVectors
+ 375 0130 0C       		.uleb128 0xc
+ 376 0131 34000000 		.4byte	.LASF19
+ 377 0135 01       		.byte	0x1
+ 378 0136 EB       		.byte	0xeb
+ 379 0137 7A000000 		.4byte	0x7a
+ 380 013b 01       		.byte	0x1
+ 381 013c 01       		.byte	0x1
+ 382 013d 00       		.byte	0x0
+ 383              		.section	.debug_abbrev
+ 384 0000 01       		.uleb128 0x1
+ 385 0001 11       		.uleb128 0x11
+ 386 0002 01       		.byte	0x1
+ 387 0003 25       		.uleb128 0x25
+ 388 0004 0E       		.uleb128 0xe
+ 389 0005 13       		.uleb128 0x13
+ 390 0006 0B       		.uleb128 0xb
+ 391 0007 03       		.uleb128 0x3
+ 392 0008 0E       		.uleb128 0xe
+ 393 0009 1B       		.uleb128 0x1b
+ 394 000a 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 14
 
 
- 395 000d 52       		.uleb128 0x52
- 396 000e 01       		.uleb128 0x1
- 397 000f 55       		.uleb128 0x55
- 398 0010 06       		.uleb128 0x6
- 399 0011 10       		.uleb128 0x10
- 400 0012 06       		.uleb128 0x6
- 401 0013 00       		.byte	0x0
- 402 0014 00       		.byte	0x0
- 403 0015 02       		.uleb128 0x2
- 404 0016 24       		.uleb128 0x24
- 405 0017 00       		.byte	0x0
- 406 0018 0B       		.uleb128 0xb
- 407 0019 0B       		.uleb128 0xb
- 408 001a 3E       		.uleb128 0x3e
- 409 001b 0B       		.uleb128 0xb
- 410 001c 03       		.uleb128 0x3
- 411 001d 0E       		.uleb128 0xe
- 412 001e 00       		.byte	0x0
- 413 001f 00       		.byte	0x0
- 414 0020 03       		.uleb128 0x3
- 415 0021 24       		.uleb128 0x24
- 416 0022 00       		.byte	0x0
- 417 0023 0B       		.uleb128 0xb
- 418 0024 0B       		.uleb128 0xb
- 419 0025 3E       		.uleb128 0x3e
- 420 0026 0B       		.uleb128 0xb
- 421 0027 03       		.uleb128 0x3
- 422 0028 08       		.uleb128 0x8
- 423 0029 00       		.byte	0x0
- 424 002a 00       		.byte	0x0
- 425 002b 04       		.uleb128 0x4
- 426 002c 16       		.uleb128 0x16
- 427 002d 00       		.byte	0x0
- 428 002e 03       		.uleb128 0x3
- 429 002f 0E       		.uleb128 0xe
- 430 0030 3A       		.uleb128 0x3a
- 431 0031 0B       		.uleb128 0xb
- 432 0032 3B       		.uleb128 0x3b
- 433 0033 0B       		.uleb128 0xb
- 434 0034 49       		.uleb128 0x49
- 435 0035 13       		.uleb128 0x13
- 436 0036 00       		.byte	0x0
- 437 0037 00       		.byte	0x0
- 438 0038 05       		.uleb128 0x5
- 439 0039 0F       		.uleb128 0xf
- 440 003a 00       		.byte	0x0
- 441 003b 0B       		.uleb128 0xb
- 442 003c 0B       		.uleb128 0xb
- 443 003d 49       		.uleb128 0x49
- 444 003e 13       		.uleb128 0x13
- 445 003f 00       		.byte	0x0
- 446 0040 00       		.byte	0x0
- 447 0041 06       		.uleb128 0x6
- 448 0042 15       		.uleb128 0x15
- 449 0043 00       		.byte	0x0
- 450 0044 27       		.uleb128 0x27
- 451 0045 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 15
+ 395 000b 11       		.uleb128 0x11
+ 396 000c 01       		.uleb128 0x1
+ 397 000d 52       		.uleb128 0x52
+ 398 000e 01       		.uleb128 0x1
+ 399 000f 55       		.uleb128 0x55
+ 400 0010 06       		.uleb128 0x6
+ 401 0011 10       		.uleb128 0x10
+ 402 0012 06       		.uleb128 0x6
+ 403 0013 00       		.byte	0x0
+ 404 0014 00       		.byte	0x0
+ 405 0015 02       		.uleb128 0x2
+ 406 0016 24       		.uleb128 0x24
+ 407 0017 00       		.byte	0x0
+ 408 0018 0B       		.uleb128 0xb
+ 409 0019 0B       		.uleb128 0xb
+ 410 001a 3E       		.uleb128 0x3e
+ 411 001b 0B       		.uleb128 0xb
+ 412 001c 03       		.uleb128 0x3
+ 413 001d 0E       		.uleb128 0xe
+ 414 001e 00       		.byte	0x0
+ 415 001f 00       		.byte	0x0
+ 416 0020 03       		.uleb128 0x3
+ 417 0021 24       		.uleb128 0x24
+ 418 0022 00       		.byte	0x0
+ 419 0023 0B       		.uleb128 0xb
+ 420 0024 0B       		.uleb128 0xb
+ 421 0025 3E       		.uleb128 0x3e
+ 422 0026 0B       		.uleb128 0xb
+ 423 0027 03       		.uleb128 0x3
+ 424 0028 08       		.uleb128 0x8
+ 425 0029 00       		.byte	0x0
+ 426 002a 00       		.byte	0x0
+ 427 002b 04       		.uleb128 0x4
+ 428 002c 16       		.uleb128 0x16
+ 429 002d 00       		.byte	0x0
+ 430 002e 03       		.uleb128 0x3
+ 431 002f 0E       		.uleb128 0xe
+ 432 0030 3A       		.uleb128 0x3a
+ 433 0031 0B       		.uleb128 0xb
+ 434 0032 3B       		.uleb128 0x3b
+ 435 0033 0B       		.uleb128 0xb
+ 436 0034 49       		.uleb128 0x49
+ 437 0035 13       		.uleb128 0x13
+ 438 0036 00       		.byte	0x0
+ 439 0037 00       		.byte	0x0
+ 440 0038 05       		.uleb128 0x5
+ 441 0039 0F       		.uleb128 0xf
+ 442 003a 00       		.byte	0x0
+ 443 003b 0B       		.uleb128 0xb
+ 444 003c 0B       		.uleb128 0xb
+ 445 003d 49       		.uleb128 0x49
+ 446 003e 13       		.uleb128 0x13
+ 447 003f 00       		.byte	0x0
+ 448 0040 00       		.byte	0x0
+ 449 0041 06       		.uleb128 0x6
+ 450 0042 15       		.uleb128 0x15
+ 451 0043 00       		.byte	0x0
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 15
 
 
- 452 0046 00       		.byte	0x0
- 453 0047 00       		.byte	0x0
- 454 0048 07       		.uleb128 0x7
- 455 0049 24       		.uleb128 0x24
- 456 004a 00       		.byte	0x0
- 457 004b 0B       		.uleb128 0xb
- 458 004c 0B       		.uleb128 0xb
- 459 004d 3E       		.uleb128 0x3e
- 460 004e 0B       		.uleb128 0xb
- 461 004f 00       		.byte	0x0
- 462 0050 00       		.byte	0x0
- 463 0051 08       		.uleb128 0x8
- 464 0052 2E       		.uleb128 0x2e
- 465 0053 00       		.byte	0x0
- 466 0054 3F       		.uleb128 0x3f
- 467 0055 0C       		.uleb128 0xc
- 468 0056 03       		.uleb128 0x3
- 469 0057 0E       		.uleb128 0xe
- 470 0058 3A       		.uleb128 0x3a
- 471 0059 0B       		.uleb128 0xb
- 472 005a 3B       		.uleb128 0x3b
- 473 005b 0B       		.uleb128 0xb
- 474 005c 27       		.uleb128 0x27
- 475 005d 0C       		.uleb128 0xc
- 476 005e 11       		.uleb128 0x11
- 477 005f 01       		.uleb128 0x1
- 478 0060 12       		.uleb128 0x12
- 479 0061 01       		.uleb128 0x1
- 480 0062 40       		.uleb128 0x40
- 481 0063 06       		.uleb128 0x6
- 482 0064 00       		.byte	0x0
- 483 0065 00       		.byte	0x0
- 484 0066 09       		.uleb128 0x9
- 485 0067 2E       		.uleb128 0x2e
- 486 0068 00       		.byte	0x0
- 487 0069 3F       		.uleb128 0x3f
- 488 006a 0C       		.uleb128 0xc
- 489 006b 03       		.uleb128 0x3
- 490 006c 0E       		.uleb128 0xe
- 491 006d 3A       		.uleb128 0x3a
- 492 006e 0B       		.uleb128 0xb
- 493 006f 3B       		.uleb128 0x3b
- 494 0070 05       		.uleb128 0x5
- 495 0071 27       		.uleb128 0x27
- 496 0072 0C       		.uleb128 0xc
- 497 0073 11       		.uleb128 0x11
- 498 0074 01       		.uleb128 0x1
- 499 0075 12       		.uleb128 0x12
- 500 0076 01       		.uleb128 0x1
- 501 0077 40       		.uleb128 0x40
- 502 0078 0A       		.uleb128 0xa
- 503 0079 00       		.byte	0x0
- 504 007a 00       		.byte	0x0
- 505 007b 0A       		.uleb128 0xa
- 506 007c 2E       		.uleb128 0x2e
- 507 007d 01       		.byte	0x1
- 508 007e 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 16
+ 452 0044 27       		.uleb128 0x27
+ 453 0045 0C       		.uleb128 0xc
+ 454 0046 00       		.byte	0x0
+ 455 0047 00       		.byte	0x0
+ 456 0048 07       		.uleb128 0x7
+ 457 0049 24       		.uleb128 0x24
+ 458 004a 00       		.byte	0x0
+ 459 004b 0B       		.uleb128 0xb
+ 460 004c 0B       		.uleb128 0xb
+ 461 004d 3E       		.uleb128 0x3e
+ 462 004e 0B       		.uleb128 0xb
+ 463 004f 00       		.byte	0x0
+ 464 0050 00       		.byte	0x0
+ 465 0051 08       		.uleb128 0x8
+ 466 0052 2E       		.uleb128 0x2e
+ 467 0053 00       		.byte	0x0
+ 468 0054 3F       		.uleb128 0x3f
+ 469 0055 0C       		.uleb128 0xc
+ 470 0056 03       		.uleb128 0x3
+ 471 0057 0E       		.uleb128 0xe
+ 472 0058 3A       		.uleb128 0x3a
+ 473 0059 0B       		.uleb128 0xb
+ 474 005a 3B       		.uleb128 0x3b
+ 475 005b 0B       		.uleb128 0xb
+ 476 005c 27       		.uleb128 0x27
+ 477 005d 0C       		.uleb128 0xc
+ 478 005e 11       		.uleb128 0x11
+ 479 005f 01       		.uleb128 0x1
+ 480 0060 12       		.uleb128 0x12
+ 481 0061 01       		.uleb128 0x1
+ 482 0062 40       		.uleb128 0x40
+ 483 0063 06       		.uleb128 0x6
+ 484 0064 00       		.byte	0x0
+ 485 0065 00       		.byte	0x0
+ 486 0066 09       		.uleb128 0x9
+ 487 0067 2E       		.uleb128 0x2e
+ 488 0068 00       		.byte	0x0
+ 489 0069 3F       		.uleb128 0x3f
+ 490 006a 0C       		.uleb128 0xc
+ 491 006b 03       		.uleb128 0x3
+ 492 006c 0E       		.uleb128 0xe
+ 493 006d 3A       		.uleb128 0x3a
+ 494 006e 0B       		.uleb128 0xb
+ 495 006f 3B       		.uleb128 0x3b
+ 496 0070 05       		.uleb128 0x5
+ 497 0071 27       		.uleb128 0x27
+ 498 0072 0C       		.uleb128 0xc
+ 499 0073 11       		.uleb128 0x11
+ 500 0074 01       		.uleb128 0x1
+ 501 0075 12       		.uleb128 0x12
+ 502 0076 01       		.uleb128 0x1
+ 503 0077 40       		.uleb128 0x40
+ 504 0078 0A       		.uleb128 0xa
+ 505 0079 00       		.byte	0x0
+ 506 007a 00       		.byte	0x0
+ 507 007b 0A       		.uleb128 0xa
+ 508 007c 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 16
 
 
- 509 007f 0C       		.uleb128 0xc
- 510 0080 03       		.uleb128 0x3
- 511 0081 0E       		.uleb128 0xe
- 512 0082 3A       		.uleb128 0x3a
- 513 0083 0B       		.uleb128 0xb
- 514 0084 3B       		.uleb128 0x3b
- 515 0085 05       		.uleb128 0x5
- 516 0086 27       		.uleb128 0x27
- 517 0087 0C       		.uleb128 0xc
- 518 0088 11       		.uleb128 0x11
- 519 0089 01       		.uleb128 0x1
- 520 008a 12       		.uleb128 0x12
- 521 008b 01       		.uleb128 0x1
- 522 008c 40       		.uleb128 0x40
- 523 008d 06       		.uleb128 0x6
- 524 008e 01       		.uleb128 0x1
- 525 008f 13       		.uleb128 0x13
- 526 0090 00       		.byte	0x0
- 527 0091 00       		.byte	0x0
- 528 0092 0B       		.uleb128 0xb
- 529 0093 34       		.uleb128 0x34
- 530 0094 00       		.byte	0x0
- 531 0095 03       		.uleb128 0x3
- 532 0096 08       		.uleb128 0x8
- 533 0097 3A       		.uleb128 0x3a
- 534 0098 0B       		.uleb128 0xb
- 535 0099 3B       		.uleb128 0x3b
- 536 009a 05       		.uleb128 0x5
- 537 009b 49       		.uleb128 0x49
- 538 009c 13       		.uleb128 0x13
- 539 009d 02       		.uleb128 0x2
- 540 009e 0A       		.uleb128 0xa
- 541 009f 00       		.byte	0x0
- 542 00a0 00       		.byte	0x0
- 543 00a1 0C       		.uleb128 0xc
- 544 00a2 34       		.uleb128 0x34
- 545 00a3 00       		.byte	0x0
- 546 00a4 03       		.uleb128 0x3
- 547 00a5 0E       		.uleb128 0xe
- 548 00a6 3A       		.uleb128 0x3a
- 549 00a7 0B       		.uleb128 0xb
- 550 00a8 3B       		.uleb128 0x3b
- 551 00a9 0B       		.uleb128 0xb
- 552 00aa 49       		.uleb128 0x49
- 553 00ab 13       		.uleb128 0x13
- 554 00ac 3F       		.uleb128 0x3f
- 555 00ad 0C       		.uleb128 0xc
- 556 00ae 3C       		.uleb128 0x3c
- 557 00af 0C       		.uleb128 0xc
- 558 00b0 00       		.byte	0x0
- 559 00b1 00       		.byte	0x0
- 560 00b2 0D       		.uleb128 0xd
- 561 00b3 01       		.uleb128 0x1
- 562 00b4 01       		.byte	0x1
- 563 00b5 49       		.uleb128 0x49
- 564 00b6 13       		.uleb128 0x13
- 565 00b7 01       		.uleb128 0x1
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 17
+ 509 007d 01       		.byte	0x1
+ 510 007e 3F       		.uleb128 0x3f
+ 511 007f 0C       		.uleb128 0xc
+ 512 0080 03       		.uleb128 0x3
+ 513 0081 0E       		.uleb128 0xe
+ 514 0082 3A       		.uleb128 0x3a
+ 515 0083 0B       		.uleb128 0xb
+ 516 0084 3B       		.uleb128 0x3b
+ 517 0085 05       		.uleb128 0x5
+ 518 0086 27       		.uleb128 0x27
+ 519 0087 0C       		.uleb128 0xc
+ 520 0088 11       		.uleb128 0x11
+ 521 0089 01       		.uleb128 0x1
+ 522 008a 12       		.uleb128 0x12
+ 523 008b 01       		.uleb128 0x1
+ 524 008c 40       		.uleb128 0x40
+ 525 008d 06       		.uleb128 0x6
+ 526 008e 01       		.uleb128 0x1
+ 527 008f 13       		.uleb128 0x13
+ 528 0090 00       		.byte	0x0
+ 529 0091 00       		.byte	0x0
+ 530 0092 0B       		.uleb128 0xb
+ 531 0093 34       		.uleb128 0x34
+ 532 0094 00       		.byte	0x0
+ 533 0095 03       		.uleb128 0x3
+ 534 0096 08       		.uleb128 0x8
+ 535 0097 3A       		.uleb128 0x3a
+ 536 0098 0B       		.uleb128 0xb
+ 537 0099 3B       		.uleb128 0x3b
+ 538 009a 05       		.uleb128 0x5
+ 539 009b 49       		.uleb128 0x49
+ 540 009c 13       		.uleb128 0x13
+ 541 009d 02       		.uleb128 0x2
+ 542 009e 0A       		.uleb128 0xa
+ 543 009f 00       		.byte	0x0
+ 544 00a0 00       		.byte	0x0
+ 545 00a1 0C       		.uleb128 0xc
+ 546 00a2 34       		.uleb128 0x34
+ 547 00a3 00       		.byte	0x0
+ 548 00a4 03       		.uleb128 0x3
+ 549 00a5 0E       		.uleb128 0xe
+ 550 00a6 3A       		.uleb128 0x3a
+ 551 00a7 0B       		.uleb128 0xb
+ 552 00a8 3B       		.uleb128 0x3b
+ 553 00a9 0B       		.uleb128 0xb
+ 554 00aa 49       		.uleb128 0x49
+ 555 00ab 13       		.uleb128 0x13
+ 556 00ac 3F       		.uleb128 0x3f
+ 557 00ad 0C       		.uleb128 0xc
+ 558 00ae 3C       		.uleb128 0x3c
+ 559 00af 0C       		.uleb128 0xc
+ 560 00b0 00       		.byte	0x0
+ 561 00b1 00       		.byte	0x0
+ 562 00b2 0D       		.uleb128 0xd
+ 563 00b3 01       		.uleb128 0x1
+ 564 00b4 01       		.byte	0x1
+ 565 00b5 49       		.uleb128 0x49
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 17
 
 
- 566 00b8 13       		.uleb128 0x13
- 567 00b9 00       		.byte	0x0
- 568 00ba 00       		.byte	0x0
- 569 00bb 0E       		.uleb128 0xe
- 570 00bc 21       		.uleb128 0x21
- 571 00bd 00       		.byte	0x0
- 572 00be 49       		.uleb128 0x49
- 573 00bf 13       		.uleb128 0x13
- 574 00c0 2F       		.uleb128 0x2f
- 575 00c1 0B       		.uleb128 0xb
- 576 00c2 00       		.byte	0x0
- 577 00c3 00       		.byte	0x0
- 578 00c4 0F       		.uleb128 0xf
- 579 00c5 34       		.uleb128 0x34
- 580 00c6 00       		.byte	0x0
- 581 00c7 03       		.uleb128 0x3
- 582 00c8 0E       		.uleb128 0xe
- 583 00c9 3A       		.uleb128 0x3a
- 584 00ca 0B       		.uleb128 0xb
- 585 00cb 3B       		.uleb128 0x3b
- 586 00cc 0B       		.uleb128 0xb
- 587 00cd 49       		.uleb128 0x49
- 588 00ce 13       		.uleb128 0x13
- 589 00cf 3F       		.uleb128 0x3f
- 590 00d0 0C       		.uleb128 0xc
- 591 00d1 02       		.uleb128 0x2
- 592 00d2 0A       		.uleb128 0xa
- 593 00d3 00       		.byte	0x0
- 594 00d4 00       		.byte	0x0
- 595 00d5 00       		.byte	0x0
- 596              		.section	.debug_pubnames,"",%progbits
- 597 0000 53000000 		.4byte	0x53
- 598 0004 0200     		.2byte	0x2
- 599 0006 00000000 		.4byte	.Ldebug_info0
- 600 000a 3E010000 		.4byte	0x13e
- 601 000e B0000000 		.4byte	0xb0
- 602 0012 496E7444 		.ascii	"IntDefaultHandler\000"
- 602      65666175 
- 602      6C744861 
- 602      6E646C65 
- 602      7200
- 603 0024 C5000000 		.4byte	0xc5
- 604 0028 52657365 		.ascii	"Reset\000"
- 604      7400
- 605 002e D9000000 		.4byte	0xd9
- 606 0032 696E6974 		.ascii	"initialize_psoc\000"
- 606      69616C69 
- 606      7A655F70 
- 606      736F6300 
- 607 0042 1E010000 		.4byte	0x11e
- 608 0046 43795261 		.ascii	"CyRamVectors\000"
- 608      6D566563 
- 608      746F7273 
- 608      00
- 609 0053 00000000 		.4byte	0x0
- 610              		.section	.debug_aranges,"",%progbits
- 611 0000 2C000000 		.4byte	0x2c
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 18
+ 566 00b6 13       		.uleb128 0x13
+ 567 00b7 01       		.uleb128 0x1
+ 568 00b8 13       		.uleb128 0x13
+ 569 00b9 00       		.byte	0x0
+ 570 00ba 00       		.byte	0x0
+ 571 00bb 0E       		.uleb128 0xe
+ 572 00bc 21       		.uleb128 0x21
+ 573 00bd 00       		.byte	0x0
+ 574 00be 49       		.uleb128 0x49
+ 575 00bf 13       		.uleb128 0x13
+ 576 00c0 2F       		.uleb128 0x2f
+ 577 00c1 0B       		.uleb128 0xb
+ 578 00c2 00       		.byte	0x0
+ 579 00c3 00       		.byte	0x0
+ 580 00c4 0F       		.uleb128 0xf
+ 581 00c5 34       		.uleb128 0x34
+ 582 00c6 00       		.byte	0x0
+ 583 00c7 03       		.uleb128 0x3
+ 584 00c8 0E       		.uleb128 0xe
+ 585 00c9 3A       		.uleb128 0x3a
+ 586 00ca 0B       		.uleb128 0xb
+ 587 00cb 3B       		.uleb128 0x3b
+ 588 00cc 0B       		.uleb128 0xb
+ 589 00cd 49       		.uleb128 0x49
+ 590 00ce 13       		.uleb128 0x13
+ 591 00cf 3F       		.uleb128 0x3f
+ 592 00d0 0C       		.uleb128 0xc
+ 593 00d1 02       		.uleb128 0x2
+ 594 00d2 0A       		.uleb128 0xa
+ 595 00d3 00       		.byte	0x0
+ 596 00d4 00       		.byte	0x0
+ 597 00d5 00       		.byte	0x0
+ 598              		.section	.debug_pubnames,"",%progbits
+ 599 0000 53000000 		.4byte	0x53
+ 600 0004 0200     		.2byte	0x2
+ 601 0006 00000000 		.4byte	.Ldebug_info0
+ 602 000a 3E010000 		.4byte	0x13e
+ 603 000e B0000000 		.4byte	0xb0
+ 604 0012 496E7444 		.ascii	"IntDefaultHandler\000"
+ 604      65666175 
+ 604      6C744861 
+ 604      6E646C65 
+ 604      7200
+ 605 0024 C5000000 		.4byte	0xc5
+ 606 0028 52657365 		.ascii	"Reset\000"
+ 606      7400
+ 607 002e D9000000 		.4byte	0xd9
+ 608 0032 696E6974 		.ascii	"initialize_psoc\000"
+ 608      69616C69 
+ 608      7A655F70 
+ 608      736F6300 
+ 609 0042 1E010000 		.4byte	0x11e
+ 610 0046 43795261 		.ascii	"CyRamVectors\000"
+ 610      6D566563 
+ 610      746F7273 
+ 610      00
+ 611 0053 00000000 		.4byte	0x0
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 18
 
 
- 612 0004 0200     		.2byte	0x2
- 613 0006 00000000 		.4byte	.Ldebug_info0
- 614 000a 04       		.byte	0x4
- 615 000b 00       		.byte	0x0
- 616 000c 0000     		.2byte	0x0
- 617 000e 0000     		.2byte	0x0
- 618 0010 00000000 		.4byte	.LFB0
- 619 0014 06000000 		.4byte	.LFE0-.LFB0
- 620 0018 00000000 		.4byte	.LFB1
- 621 001c 18000000 		.4byte	.LFE1-.LFB1
- 622 0020 00000000 		.4byte	.LFB2
- 623 0024 9C000000 		.4byte	.LFE2-.LFB2
- 624 0028 00000000 		.4byte	0x0
- 625 002c 00000000 		.4byte	0x0
- 626              		.section	.debug_ranges,"",%progbits
- 627              	.Ldebug_ranges0:
- 628 0000 00000000 		.4byte	.Ltext0
- 629 0004 00000000 		.4byte	.Letext0
- 630 0008 00000000 		.4byte	.LFB0
- 631 000c 06000000 		.4byte	.LFE0
- 632 0010 00000000 		.4byte	.LFB1
- 633 0014 18000000 		.4byte	.LFE1
- 634 0018 00000000 		.4byte	.LFB2
- 635 001c 9C000000 		.4byte	.LFE2
- 636 0020 00000000 		.4byte	0x0
- 637 0024 00000000 		.4byte	0x0
- 638              		.section	.debug_str,"MS",%progbits,1
- 639              	.LASF6:
- 640 0000 6C6F6E67 		.ascii	"long long int\000"
- 640      206C6F6E 
- 640      6720696E 
- 640      7400
- 641              	.LASF10:
- 642 000e 75696E74 		.ascii	"uint32\000"
- 642      333200
- 643              	.LASF8:
- 644 0015 756E7369 		.ascii	"unsigned int\000"
- 644      676E6564 
- 644      20696E74 
- 644      00
- 645              	.LASF15:
- 646 0022 496E7444 		.ascii	"IntDefaultHandler\000"
- 646      65666175 
- 646      6C744861 
- 646      6E646C65 
- 646      7200
- 647              	.LASF19:
- 648 0034 5F5F6373 		.ascii	"__cs3_interrupt_vector\000"
- 648      335F696E 
- 648      74657272 
- 648      7570745F 
- 648      76656374 
- 649              	.LASF23:
- 650 004b 696E6974 		.ascii	"initialize_psoc\000"
- 650      69616C69 
- 650      7A655F70 
- 650      736F6300 
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 19
+ 612              		.section	.debug_aranges,"",%progbits
+ 613 0000 2C000000 		.4byte	0x2c
+ 614 0004 0200     		.2byte	0x2
+ 615 0006 00000000 		.4byte	.Ldebug_info0
+ 616 000a 04       		.byte	0x4
+ 617 000b 00       		.byte	0x0
+ 618 000c 0000     		.2byte	0x0
+ 619 000e 0000     		.2byte	0x0
+ 620 0010 00000000 		.4byte	.LFB0
+ 621 0014 06000000 		.4byte	.LFE0-.LFB0
+ 622 0018 00000000 		.4byte	.LFB1
+ 623 001c 18000000 		.4byte	.LFE1-.LFB1
+ 624 0020 00000000 		.4byte	.LFB2
+ 625 0024 A0000000 		.4byte	.LFE2-.LFB2
+ 626 0028 00000000 		.4byte	0x0
+ 627 002c 00000000 		.4byte	0x0
+ 628              		.section	.debug_ranges,"",%progbits
+ 629              	.Ldebug_ranges0:
+ 630 0000 00000000 		.4byte	.Ltext0
+ 631 0004 00000000 		.4byte	.Letext0
+ 632 0008 00000000 		.4byte	.LFB0
+ 633 000c 06000000 		.4byte	.LFE0
+ 634 0010 00000000 		.4byte	.LFB1
+ 635 0014 18000000 		.4byte	.LFE1
+ 636 0018 00000000 		.4byte	.LFB2
+ 637 001c A0000000 		.4byte	.LFE2
+ 638 0020 00000000 		.4byte	0x0
+ 639 0024 00000000 		.4byte	0x0
+ 640              		.section	.debug_str,"MS",%progbits,1
+ 641              	.LASF6:
+ 642 0000 6C6F6E67 		.ascii	"long long int\000"
+ 642      206C6F6E 
+ 642      6720696E 
+ 642      7400
+ 643              	.LASF10:
+ 644 000e 75696E74 		.ascii	"uint32\000"
+ 644      333200
+ 645              	.LASF8:
+ 646 0015 756E7369 		.ascii	"unsigned int\000"
+ 646      676E6564 
+ 646      20696E74 
+ 646      00
+ 647              	.LASF15:
+ 648 0022 496E7444 		.ascii	"IntDefaultHandler\000"
+ 648      65666175 
+ 648      6C744861 
+ 648      6E646C65 
+ 648      7200
+ 649              	.LASF19:
+ 650 0034 5F5F6373 		.ascii	"__cs3_interrupt_vector\000"
+ 650      335F696E 
+ 650      74657272 
+ 650      7570745F 
+ 650      76656374 
+ 651              	.LASF23:
+ 652 004b 696E6974 		.ascii	"initialize_psoc\000"
+ 652      69616C69 
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 19
 
 
- 651              	.LASF9:
- 652 005b 75696E74 		.ascii	"uint8\000"
- 652      3800
- 653              	.LASF5:
- 654 0061 6C6F6E67 		.ascii	"long unsigned int\000"
- 654      20756E73 
- 654      69676E65 
- 654      6420696E 
- 654      7400
- 655              	.LASF7:
- 656 0073 6C6F6E67 		.ascii	"long long unsigned int\000"
- 656      206C6F6E 
- 656      6720756E 
- 656      7369676E 
- 656      65642069 
- 657              	.LASF20:
- 658 008a 474E5520 		.ascii	"GNU C 4.4.1\000"
- 658      4320342E 
- 658      342E3100 
- 659              	.LASF17:
- 660 0096 43795265 		.ascii	"CyResetStatus\000"
- 660      73657453 
- 660      74617475 
- 660      7300
- 661              	.LASF1:
- 662 00a4 756E7369 		.ascii	"unsigned char\000"
- 662      676E6564 
- 662      20636861 
- 662      7200
- 663              	.LASF13:
- 664 00b2 63686172 		.ascii	"char\000"
- 664      00
- 665              	.LASF4:
- 666 00b7 6C6F6E67 		.ascii	"long int\000"
- 666      20696E74 
+ 652      7A655F70 
+ 652      736F6300 
+ 653              	.LASF9:
+ 654 005b 75696E74 		.ascii	"uint8\000"
+ 654      3800
+ 655              	.LASF5:
+ 656 0061 6C6F6E67 		.ascii	"long unsigned int\000"
+ 656      20756E73 
+ 656      69676E65 
+ 656      6420696E 
+ 656      7400
+ 657              	.LASF7:
+ 658 0073 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 658      206C6F6E 
+ 658      6720756E 
+ 658      7369676E 
+ 658      65642069 
+ 659              	.LASF20:
+ 660 008a 474E5520 		.ascii	"GNU C 4.4.1\000"
+ 660      4320342E 
+ 660      342E3100 
+ 661              	.LASF17:
+ 662 0096 43795265 		.ascii	"CyResetStatus\000"
+ 662      73657453 
+ 662      74617475 
+ 662      7300
+ 663              	.LASF1:
+ 664 00a4 756E7369 		.ascii	"unsigned char\000"
+ 664      676E6564 
+ 664      20636861 
+ 664      7200
+ 665              	.LASF13:
+ 666 00b2 63686172 		.ascii	"char\000"
  666      00
- 667              	.LASF14:
- 668 00c0 63796973 		.ascii	"cyisraddress\000"
- 668      72616464 
- 668      72657373 
+ 667              	.LASF4:
+ 668 00b7 6C6F6E67 		.ascii	"long int\000"
+ 668      20696E74 
  668      00
- 669              	.LASF2:
- 670 00cd 73686F72 		.ascii	"short int\000"
- 670      7420696E 
- 670      7400
- 671              	.LASF12:
- 672 00d7 646F7562 		.ascii	"double\000"
- 672      6C6500
- 673              	.LASF3:
- 674 00de 73686F72 		.ascii	"short unsigned int\000"
- 674      7420756E 
- 674      7369676E 
- 674      65642069 
- 674      6E7400
- 675              	.LASF0:
- 676 00f1 7369676E 		.ascii	"signed char\000"
- 676      65642063 
-ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccpggixa.s 			page 20
+ 669              	.LASF14:
+ 670 00c0 63796973 		.ascii	"cyisraddress\000"
+ 670      72616464 
+ 670      72657373 
+ 670      00
+ 671              	.LASF2:
+ 672 00cd 73686F72 		.ascii	"short int\000"
+ 672      7420696E 
+ 672      7400
+ 673              	.LASF12:
+ 674 00d7 646F7562 		.ascii	"double\000"
+ 674      6C6500
+ 675              	.LASF3:
+ 676 00de 73686F72 		.ascii	"short unsigned int\000"
+ 676      7420756E 
+ 676      7369676E 
+ 676      65642069 
+ 676      6E7400
+ 677              	.LASF0:
+ARM GAS  C:\Users\Craig\AppData\Local\Temp\ccm3MUCL.s 			page 20
 
 
- 676      68617200 
- 677              	.LASF11:
- 678 00fd 666C6F61 		.ascii	"float\000"
- 678      7400
- 679              	.LASF18:
- 680 0103 43795261 		.ascii	"CyRamVectors\000"
- 680      6D566563 
- 680      746F7273 
- 680      00
- 681              	.LASF16:
- 682 0110 52657365 		.ascii	"Reset\000"
- 682      7400
- 683              	.LASF21:
- 684 0116 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Cm3Start.c\000"
- 684      6E657261 
- 684      7465645F 
- 684      536F7572 
- 684      63655C50 
- 685              	.LASF22:
- 686 013a 433A5C55 		.ascii	"C:\\Users\\Craig\\Dropbox\\6.115\\Final Project\\PS"
- 686      73657273 
- 686      5C437261 
- 686      69675C44 
- 686      726F7062 
- 687 0167 6F432057 		.ascii	"oC Work\\BitBanging.cydsn\000"
- 687      6F726B5C 
- 687      42697442 
- 687      616E6769 
- 687      6E672E63 
- 688              		.ident	"GCC: (Sourcery G++ Lite 2010q1-188) 4.4.1"
+ 678 00f1 7369676E 		.ascii	"signed char\000"
+ 678      65642063 
+ 678      68617200 
+ 679              	.LASF11:
+ 680 00fd 666C6F61 		.ascii	"float\000"
+ 680      7400
+ 681              	.LASF18:
+ 682 0103 43795261 		.ascii	"CyRamVectors\000"
+ 682      6D566563 
+ 682      746F7273 
+ 682      00
+ 683              	.LASF16:
+ 684 0110 52657365 		.ascii	"Reset\000"
+ 684      7400
+ 685              	.LASF21:
+ 686 0116 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Cm3Start.c\000"
+ 686      6E657261 
+ 686      7465645F 
+ 686      536F7572 
+ 686      63655C50 
+ 687              	.LASF22:
+ 688 013a 433A5C55 		.ascii	"C:\\Users\\Craig\\Dropbox\\6.115\\Final Project\\PS"
+ 688      73657273 
+ 688      5C437261 
+ 688      69675C44 
+ 688      726F7062 
+ 689 0167 6F432057 		.ascii	"oC Work\\BitBanging.cydsn\000"
+ 689      6F726B5C 
+ 689      42697442 
+ 689      616E6769 
+ 689      6E672E63 
+ 690              		.ident	"GCC: (Sourcery G++ Lite 2010q1-188) 4.4.1"

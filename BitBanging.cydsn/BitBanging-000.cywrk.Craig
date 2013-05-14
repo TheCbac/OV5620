@@ -67,27 +67,16 @@
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\DataLine\DataLine.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\DataLine\DataLine.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\DataLine\DataLine_aliases.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\EXPST</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\EXPST\EXPST.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\EXPST\EXPST.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\EXPST\EXPST_aliases.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\FREX</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\FREX\FREX.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\FREX\FREX.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\FREX\FREX_aliases.h</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\DMA</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\DMA\DMA_dma.c</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\DMA\DMA_dma.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\HREF</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\HREF\HREF.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\HREF\HREF.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\HREF\HREF_aliases.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_HREF</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_HREF\isr_HREF.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_HREF\isr_HREF.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_HREF_FALL</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_HREF_FALL\isr_HREF_FALL.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_HREF_FALL\isr_HREF_FALL.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_PCLK</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_PCLK\isr_PCLK.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_PCLK\isr_PCLK.h</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_DMA</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_DMA\isr_DMA.c</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_DMA\isr_DMA.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_rx</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_rx\isr_rx.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\isr_rx\isr_rx.h</v>
@@ -113,14 +102,6 @@
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\PCLK\PCLK.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\PCLK\PCLK.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\PCLK\PCLK_aliases.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_1</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_1\Pin_1.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_1\Pin_1.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_1\Pin_1_aliases.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_3</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_3\Pin_3.c</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_3\Pin_3.h</v>
-<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Pin_3\Pin_3_aliases.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\pin_4</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\pin_4\pin_4.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\pin_4\pin_4.h</v>
@@ -145,6 +126,9 @@
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\RST_B\RST_B.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\RST_B\RST_B.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\RST_B\RST_B_aliases.h</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Status_Reg_1</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Status_Reg_1\Status_Reg_1.c</v>
+<v>BitBanging-000\BitBanging\Generated_Source\PSoC5\Status_Reg_1\Status_Reg_1.h</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\UART</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\UART\UART.c</v>
 <v>BitBanging-000\BitBanging\Generated_Source\PSoC5\UART\UART.h</v>
@@ -376,12 +360,9 @@
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\cyutils.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DataBus.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DataLine.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\EXPST.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\FREX.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DMA_dma.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\HREF.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_HREF.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_HREF_FALL.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_PCLK.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_DMA.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_rx.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_tx.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_VREF.lst</v>
@@ -391,14 +372,13 @@
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\LED.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\main.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\PCLK.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\Pin_1.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\Pin_3.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\pin_4.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\Pin_5.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\pin_HREF_FALL.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\pin_VREF.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\PWND.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\RST_B.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\Status_Reg_1.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\UART.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\UART_BOOT.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\UART_INT.lst</v>
@@ -495,13 +475,13 @@
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\cyutils.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DataBus.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DataLine.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\EXPST.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\FREX.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\DMA_dma.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\HREF.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_HREF.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_HREF_FALL.lst</v>
-<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_PCLK.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_DMA.lst</v>
 <v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_rx.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_tx.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\isr_VREF.lst</v>
+<v>BitBanging-000\BitBanging\CortexM3\ARM_GCC_441\Debug\Listing Files\LCD_Char_1.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -519,8 +499,10 @@
 <v>BitBanging-000\BitBanging\CharLCD_v1_80</v>
 <v>BitBanging-000\BitBanging\cy_clock_v2_0</v>
 <v>BitBanging-000\BitBanging\cy_constant_v1_0</v>
+<v>BitBanging-000\BitBanging\cy_dma_v1_70</v>
 <v>BitBanging-000\BitBanging\cy_isr_v1_70</v>
 <v>BitBanging-000\BitBanging\cy_pins_v1_80</v>
+<v>BitBanging-000\BitBanging\CyStatusReg_v1_80</v>
 <v>BitBanging-000\BitBanging\UART_v2_30</v>
 <v>BitBanging-000\BitBanging\USBFS_v2_50</v>
 <v>BitBanging-000\USB Example</v>
@@ -541,8 +523,10 @@
 <v>BitBanging-000\BitBanging\CharLCD_v1_80</v>
 <v>BitBanging-000\BitBanging\cy_clock_v2_0</v>
 <v>BitBanging-000\BitBanging\cy_constant_v1_0</v>
+<v>BitBanging-000\BitBanging\cy_dma_v1_70</v>
 <v>BitBanging-000\BitBanging\cy_isr_v1_70</v>
 <v>BitBanging-000\BitBanging\cy_pins_v1_80</v>
+<v>BitBanging-000\BitBanging\CyStatusReg_v1_80</v>
 <v>BitBanging-000\BitBanging\UART_v2_30</v>
 <v>BitBanging-000\BitBanging\USBFS_v2_50</v>
 <v>BitBanging-000\USB Example</v>

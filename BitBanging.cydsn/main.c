@@ -139,33 +139,94 @@ void SccbRead(uint8 id, uint8 addr )
 }
 void CameraConfig()
 {
-    //SccbWrite(0x60,0x12,0x80); // initiates soft reset
-    SccbWrite(0x60,0x12,0x10); // Binning 08 is 1/8 binning
+    // No reset pins
+    PWND_Write(0);
+    RST_B_Write(1);
+
+   
+    SccbRead(0x42, 0x1d); // Manufacturer number
+    SccbWrite(0x42,0x15,0x20); // No PCLK during HREF low
+    SccbWrite(0x42,0x11,0x8f); // Slowest clock output
+    SccbWrite(0x42,0x12,0x21); // Output is CIF, color bar enable
+    SccbWrite(0x42,0x13,0x87); // Auto Gain Control, Auto White Balance, Auto Exposure
+    SccbWrite(0x42,0x2b,0x04); //4 dummy pixels 
+    
+    /*
+    SccbWrite(0x60,0x12,0x80); // initiates soft reset
+    CyDelay(20);
+    SccbWrite(0x60,0x12,0x00); // Binning 08 is 1/8 binning
     SccbWrite(0x60,0x11,0x7f); // Output clock divider
     SccbWrite(0x60,0x32,0xc0); //pixel clock divider 1/4
     SccbWrite(0x60,0x15,0x20); // PCLK output only when HREF high
     SccbWrite(0x60,0x80,0x11); //Color bar enable (Test pattern?)
+    //SccbWrite(0x60,0x0c,0x0d); //  enable custom output
+    //SccbWrite(0x60,0x61,0x1e); // 240
+   // SccbWrite(0x60,0x60,0x19); // 240
     //SccbWrite(0x60,0x1b,0x05); //pixel shift
-    SccbWrite(0x60,0x09,0x04); //Slave Mode
+    //SccbWrite(0x60,0x09,0x04); //Slave Mode
     //SccbRead(0x60,0x12);
+    */
+    
+    // Change HREDEND to ~240(?)
+   // SccbWrite(0x60, 0x18, 0xff);
+    // display the HREFEND
+   // SccbRead(0x60, 0x0c);
 
 }
 
 //###################### END SCCB FUNCTIONS ######################
 
-uint8 buffer[350],length;
+uint8 buffer[384] = {0};
+uint8 length;
 uint8 pixel;
 uint16 row, column=0;
 //uint8 imageData0[350][350];
-uint8 pos;
-uint8 imageNumber;
-uint8 state;
-uint8 status=0;
-uint16 countpc;
+
+
+
+/* DMA Configuration for DMA */
+#define DMA_BYTES_PER_BURST 1
+#define DMA_REQUEST_PER_BURST 1
+#define DMA_SRC_BASE (CYDEV_PERIPH_BASE)
+#define DMA_DST_BASE (CYDEV_SRAM_BASE)
+
+
+// global variable for the DMA channel
+uint8 DMA_Chan;
+uint8 DMA_TD[1];
+ 
+// Set up the DMA from camera to USB
+void DMA_Config()
+{
+    /* Variable declarations for DMA */
+    /* Move these variable declarations to the top of the function */
+    
+    // Set up the DMA channel with 1 byte per burst, and 1 request per burst
+    DMA_Chan = DMA_DmaInitialize(DMA_BYTES_PER_BURST, DMA_REQUEST_PER_BURST,HI16(DMA_SRC_BASE), HI16(DMA_DST_BASE));
+    
+    // Create the Transaction Descriptor (TD)
+    DMA_TD[0] = CyDmaTdAllocate();
+    
+    // Configure the TD , len of transfer, next TD, and enable output
+    CyDmaTdSetConfiguration(DMA_TD[0], 356, DMA_INVALID_TD, TD_TERMIN_EN | DMA__TD_TERMOUT_EN | TD_INC_DST_ADR);
+    
+    // the source is from status register, the destination is the buffer
+    CyDmaTdSetAddress(DMA_TD[0], LO16((uint32)Status_Reg_1_Status_PTR), LO16((uint32)buffer));
+    
+    // Set the initial TD to be executed when CyDmaChEnable() is called 
+    CyDmaChSetInitialTd(DMA_Chan, DMA_TD[0]);
+    
+    // Don't enable the channel until isr_VREF has been called 
+    //CyDmaChEnable(DMA_Chan, 1);
+
+
+}
+
+// sendData()
 
 void sendData()
 {
-        Pin_5_Write(1);
+        //Pin_5_Write(1);
         LED_Write(0);
         while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY); 
         USB_LoadInEP(1, &buffer[0], 64);
@@ -183,24 +244,16 @@ void sendData()
         while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
         USB_LoadInEP(1, &buffer[256], 64);
            // LCD_Char_1_PrintNumber(USB_bGetEPState(1));
+         while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
+        USB_LoadInEP(1, &buffer[320], 64);
         LED_Write(1);
-        Pin_5_Write(0);
-        /*
-        
-        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
-        USB_LoadInEP(1, &buffer[64], 64);
-        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
-        USB_LoadInEP(1, &buffer[128], 64);
-        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
-        USB_LoadInEP(1, &buffer[192], 64);
-        while(USB_bGetEPState(1) != USB_IN_BUFFER_EMPTY);
-        USB_LoadInEP(1, &buffer[256], 64);
-       //Pin_5_Write(0);
-       */
-}
+        //Pin_5_Write(0);
 
+       
+} 
 
-
+// isr_PCLK
+/*
 CY_ISR(PCLK_Interrupt)
 {
 
@@ -208,15 +261,24 @@ CY_ISR(PCLK_Interrupt)
    ++column;
 
 }
-
+*/
 
 CY_ISR(VREF_Interrupt)
 { 
-    Pin_5_Write(~Pin_5_Read());
-    sendData();
-    //isr_HREF_Enable(); // Start the HREF interrupts
-    //isr_HREF_FALL_Enable();
-    //isr_PCLK_Enable();
+    // Place character for testing purposes
+    //LCD_Char_1_PrintString("V");
+    
+    // Toggle Pin_5, for testing purposes 
+    //Pin_5_Write(1);
+
+    // Clear any pending requests on the TD
+    CyDmaClearPendingDrq(DMA_Chan);
+    
+    // Enable the channel
+    CyDmaChEnable(DMA_Chan, 1);
+    
+    // Place character for testing purposes
+   // LCD_Char_1_PrintString("EN");
 }
 
 /*
@@ -226,19 +288,15 @@ CY_ISR(VREF_FALL_Interrupt)
     row=0;
     isr_PCLK_Enable();  
 }*/
-
-
+/*
 CY_ISR(HREF_Interrupt)
 {
 
     //isr_PCLK_Enable();
     column=0;
 
-}
-
-uint8 pixelarray[5];
-
-
+}*/
+/*
 CY_ISR(HREF_FALL_Interrupt)
 {
     isr_PCLK_Disable();
@@ -247,12 +305,8 @@ CY_ISR(HREF_FALL_Interrupt)
     isr_VREF_Disable();
     sendData();
     
-}
-uint8 testarray[320];
-uint8 counter=0;
-uint8 testi;
-uint16 size=255;
-
+}*/
+/*
 CY_ISR(RX_Interrupt)
 
 {
@@ -261,8 +315,38 @@ CY_ISR(RX_Interrupt)
    isr_VREF_Enable(); // Start the Image
     
 }
+*/
+
+uint8 state=0;
 
 
+// This isr fires when the buffer is full, and the line is ready to be read out
+CY_ISR(DMA_Interrupt)
+{
+    
+    
+    // LCD for testing purposes
+    //LCD_Char_1_PrintString("DMA");
+    
+    // Lower P5_6 for testing purposes
+   // Pin_5_Write(1);
+    
+    // Stop the DMA (for testing purposes)
+    //CyDmaChDisable(DMA_Chan);
+    
+    // Stop VREF from Reenabling it
+    //isr_VREF_Disable();
+     //isr_DMA_Disable();
+    
+    
+    // enable sendData()
+    //Pin_5_Write(0);
+    state=1;
+    
+
+}
+
+uint16 count=0;
 
 void main()
 {
@@ -271,47 +355,46 @@ void main()
     LCD_Char_1_Start();
     LCD_Char_1_DisplayOn();
 
-    
-   // UART_Start();  
-    PWND_Write(0);
-    RST_B_Write(1);
-    FREX_Write(0);
-    EXPST_Write(0);
+   
+    // set the vector for the vertical sync isr
+    isr_VREF_StartEx(VREF_Interrupt);
 
-    isr_rx_StartEx(RX_Interrupt);        //UART Read Interrupt
-    isr_PCLK_StartEx(PCLK_Interrupt);    //Pixel Clock interrupt
-    isr_VREF_StartEx(VREF_Interrupt);    // Rising vertical sync 
+/*
+    //isr_rx_StartEx(RX_Interrupt);        //UART Read Interrupt
+    //isr_PCLK_StartEx(PCLK_Interrupt);    //Pixel Clock interrupt
+       
     //isr_VREF_FALL_StartEx(VREF_FALL_Interrupt); //Falling vertical sync
-    isr_HREF_StartEx(HREF_Interrupt); //Rising Horizontal sync
-    isr_HREF_FALL_StartEx(HREF_FALL_Interrupt); // Falling Horizontal sync
+    //isr_HREF_StartEx(HREF_Interrupt); //Rising Horizontal sync
+   // isr_HREF_FALL_StartEx(HREF_FALL_Interrupt); // Falling Horizontal sync
+*/
+
+    // When the DMA has written 320 bytes to the buffer isr_DMA will trigger
+    isr_DMA_StartEx(DMA_Interrupt);
     
     
-    isr_VREF_SetPriority(0); //highest priority
-    //isr_VREF_FALL_SetPriority(0);
-    isr_HREF_SetPriority(1);
-    //isr_HREF_LOW_SetPriority(1);
-    isr_PCLK_SetPriority(2);
-    
-    isr_PCLK_Disable();
+    // Only trigger after a byte has been received from USB
     isr_VREF_Disable();
-    //isr_VREF_FALL_Disable();
-    isr_HREF_Disable();
-    isr_HREF_FALL_Disable();
     
-    CameraConfig();
-    
-    //global enable    
-    CyGlobalIntEnable; 
+    // Unused isr stuff
     /*
-    FREX_Write(1);
-    CyDelayUs(50);
-    EXPST_Write(1);
-    CyDelayUs(50);
-    EXPST_Write(0);
-    CyDelayUs(50);
-    FREX_Write(0);
+    //isr_PCLK_Disable();  
+    //isr_VREF_FALL_Disable();
+    //isr_HREF_Disable();
+    //isr_HREF_FALL_Disable();
+    // Set for highest priority
+    //isr_VREF_SetPriority(0);
     */
     
+    // Configure the control registers on the OV5620
+    CameraConfig();
+    
+    // Configure DMA to transfer from Camera to internal buffer
+    // Doesn't start until VREF_Interrupt fires
+    DMA_Config();
+    
+    //global interrupt enable    
+    CyGlobalIntEnable; 
+
     //Start the USB and wait for it to connect
     USB_Start(0u, USB_3V_OPERATION);
     while(!USB_bGetConfiguration());
@@ -320,37 +403,51 @@ void main()
     USB_EnableOutEP(2);
     
     
-    //Read from the computer 
+    //Read from the computer and wait for a byte to be sent
     while(USB_bGetEPState(2) !=USB_OUT_BUFFER_FULL);
     length = USB_wGetEPCount(2);
     USB_ReadOutEP(2, &buffer[0], length);
     
-    //Start the transmission capture
+    // Turn on the LED for testing purposes 
     LED_Write(1);
     
+    // Clear any pending interrupts, so isr_Enable() doesn't fire immediately
     isr_VREF_ClearPending();
-   // isr_VREF_Enable();
-    sendData();
+    isr_VREF_Enable();
     
-      
+    // Send out 320 bytes of data
+    //sendData();
+    
     
     for(;;)
     {
-        /* Place your application code here. */
-        
-        /*
-         if (pos >=255)
+        if (state==1)
         {
-            // CyGlobalIntDisable;
-            isr_PCLK_Disable();
-            isr_HREF_Disable();
-            isr_VREF_Disable();       
-             sendData();
-        //LED_Write(1);
-        }*/
+            Pin_5_Write(1);
+            
+            sendData();
+            Pin_5_Write(0);
+            state=0;
+            ++count; 
+            
+            if (count>=292)
+            {
+                    // Stop the DMA 
+                    CyDmaChDisable(DMA_Chan);
+                    
+                    // Stop VREF from Reenabling it
+                    isr_VREF_Disable();
+                    isr_DMA_Disable();
+            }
+            
+        }
+        
+       
     }
     
 }
+
+
 
 
 /*

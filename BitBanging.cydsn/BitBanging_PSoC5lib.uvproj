@@ -478,36 +478,6 @@
               <FilePath>.\Generated_Source\PSoC5\ClockLine.h</FilePath>
             </File>
             <File>
-              <FileName>FREX_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\FREX_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>FREX.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\FREX.c</FilePath>
-            </File>
-            <File>
-              <FileName>FREX.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\FREX.h</FilePath>
-            </File>
-            <File>
-              <FileName>EXPST_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\EXPST_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>EXPST.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\EXPST.c</FilePath>
-            </File>
-            <File>
-              <FileName>EXPST.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\EXPST.h</FilePath>
-            </File>
-            <File>
               <FileName>XCLK_aliases.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\XCLK_aliases.h</FilePath>
@@ -638,16 +608,6 @@
               <FilePath>.\Generated_Source\PSoC5\HREF.h</FilePath>
             </File>
             <File>
-              <FileName>isr_PCLK.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_PCLK.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_PCLK.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_PCLK.h</FilePath>
-            </File>
-            <File>
               <FileName>isr_VREF.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_VREF.c</FilePath>
@@ -656,16 +616,6 @@
               <FileName>isr_VREF.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_VREF.h</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF.h</FilePath>
             </File>
             <File>
               <FileName>LED_aliases.h</FileName>
@@ -726,36 +676,6 @@
               <FileName>isr_rx.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_rx.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_3_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_3_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_3.c</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_3.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_3.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_1_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_1_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_1.c</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_1.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_1.h</FilePath>
             </File>
             <File>
               <FileName>pin_4_aliases.h</FileName>
@@ -923,16 +843,6 @@
               <FilePath>.\Generated_Source\PSoC5\Pin_5.h</FilePath>
             </File>
             <File>
-              <FileName>isr_HREF_FALL.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_FALL.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF_FALL.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_FALL.h</FilePath>
-            </File>
-            <File>
               <FileName>pin_HREF_FALL_aliases.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\pin_HREF_FALL_aliases.h</FilePath>
@@ -961,6 +871,36 @@
               <FileName>pin_VREF.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\pin_VREF.h</FilePath>
+            </File>
+            <File>
+              <FileName>DMA_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\DMA_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>DMA_dma.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\DMA_dma.h</FilePath>
+            </File>
+            <File>
+              <FileName>isr_DMA.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\isr_DMA.c</FilePath>
+            </File>
+            <File>
+              <FileName>isr_DMA.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\isr_DMA.h</FilePath>
+            </File>
+            <File>
+              <FileName>Status_Reg_1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Status_Reg_1.c</FilePath>
+            </File>
+            <File>
+              <FileName>Status_Reg_1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Status_Reg_1.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1442,36 +1382,6 @@
               <FilePath>.\Generated_Source\PSoC5\ClockLine.h</FilePath>
             </File>
             <File>
-              <FileName>FREX_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\FREX_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>FREX.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\FREX.c</FilePath>
-            </File>
-            <File>
-              <FileName>FREX.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\FREX.h</FilePath>
-            </File>
-            <File>
-              <FileName>EXPST_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\EXPST_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>EXPST.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\EXPST.c</FilePath>
-            </File>
-            <File>
-              <FileName>EXPST.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\EXPST.h</FilePath>
-            </File>
-            <File>
               <FileName>XCLK_aliases.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\XCLK_aliases.h</FilePath>
@@ -1602,16 +1512,6 @@
               <FilePath>.\Generated_Source\PSoC5\HREF.h</FilePath>
             </File>
             <File>
-              <FileName>isr_PCLK.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_PCLK.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_PCLK.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_PCLK.h</FilePath>
-            </File>
-            <File>
               <FileName>isr_VREF.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_VREF.c</FilePath>
@@ -1620,16 +1520,6 @@
               <FileName>isr_VREF.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_VREF.h</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF.h</FilePath>
             </File>
             <File>
               <FileName>LED_aliases.h</FileName>
@@ -1690,36 +1580,6 @@
               <FileName>isr_rx.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\isr_rx.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_3_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_3_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_3.c</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_3.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_3.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_1_aliases.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_1_aliases.h</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_1.c</FilePath>
-            </File>
-            <File>
-              <FileName>Pin_1.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\Pin_1.h</FilePath>
             </File>
             <File>
               <FileName>pin_4_aliases.h</FileName>
@@ -1887,16 +1747,6 @@
               <FilePath>.\Generated_Source\PSoC5\Pin_5.h</FilePath>
             </File>
             <File>
-              <FileName>isr_HREF_FALL.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_FALL.c</FilePath>
-            </File>
-            <File>
-              <FileName>isr_HREF_FALL.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC5\isr_HREF_FALL.h</FilePath>
-            </File>
-            <File>
               <FileName>pin_HREF_FALL_aliases.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\pin_HREF_FALL_aliases.h</FilePath>
@@ -1925,6 +1775,36 @@
               <FileName>pin_VREF.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC5\pin_VREF.h</FilePath>
+            </File>
+            <File>
+              <FileName>DMA_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\DMA_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>DMA_dma.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\DMA_dma.h</FilePath>
+            </File>
+            <File>
+              <FileName>isr_DMA.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\isr_DMA.c</FilePath>
+            </File>
+            <File>
+              <FileName>isr_DMA.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\isr_DMA.h</FilePath>
+            </File>
+            <File>
+              <FileName>Status_Reg_1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Status_Reg_1.c</FilePath>
+            </File>
+            <File>
+              <FileName>Status_Reg_1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC5\Status_Reg_1.h</FilePath>
             </File>
           </Files>
         </Group>

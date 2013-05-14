@@ -44,12 +44,19 @@ epIn = usb.util.find_descriptor(
 assert epOut is not None
 assert epIn is not None
 
-
 def tester1(num):
     epOut.write('1', timeout=10000)
     inData= epIn.read(num)
-    #for i in range(num):
-        #inData= epIn.read(64)
+    return inData
+    
+def tester2(num):
+    inData=[]
+    epOut.write('1', timeout=10000)
+    for i in range(num):
+        try:
+            inData.append( epIn.read(384))
+        except:
+            print i 
     return inData
 #epOut.write('1')
 #epIn.read(64)

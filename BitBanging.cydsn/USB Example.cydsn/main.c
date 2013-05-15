@@ -135,7 +135,7 @@ void main()
             if (count==64)
             {
                 // load the in buffer
-                //USB_LoadInEP(1, &buffer[0], 64);
+             *?   //USB_LoadInEP(1, &buffer[0], 64);
                 count=0;
             }
             
